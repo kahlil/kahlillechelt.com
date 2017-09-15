@@ -1,5 +1,6 @@
+@import "normalize.css";
 @import "fonts.css";
-@import "base-styles.css";
+@import "basscss.min.css";
 
 :root {
 	--text-color: #333;
