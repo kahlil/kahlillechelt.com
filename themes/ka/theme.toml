@@ -3,7 +3,7 @@ license = "MIT"
 description = "Person theme of Kahlil Lechelt"
 homepage = "https://kahlillechelt.com"
 features = ["blog"]
-min_version = "1"
+min_version = "0.20"
 
 [author]
   name = "Kahlil Lechelt"

@@ -1,0 +1,83 @@
+/* CONTENT */
+.content {
+	max-width: 32rem;
+}
+
+/* MONOSPACE TYPE */
+.monospace {
+	font-family: var(--font-family);
+}
+
+/* SEPARATOR */
+.separator div {
+	height: 10px;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	float: left;
+	width: 10%;
+}
+
+/* DEKO COLORS */
+.color-2 {
+	background-color: var(--color-2);
+}
+.color-3 {
+	background-color: var(--color-3);
+}
+.color-4 {
+	background-color: var(--color-4);
+}
+
+/* NAVIGATION */
+.nav {
+	font-size: 1.2rem;
+	text-align: left;
+}
+
+.nav a {
+	text-decoration: none;
+}
+
+/* ARTICLES & NOTES */
+.article,
+.note {
+	margin-bottom: 4rem;
+}
+
+.article,
+.note {
+	line-height: 1.8rem;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+.note__header,
+.note__header a {
+	text-decoration: none;
+	font-size: 1rem;
+	color: #cfcfcf;
+}
+
+.article__title a {
+	text-decoration: none;
+}
+
+.stopper div {
+	height: 1px;
+	width: 10%;
+	background-color: var(--text-color);
+	display: none;
+}
+
+.date {
+	padding-top: .3rem;
+	font-size: .8rem;
+	color: #989898;
+}

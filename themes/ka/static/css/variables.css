@@ -1,0 +1,11 @@
+:root {
+	--text-color: #333;
+	--highlight-color: #6CC9FF;
+	--dimmed-color: #cfcfcf;
+	--color-1: #f8f8f8;
+	--color-2: #DDE7F2;
+	--color-3: #B9BBDF;
+	--color-4: #878ECD;
+	/* Main font family */
+	--font-family: "Roboto Mono", "Inconsolata", "Consolas", monospace;
+}
