@@ -1,0 +1,23 @@
+{
+  "name": "kahlillechelt.com",
+  "version": "1.0.0",
+  "description": "My personal site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kahlil/kahlillechelt.com.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kahlil/kahlillechelt.com/issues"
+  },
+  "homepage": "https://github.com/kahlil/kahlillechelt.com#readme",
+  "dependencies": {
+    "postcss": "^6.0.11",
+    "postcss-cssnext": "^3.0.2"
+  }
+}
