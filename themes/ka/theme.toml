@@ -1,0 +1,10 @@
+name = "Ka"
+license = "MIT"
+description = "Person theme of Kahlil Lechelt"
+homepage = "https://kahlillechelt.com"
+features = ["blog"]
+min_version = "1"
+
+[author]
+  name = "Kahlil Lechelt"
+  homepage = "https://kahlillechelt.com"

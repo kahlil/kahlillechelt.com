@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+{{ range (where .Data.Pages "Section" "!=" "") }}
+	{{ if (eq .Section "post")}}
+	<section class="article">
+		<h1 class="h2 article__title mt2 mb0"><a href="{{ .URL }}#headline">{{ .Title }}</a></h1>
+		<div class="date">{{ .Date.Format "January 02, 2006" }}</div>
+	{{ else }}
+	<section class="note">
+		<h3 class="note__header regular my2"><a href="{{ .URL }}#headline">Note</a></h3>
+	{{ end }}
+		{{ .Content }}
+	</section>
+{{ end }}
+
+{{ partial "footer.html" . }}

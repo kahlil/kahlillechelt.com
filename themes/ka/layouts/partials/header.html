@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ .Site.Title }}</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i|Rubik:900" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/css/base-styles.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "/css/styles.css" | relURL }}" />
+    {{ partial "head_custom.html" . }}
+  </head>
+
+  <body>
+		<div class="content mx-auto">
+			<header>
+				{{ partial "logo.html" . }}
+				{{ partial "nav.html" . }}
+			</header>
+
