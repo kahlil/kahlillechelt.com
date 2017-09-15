@@ -1,3 +1,6 @@
+@import "fonts.css";
+@import "base-styles.css";
+
 :root {
 	--text-color: #333;
 	--highlight-color: #6CC9FF;

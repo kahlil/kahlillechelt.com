@@ -4,7 +4,7 @@
   "description": "My personal site.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "postcss -u postcss-cssnext postcss-import postcss-clean --no-map themes/ka/static/css/styles.css -o themes/ka/static/css/styles.min.css "
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,9 @@
   "homepage": "https://github.com/kahlil/kahlillechelt.com#readme",
   "dependencies": {
     "postcss": "^6.0.11",
-    "postcss-cssnext": "^3.0.2"
+    "postcss-clean": "^1.0.3",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0"
   }
 }
