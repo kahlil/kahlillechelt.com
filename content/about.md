@@ -9,3 +9,5 @@ I am [@kahliltweets](https://twitter.com/kahliltweets) on Twitter which is a gre
 You can find all my open source code [on GitHub](https://github.com/kahlil).
 
 I make music with my friends at [SMASH HIFI](http://smashhifi.com).
+
+If you want you can [Ask Me Anything](https://github.com/kahlil/ama).
