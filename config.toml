@@ -6,6 +6,7 @@ googleAnalytics = ""
 disqusShortname = ""
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
+enableEmoji = true
 
 [permalinks]
     post = "/post/:year/:month/:day/:slug/"
