@@ -81,3 +81,12 @@ h2 {
 	font-size: .8rem;
 	color: #989898;
 }
+
+.note__link-header {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.note__link-arrow {
+  font-family: sans-serif;
+}
