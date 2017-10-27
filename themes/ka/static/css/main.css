@@ -87,6 +87,10 @@ h2 {
   margin-bottom: 0;
 }
 
+.note__link-header a {
+  text-decoration: none;
+}
+
 .note__link-arrow {
   font-family: sans-serif;
 }
