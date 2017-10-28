@@ -1,9 +1,13 @@
-{{ partial "header.html" . }}
+{{ partial "head.html" . }}
+<header>
+  {{ partial "logo.html" . }}
+  {{ partial "nav.html" . }}
+</header>
 
 {{ range (where .Data.Pages "Section" "!=" "") }}
 	{{ if (eq .Section "post") }}
 	<section class="article">
-		<h1 class="h2 article__title mt2 mb0"><a href="{{ .URL }}#headline">{{ .Title }}</a></h1>
+		<h1 class="h2 article__title mt2 pt2 mb0"><a href="{{ .URL }}">{{ .Title }}</a></h1>
 		<div class="date">{{ .Date.Format "January 02, 2006" }}</div>
 	{{ else }}
 	<section class="note">

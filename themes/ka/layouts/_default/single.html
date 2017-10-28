@@ -1,4 +1,8 @@
-{{ partial "header.html" . }}
+{{ partial "head.html" . }}
+<header>
+  {{ partial "logo-small.html" . }}
+  {{ partial "nav-small.html" . }}
+</header>
 
 {{ if .Title }}
 <section class="article">

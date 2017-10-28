@@ -18,6 +18,14 @@
 	width: 10%;
 }
 
+.separator-small div {
+  height: 5px;
+}
+
+.separator-small {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
 /* DEKO COLORS */
 .color-2 {
 	background-color: var(--color-2);
@@ -32,7 +40,12 @@
 /* NAVIGATION */
 .nav {
 	font-size: 1.2rem;
-	text-align: left;
+  text-align: left;
+}
+
+.nav-small {
+	font-size: 1rem;
+  padding-bottom: 2.5rem;
 }
 
 .nav a {
