@@ -1,6 +1,6 @@
 ---
 link: "http://workingdraft.de/314/"
-linktitle: "Working Draft Podcast, Revision 314: DDD, CQRS und WTF"
+title: "Working Draft Podcast, Revision 314: DDD, CQRS und WTF"
 date: 2017-10-28
 ---
 
