@@ -4,12 +4,10 @@
   {{ partial "nav-small.html" . }}
 </header>
 
-{{ if .Title }}
+{{ if (eq .Section "post") }}
 <section class="article">
 	<h1 class="h2 article__title mt2 mb0" id="headline"><a href="{{ .URL }}">{{ .Title }}</a></h1>
-	{{ if (eq .Section "post")}}
 	<div class="date">{{ .Date.Format "January 02, 2006" }}</div>
-	{{ end }}
 {{ else }}
 <section class="note">
   <h3 class="note__header regular my2" id="headline">
