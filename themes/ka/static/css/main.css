@@ -71,11 +71,17 @@ h2 {
 	font-size: 1.3rem;
 }
 
+.note__header {
+  margin-bottom: .1rem;
+  text-transform: uppercase;
+}
+
 .note__header,
 .note__header a {
 	text-decoration: none;
-	font-size: 1rem;
-	color: #cfcfcf;
+	font-size: .7rem;
+  color: #cfcfcf;
+  font-weight: 100;
 }
 
 .article__title a {
@@ -91,12 +97,15 @@ h2 {
 
 .date {
 	padding-top: .3rem;
-	font-size: .8rem;
-	color: #989898;
+	font-size: .7rem;
+  color: #cfcfcf;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
 .note__link-header {
   position: relative;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
