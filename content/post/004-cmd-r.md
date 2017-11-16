@@ -1,6 +1,6 @@
 ---
 title: "Web Components And The CMD+R Development Workflow"
-date: 2017-11-15
+date: 2017-11-16
 ---
 
 A couple of months ago I stumbled across Mikeal Rogers' article [I’ve seen the future, it’s full of HTML.](https://medium.com/@mikeal/ive-seen-the-future-it-s-full-of-html-2577246f2210) in which he lays out his reasons why he started to dive into Web Components for the web apps he is working on right now and hinted to the workflow he uses. 
