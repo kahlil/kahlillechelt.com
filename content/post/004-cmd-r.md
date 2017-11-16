@@ -1,5 +1,5 @@
 ---
-title: "Web Components And The CMD+R Development Workflow"
+title: "Web Components And The CMD-R Development Workflow"
 date: 2017-11-16
 ---
 
@@ -21,7 +21,7 @@ I was like: "No tooling? Hmmm... that sounds pretty sweet."
 
 A few weeks ago I took some time to write a tiny application just with Web Components. I used no tooling, no compilation no polyfills, no nothing. Just Chrome, ES 2015+, ES Modules, `<template>`, Custom Elements and an "actions up data down" data flow with Custom Events.
 
-I used the CMD+R (CTRL+R on Windows) web development workflow as Alex Russel calls it. 
+I used the CMD-R (CTRL-R on Windows) web development workflow as Alex Russel calls it. 
 
 Now that's a _developer experience_ 😉!
 
