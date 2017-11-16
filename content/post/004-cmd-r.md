@@ -33,7 +33,3 @@ Just write your app using Chrome and then make a bundle with dynamically loaded 
 
 As it stands currently that latest versions of Google Chrome, Safari and Opera support these technologies natively, Firefox and Edge are lagging behind but working on it. 
 
-
-
-
-

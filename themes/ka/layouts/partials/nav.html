@@ -1,6 +1,6 @@
 <ul class="nav list-reset m0 pb4">
 	{{ range .Site.Menus.main }}
-	<li class="inline-block mr1 pr2">
+  <li class="inline-block">
 		<a href="{{ .URL | relURL }}">{{ .Name }}</a>
 	</li>
 	{{ end }}
