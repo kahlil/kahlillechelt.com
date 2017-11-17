@@ -4,7 +4,8 @@
   "description": "My personal site.",
   "main": "index.js",
   "scripts": {
-    "css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map themes/ka/static/css/styles.css -o themes/ka/static/css/styles.min.css "
+    "css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map themes/ka/static/css/styles.css -o themes/ka/static/css/styles.min.css",
+    "watch:css": "chokidar **/*.css -c \"npm run css\" -i \"**/*.min.css\""
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
     "postcss-cli": "^4.1.1",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0"
   }
 }
