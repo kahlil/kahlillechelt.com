@@ -19,7 +19,8 @@
 }
 
 .separator-small div {
-  height: 5px;
+  /* height: 5px; */
+  float: none;
 }
 
 .separator-small {
@@ -40,15 +41,15 @@
 /* NAVIGATION */
 .nav {
 	font-size: 1.2rem;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav li {
-  padding-right: 1rem;
-}
-
-.nav li:last-child {
-  padding-right: 0;
+  display: block;
+  border-right: 0px solid white;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-small {
@@ -57,7 +58,7 @@
 }
 
 .nav a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* ARTICLES & NOTES */
