@@ -51,7 +51,7 @@ Tagged Template Literals are a JavaScript standard. They are Template Literals t
 
 ```js
 const markup = html`
-	<div>
+  <div>
     ${state.someValue}
   </div>
 `;
@@ -84,15 +84,15 @@ export class LitElement extends HTMLElement {
     // Just a convenient alias for addEventListener
     this.on = this.addEventListener;
   }
-	
-	// The state getter.
+  
+  // The state getter.
   get state() {
     return this._state;
   }
-	
-	// The state setter calls the 
-	// invalidate function, which invalidates the
-	// state and calls render.
+  
+  // The state setter calls the 
+  // invalidate function, which invalidates the
+  // state and calls render.
   set state(s) {
     this._state = s;
     this.invalidate();
