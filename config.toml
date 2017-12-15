@@ -9,30 +9,34 @@ footnotereturnlinkcontents = "↩"
 enableEmoji = true
 
 [permalinks]
-    post = "/post/:year/:month/:day/:slug/"
-    note = "/note/:year/:month/:day/:slug/"
+  post = "/post/:year/:month/:day/:slug/"
+  note = "/note/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "Blog"
-    url = "/"
-    weight = 1
+  name = "Blog"
+  url = "/"
+  weight = 1
 [[menu.main]]
-    name = "Podcast"
-    url = "/podcast/"
-    weight = 2
+  name = "Podcast"
+  url = "/podcast/"
+  weight = 2
 [[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/kahliltweets"
-    weight = 3
+  name = "Twitter"
+  url = "https://twitter.com/kahliltweets"
+  weight = 3
 [[menu.main]]
-    name = "About"
-    url = "/about/"
-		weight = 4
+  name = "About"
+  url = "/about/"
+  weight = 4
 [[menu.main]]
-    name = "Feed"
-    url = "/index.xml"
-		weight = 5
+  name = "Feed"
+  url = "/index.xml"
+  weight = 5
 
 [params]
-    description = "A blog by Kahlil Lechelt"
-    footer = "&copy; [Kahlil Lechelt](https://kahlil.info) 2017 | [Github](https://github.com/kahlil) | [Twitter](https://twitter.com/kahliltweets)"
+  description = "A blog by Kahlil Lechelt"
+  footer = "&copy; [Kahlil Lechelt](https://kahlil.info) 2017 | [Github](https://github.com/kahlil) | [Twitter](https://twitter.com/kahliltweets)"
+
+[outputs]
+  home = ["html", "json", "rss"]
+  section = ["html", "json", "rss"]
