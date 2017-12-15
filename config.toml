@@ -30,7 +30,7 @@ enableEmoji = true
   weight = 4
 [[menu.main]]
   name = "Feed"
-  url = "/index.xml"
+  url = "/post/index.xml"
   weight = 5
 
 [params]
