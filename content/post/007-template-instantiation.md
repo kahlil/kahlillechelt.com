@@ -9,4 +9,4 @@ This would be huge if it made it into the platform. This would mean efficient DO
 
 Here the (extremely short) video for your viewing pleasure:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tx0BtNO3gmk?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/tx0BtNO3gmk?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
