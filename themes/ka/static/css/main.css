@@ -59,6 +59,7 @@
 
 .nav a {
   text-decoration: none;
+  border-bottom: none;
 }
 
 /* ARTICLES & NOTES */
@@ -94,7 +95,8 @@ h2 {
 }
 
 .article__title a {
-	text-decoration: none;
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .stopper div {
@@ -124,4 +126,48 @@ h2 {
 
 .note__link-arrow {
   font-family: sans-serif;
+}
+
+figure {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+figure img {
+  display: block;
+}
+
+figcaption p {
+  margin-top: 0;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+
+.twitter-note {
+  background-color: #f9f9f9;
+  padding: 1rem 2rem;
+  margin-top: 5rem;
+  color: #555;
+  font-weight: 400;
+  border-radius: 6px;
+}
+
+.twitter-note p {
+  margin: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.twitter-note p:last-child {
+  margin-bottom: 0rem;
+}
+
+.separator-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  height: 0;
+  border-bottom: 1px solid #dadada;
+  width: 3rem;
+  margin: 0 auto;
 }

@@ -9,6 +9,4 @@ This would be huge if it made it into the platform. This would mean that Web Com
 
 Here the (extremely short) video for your viewing pleasure:
 
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/tx0BtNO3gmk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
-</div>
+{{< youtube tx0BtNO3gmk >}}

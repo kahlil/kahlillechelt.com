@@ -19,7 +19,18 @@
   <h1 class="h2 article__title mt2 mb0" id="headline"><a href="{{ .URL }}">{{ .Title }}</a></h1>
   {{ if (eq .Section "post") }}<div class="date">{{ .Date.Format "January 02, 2006" }}</div>{{ end }}
 {{ end }}
-	{{ .Content }}
+  {{ .Content }}
+
+  {{ if (eq .Section "post") }}
+  <section class="twitter-note">
+    <p>
+      If you have any remarks or comments I am happy to hear from you <a href="https://twitter.com/kahliltweets">on Twitter</a>.
+    </p>
+    <p>
+      To be notified about new posts subscribe to <a href="https://www.kahlillechelt.com/post/index.xml">the feed</a> or follow me on Twitter.
+    </p>
+  </section>
+  {{ end }}
 </section>
 
 {{ partial "footer.html" . }}

@@ -39,7 +39,9 @@ li {
 }
 
 a {
-	color: var(--text-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid #333;
 }
 
 a:hover {
