@@ -17,7 +17,7 @@ I realized in order to build and iterate on anything during my very limited free
 
 Recently I hooked up [NetlifyCMS](https://www.netlifycms.org/) to my site. It uses Netlify's auth service and GitHub to add posts to your site. If you set up automatic deployment via GitHub on Netlify that is a really great solution to adding posts to a static site through a nice UI.
 
-But here I had the same problem. I write my stuff on the road and I can't rely on being online. But I really liked some of the functionality that NetlifyCMS provided, namely the schaffolding of posts, easy Front Matter editing as well as the automatic Git commit functionality. 
+But here I had the same problem. I write my stuff on the road and I can't rely on being online. But I really liked some of the functionality that NetlifyCMS provided, namely the scaffolding of posts, easy Front Matter editing as well as the automatic Git commit functionality. 
 
 I thought to myself: "That's cool, I wish I had that for the desktop."
 
