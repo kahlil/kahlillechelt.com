@@ -3,7 +3,7 @@ title: "Switching To hyperHTML And HyperHTMLElement"
 date: 2018-01-10
 ---
 
-When starting work on Static Site CMS I originally planned on using Custom Components and lit-html instead of a JavaScript framework. 
+When starting work on [Static Site CMS](https://www.kahlillechelt.com/post/2018/01/05/working-title-static-site-cms/) I originally planned on using Custom Components and lit-html instead of a JavaScript framework. 
 
 In the process of setting up my development environment I was a little annoyed to realize that lit-html can only be used with ES Modules and not with CommonJS modules. Since Electron uses CommonJS that is a requirement for my current project. 
 
