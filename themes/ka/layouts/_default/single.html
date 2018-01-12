@@ -5,23 +5,28 @@
 </header>
 
 {{ if (eq .Section "note") }}
+
 <section class="note">
   <h3 class="note__header regular my2" id="headline">
     {{ .Date.Format "January 02, 2006" }}
   </h3>
   <h4 class="note__link-header">
     <a href="{{ .Params.link }}">
-      {{ .Title }} <span class="note__link-arrow">&rarr;</span>
+      {{ .Params.linktitle }} <span class="note__link-arrow">&rarr;</span>
     </a>
   </h4>
+
 {{ else }}
+
 <section class="article">
   <h1 class="h2 article__title mt2 mb0" id="headline"><a href="{{ .URL }}">{{ .Title }}</a></h1>
+
   {{ if (eq .Section "post") }}<div class="date">{{ .Date.Format "January 02, 2006" }}</div>{{ end }}
 {{ end }}
   {{ .Content }}
 
   {{ if (eq .Section "post") }}
+
   <section class="twitter-note">
     <p>
       If you have any remarks or comments I am happy to hear from you <a href="https://twitter.com/kahliltweets">on Twitter</a>.
@@ -30,7 +35,9 @@
       To be notified about new posts subscribe to <a href="https://www.kahlillechelt.com/post/index.xml">the feed</a> or follow me on Twitter.
     </p>
   </section>
+
   {{ end }}
+  
 </section>
 
 {{ partial "footer.html" . }}

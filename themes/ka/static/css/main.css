@@ -114,6 +114,12 @@ h2 {
   font-weight: 100;
 }
 
+.date a {
+  color: #cfcfcf;
+  text-decoration: none;
+  border-bottom: none;
+}
+
 .note__link-header {
   position: relative;
   margin-top: 0;
