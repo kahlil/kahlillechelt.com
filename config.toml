@@ -40,3 +40,6 @@ enableEmoji = true
 [outputs]
   home = ["html", "json", "rss"]
   section = ["html", "json", "rss"]
+
+[taxonomies]
+  tag = "tags"
