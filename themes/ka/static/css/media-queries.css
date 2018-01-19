@@ -22,5 +22,9 @@
 		font-size: 3.7rem;
 		line-height: 4.1rem;
 		margin-left: -2px;
-	}
+  }
+  
+  .nav {
+    font-size: 1rem;
+  }
 }
