@@ -6,15 +6,15 @@ tags: ["Building Grit"]
 
 When I started [Grit](https://www.producthunt.com/upcoming/grit) I was excited to find out that the Electron team is shipping types with Electron which expose the Electron API in your tooling. Since I am a fan of TypeScript I set up my dev environment to write my code in TypeScript as well.
 
-After a few days of writing TS code to transpire it for my app I started to get annoyed with the fact that I am transpiling code. And here is the reason:
+After a few days of writing TS code to transpile it for my app, I started to get annoyed with the fact that I am transpiling code. And here is the reason:
 
-In Electron you write code for very capable browser. ES2015 is fully implemented minus ES Modules. That means the code I can write for the browser directly is already so close to ideal for me that it felt wrong to transpile from something else. So I converted my project back to JavaScript. 
+In Electron you write code for a very capable browser. ES2015 is fully implemented minus ES Modules. That means the code I can write for the browser directly is already so close to ideal for me that it felt wrong to transpile from something else. So I converted my project back to JavaScript. 
 
 After years of dealing with Babel and TypeScript, writing ES2015+ code directly for the browser feels very freeing.
 
 No source maps to decode, no types to manage. 
 
-Losing the types would be a little annoying though. For me personally in a this one-man-project I enjoy the types especially because they enhance the tooling. 
+Losing the types would be a little annoying though. For me personally, in this one-man-project, I enjoy the types especially because they enhance the tooling. 
 
 Thankfully there is VSCode!
 
@@ -30,16 +30,16 @@ This means you get autocompletion and type errors for a normal JavaScript projec
 
 ## Setting up jsconfig.json For Electron
 
-In order to get it to work satisfyingly for my Electron setup I had to configure a few things.
+In order to get it to work satisfyingly for my Electron setup, I had to configure a few things.
 jsconfig.json is just a tsconfig.json so the options are the same.
 
-First of all I excluded `node_modules` since I don't want VSCode to type check all my dependencies. 
+First of all, I excluded `node_modules` since I don't want VSCode to type check all my dependencies. 
 
 ```
 "exclude": ["node_modules"]
 ```
 
-In the `compileroptions` property I set the `checkJs` property to `true` so that the JavaScript code is type checked as much as possible.
+In the `compileroptions` property, I set the `checkJs` property to `true` so that the JavaScript code is type checked as much as possible.
 
 Because I (have to) use CommonJS Modules in Electron I had to set the `module` property to `commonjs` so that `index.js` files are resolved CommonJS-style.
 
@@ -58,9 +58,3 @@ const HyperHTMLElement = require('hyperhtml-element').default;
 I went to the trouble to actually add all the class properties in the definition which gives me the sweet sweet code completion feature in VSCode. If you need it you can pick it up from [here](https://github.com/kahlil/grit/blob/master/types/hyperhtml-element.d.ts).
 
 This setup allows me to write modern JavaScript code directly for the browser as well as benefit from many TypeScript features. Love it.
-
-
-
-
-
-
