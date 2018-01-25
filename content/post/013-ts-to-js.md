@@ -41,7 +41,7 @@ First of all I excluded `node_modules` since I don't want VSCode to type check a
 
 In the `compileroptions` property I set the `checkJs` property to `true` so that the JavaScript code is type checked as much as possible.
 
-Because I am using CommonJS in Electron I had to set the `module` property to `commonjs` so that `index.js` files are resolved CommonJS-style.
+Because I (have to) use CommonJS Modules in Electron I had to set the `module` property to `commonjs` so that `index.js` files are resolved CommonJS-style.
 
 And last but not least in order to be able to write ES2015+ code without warnings I set the `target` property to `es2017`.
 
