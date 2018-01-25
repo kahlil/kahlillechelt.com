@@ -94,6 +94,10 @@ h2 {
   font-weight: 100;
 }
 
+.article__title {
+  line-height: 2rem;
+}
+
 .article__title a {
   text-decoration: none;
   border-bottom: none;
