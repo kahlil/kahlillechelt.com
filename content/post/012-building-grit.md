@@ -1,6 +1,6 @@
 ---
 title: "Building Grit"
-date: 2018-01-18T00:21:00Z
+date: 2018-01-18T21:00:00Z
 tags: ["Building Grit"]
 ---
 
