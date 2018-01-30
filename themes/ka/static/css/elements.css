@@ -82,3 +82,7 @@ hr {
 article h2 {
   line-height: 2rem;
 }
+
+.article p:nth-child(2) {
+  margin-top: 0.5rem;
+}

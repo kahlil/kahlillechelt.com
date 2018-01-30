@@ -1,9 +1,9 @@
 ---
 date: 2018-01-26T17:23:51+01:00
-slug: electron-serve
+title: electron-serve
+link: https://github.com/sindresorhus/electron-serve
+linkPost: true
 ---
-
-[electron-serve &rarr;](https://github.com/sindresorhus/electron-serve)
 
 In a default setup, Electron serves the app's index.html file directly from disk with the `file://` protocol. This does not work well with JavaScript apps that want to use client-side routing. 
 
