@@ -7,7 +7,7 @@
 {{ range (where .Data.Pages "Section" "!=" "") }}
 	{{ if (eq .Section "post") }}
 	<section class="article">
-    {{ if .Params.linkPost }}
+    {{ if .Params.linkpost }}
     <div class="date"><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></div>
     <p><a href="{{ .Params.link }}">{{ .Title }}&nbsp;&rarr;</a></p>
     {{ else if .Title }}
