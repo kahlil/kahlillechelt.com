@@ -7,12 +7,12 @@
 {{ range (where .Data.Pages "Section" "!=" "") }}
 	{{ if (eq .Section "post") }}
 	<section class="article">
-    {{ if .Title }}
-    <h1 class="h2 article__title pt2 mb0"><a href="{{ .URL }}">{{ .Title }}</a></h1>
-    <div class="date"><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></div>
-    {{ else if .Params.linkPost }}
+    {{ if .Params.linkPost }}
     <div class="date"><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></div>
     <p><a href="{{ .Params.link }}">{{ .Title }}&nbsp;&rarr;</a></p>
+    {{ else if .Title }}
+    <h1 class="h2 article__title pt2 mb0"><a href="{{ .URL }}">{{ .Title }}</a></h1>
+    <div class="date"><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></div>
     {{ else }}
     <div class="date"><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></div>
     {{ end }}
