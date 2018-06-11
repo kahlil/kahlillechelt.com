@@ -7,5 +7,6 @@
 	--color-3: #B9BBDF;
 	--color-4: #878ECD;
 	/* Main font family */
-	--font-family: "Roboto Mono", "Hasklig", "Inconsolata", "Consolas", monospace;
+	--font-family-monospace: 'IBM Plex Mono', 'Roboto Mono', 'Hasklig', 'Inconsolata', 'Consolas', monospace;
+	--font-family: Duospaced, 'Roboto Mono', 'Hasklig', 'Inconsolata', 'Consolas', monospace;
 }

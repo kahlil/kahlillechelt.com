@@ -5,7 +5,7 @@
 
 /* MONOSPACE TYPE */
 .monospace {
-	font-family: var(--font-family);
+	font-family: var(--font-family-code);
 }
 
 /* SEPARATOR */
