@@ -1,9 +1,5 @@
 @import "variables.css";
 @import "normalize.css";
-@import "fonts.css";
-@import "basscss.min.css";
-@import "elements.css";
-@import "header.css";
 @import "main.css";
 @import "sticky-footer.css";
 @import "media-queries.css";

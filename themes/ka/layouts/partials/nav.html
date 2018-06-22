@@ -1,7 +1,9 @@
-<ul class="nav list-reset m0 pb4 pt0">
-	{{ range .Site.Menus.main }}
-  <li class="nav__item">
-		<a href="{{ .URL | relURL }}">{{ .Name }}</a>
-	</li>
-	{{ end }}
-</ul>
+<nav>
+  <ul>
+    {{ range .Site.Menus.main }}
+    <li>
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>

@@ -13,25 +13,17 @@ enableEmoji = true
   note = "/note/:year/:month/:day/:slug/"
 
 [[menu.main]]
-  name = "Blog"
-  url = "/"
-  weight = 1
-[[menu.main]]
   name = "Podcast"
   url = "/podcast/"
-  weight = 2
-[[menu.main]]
-  name = "Twitter"
-  url = "https://twitter.com/kahliltweets"
-  weight = 3
+  weight = 1
 [[menu.main]]
   name = "About"
   url = "/about/"
-  weight = 4
+  weight = 2
 [[menu.main]]
   name = "Feed"
   url = "/index.xml"
-  weight = 5
+  weight = 3
 
 [params]
   description = "A blog by Kahlil Lechelt"

@@ -1,24 +1,23 @@
-{{ partial "head-list.html" . }}
-<header>
-  {{ partial "logo.html" . }}
-  {{ partial "nav.html" . }}
-</header>
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
 
+<main>
 {{ range (where .Data.Pages "Section" "!=" "") }}
 	{{ if (eq .Section "post") }}
-	<section class="article">
+	<article>
     {{ if .Params.linkpost }}
-    <div class="date"><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></div>
+    <datetime><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></datetime>
     <p><a href="{{ .Params.link }}">{{ .Title }}&nbsp;&rarr;</a></p>
     {{ else if .Title }}
-    <h1 class="h2 article__title pt2 mb0"><a href="{{ .URL }}">{{ .Title }}</a></h1>
-    <div class="date"><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></div>
+    <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
+    <datetime><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></datetime>
     {{ else }}
-    <div class="date"><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></div>
+    <datetime><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></datetime>
     {{ end }}
 	{{ end }}
 		{{ .Content }}
-	</section>
+	</article>
 {{ end }}
+</main>
 
-{{ partial "footer-list.html" . }}
+{{ partial "footer.html" . }}

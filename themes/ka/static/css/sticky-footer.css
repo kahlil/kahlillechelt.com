@@ -18,11 +18,6 @@ footer, .content:after {
   height: 3rem;
 }
 
-footer {
-	font-size: .9rem;
-	font-weight: 300;
-}
-
 .footnote-return {
 	text-decoration: none;
 }
