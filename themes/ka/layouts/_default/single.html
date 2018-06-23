@@ -5,7 +5,7 @@
 {{ if (eq .Section "note") }}
 
 <section class="note">
-  <h3 class="note__header regular my2" id="headline">
+  <h3>
     {{ .Date.Format "January 02, 2006" }}
   </h3>
   <h4 class="note__link-header">
@@ -17,7 +17,7 @@
 {{ else if .Params.linkpost }}
 
 <article>
-  <div class="date"><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></div>
+  <datatime><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></datetime>
 
   <p>
     <a href="{{ .Params.link }}">{{ .Title }}&nbsp;&rarr;</a>
@@ -26,9 +26,9 @@
 {{ else }}
 
 <article>
-  <h1 class="h2 article__title mt2 mb0" id="headline"><a href="{{ .URL }}">{{ .Title }}</a></h1>
+  <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
 
-  {{ if (eq .Section "post") }}<div class="date">{{ .Date.Format "January 02, 2006" }}</div>{{ end }}
+  {{ if (eq .Section "post") }}<datetime>{{ .Date.Format "January 02, 2006" }}</datetime>{{ end }}
 
 {{ end }}
 
