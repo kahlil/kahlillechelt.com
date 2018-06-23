@@ -20,6 +20,7 @@ main, header, footer {
 
 footer {
   padding: 0 1.5rem;
+  font-size: .8rem;
 }
 
 header .header-content {
