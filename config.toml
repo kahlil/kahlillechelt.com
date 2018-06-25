@@ -1,7 +1,6 @@
 baseurl = "https://kahlillechelt.com"
 languageCode = "en-us"
 title = "kahlillechelt.com"
-theme = "ka"
 googleAnalytics = ""
 disqusShortname = ""
 preserveTaxonomyNames = true
@@ -9,8 +8,7 @@ footnotereturnlinkcontents = "↩"
 enableEmoji = true
 
 [permalinks]
-  post = "/post/:year/:month/:day/:slug/"
-  note = "/note/:year/:month/:day/:slug/"
+  post = "/:year/:month/:day/:slug"
 
 [[menu.main]]
   name = "Podcast"

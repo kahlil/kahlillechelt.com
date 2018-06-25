@@ -8,3 +8,5 @@
 
 /asynchronous-validation-with-angular-reactive-forms-1a392971c062
 https://medium.com/@kahlil/asynchronous-validation-with-angular-reactive-forms-1a392971c062 301
+
+/post/* /:splat
