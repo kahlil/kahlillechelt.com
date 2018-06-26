@@ -2,22 +2,19 @@
 {{ partial "header.html" . }}
 
 <main>
+
 {{ range (where .Data.Pages "Section" "!=" "") }}
 	{{ if (eq .Section "post") }}
-	<article>
     {{ if .Params.linkpost }}
-    <datetime><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></datetime>
-    <p><a href="{{ .Params.link }}">{{ .Title }}&nbsp;&rarr;</a></p>
-    {{ else if .Title }}
-    <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
-    <datetime><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></datetime>
+      {{ partial "linkpost.html" . }}
+    {{ else if .Params.micropost }}
+      {{ partial "micropost.html" . }}
     {{ else }}
-    <datetime><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></datetime>
+      {{ partial "post.html" . }}
     {{ end }}
 	{{ end }}
-		{{ .Content }}
-	</article>
 {{ end }}
+
 </main>
 
 {{ partial "footer.html" . }}

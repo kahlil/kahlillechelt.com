@@ -4,39 +4,13 @@
 <main>
 
 {{ if .Params.linkpost }}
-
-<article>
-  <datetime><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></datetime>
-
-  <p>
-    <a href="{{ .Params.link }}">{{ .Title }}&nbsp;&rarr;</a>
-  </p>
-
+  {{ partial "linkpost.html" . }}
+{{ else if .Params.micropost }}
+  {{ partial "micropost.html" . }}
 {{ else }}
-
-<article>
-  <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
-
-  {{ if (eq .Section "post") }}<datetime>{{ .Date.Format "January 02, 2006" }}</datetime>{{ end }}
-
+  {{ partial "post.html" . }}
 {{ end }}
 
-  {{ .Content }}
-
-  {{ if (eq .Section "post") }}
-
-  <!-- <section class="twitter-note">
-    <p>
-      If you have any remarks or comments I am happy to hear from you <a href="https://twitter.com/kahliltweets">on Twitter</a>.
-    </p>
-    <p>
-      To be notified about new posts subscribe to <a href="https://www.kahlillechelt.com/post/index.xml">the feed</a> or follow me on Twitter.
-    </p>
-  </section> -->
-
-  {{ end }}
-  
-</article>
 </main>
 
 {{ partial "footer.html" . }}

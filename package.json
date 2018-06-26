@@ -4,8 +4,8 @@
   "description": "My personal site.",
   "main": "index.js",
   "scripts": {
-    "css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map static/css/styles.css -o static/css/styles.min.css",
-    "watch:css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map static/css/styles.css -o static/css/styles.min.css -w"
+    "css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map css/styles.css -o static/css/styles.min.css",
+    "watch:css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map css/styles.css -o static/css/styles.min.css -w"
   },
   "repository": {
     "type": "git",
