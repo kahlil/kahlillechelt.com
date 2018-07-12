@@ -87,7 +87,7 @@ pre {
 
 code {
   font-family: "Monaco", "Source Code Pro", "Inconsolata", "Consolas", "Droid Mono", monospace;
-  font-size: .9rem;
+  font-size: .8rem;
   padding: 0 3px 2px 3px;
   color: var(--color-highlight);
 }
