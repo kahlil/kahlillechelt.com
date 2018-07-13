@@ -90,6 +90,7 @@ code {
   font-size: .8rem;
   padding: 0 3px 2px 3px;
   color: var(--color-highlight);
+  background-color: #f7f7f7;
 }
 
 pre code {
