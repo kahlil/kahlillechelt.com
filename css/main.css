@@ -102,6 +102,10 @@ article h1 {
   font-size: 1.5rem;
 }
 
+article h2 {
+  font-size: 1.2rem;
+}
+
 figure {
   margin: 0;
 }
