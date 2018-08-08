@@ -14,7 +14,7 @@ body {
 }
 
 main, header, footer {
-  max-width: 580px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -66,6 +66,10 @@ a {
   border-bottom: 1px solid #333;
 }
 
+p, pre {
+  margin: 1.5rem 0;
+}
+
 h1 a, datetime a {
   border-bottom: none;
 }
@@ -103,7 +107,12 @@ article h1 {
 }
 
 article h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: .3rem;
+}
+
+article p {
+  margin-top: 0;
 }
 
 figure {
