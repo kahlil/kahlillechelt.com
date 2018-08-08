@@ -54,6 +54,8 @@ datetime {
   display: block;
   font-size: 0.7rem;
   margin-bottom: 1.5rem;
+  color: var(--color-gray-light);
+  font-weight: 300;
 }
 
 article, .header-content {
@@ -73,6 +75,15 @@ p, pre {
 h1 a, datetime a {
   border-bottom: none;
 }
+
+datetime a {
+  color: var(--color-gray-light);
+}
+
+datetime a:hover {
+  color: var(--color-gray-dark);
+}
+
 
 blockquote {
   margin-left: -24px;
