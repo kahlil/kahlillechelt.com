@@ -68,6 +68,16 @@ a {
   border-bottom: 1px solid #333;
 }
 
+article p a {
+  color: #1192d4;
+  border: none;
+  border-color: #1192d4;
+}
+
+article p a:hover {
+  border-bottom: 1px solid;
+}
+
 p, pre {
   margin: 1.5rem 0;
 }
