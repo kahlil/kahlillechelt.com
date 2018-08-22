@@ -65,7 +65,7 @@ article, .header-content {
 a {
   color: #333;
   text-decoration: none;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--color-highlight);
 }
 
 article p a {
