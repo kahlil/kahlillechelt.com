@@ -69,12 +69,9 @@ a {
 }
 
 article p a {
-  color: var(--color-highlight);
+  color: #333;
   border: none;
-  border-color: var(--color-highlight);
-}
-
-article p a:hover {
+  border-color: #333;
   border-bottom: 1px solid;
 }
 
