@@ -75,6 +75,10 @@ article p a {
   border-bottom: 1px solid;
 }
 
+article p a:hover {
+  border-bottom: none;
+}
+
 p, pre {
   margin: 1.5rem 0;
 }
