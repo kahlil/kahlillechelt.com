@@ -1,15 +1,16 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
+<!-- {{ partial "home-link.html" }} -->
 
 <main>
 
-{{ if .Params.linkpost }}
+  {{ if .Params.linkpost }}
   {{ partial "linkpost.html" . }}
-{{ else if .Params.micropost }}
+  {{ else if .Params.micropost }}
   {{ partial "micropost.html" . }}
-{{ else }}
+  {{ else }}
   {{ partial "post.html" . }}
-{{ end }}
+  {{ end }}
 
 </main>
 

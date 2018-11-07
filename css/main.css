@@ -13,9 +13,15 @@ body {
   margin: 0;
 }
 
-main, header, footer {
+main,
+header,
+footer {
   max-width: 600px;
   margin: 0 auto;
+}
+
+main {
+  margin-top: 1rem;
 }
 
 footer {
@@ -47,7 +53,9 @@ nav a {
 
 header h1 {
   margin: 0;
-  line-height: 1.5rem;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
+  /* font-weight: 900; */
 }
 
 datetime {
@@ -58,30 +66,33 @@ datetime {
   font-weight: 300;
 }
 
-article, .header-content {
+article,
+.header-content {
   margin: 0 1.5rem 7rem 1.5rem;
 }
 
 a {
-  color: #333;
+  color: var(--color-text);
   text-decoration: none;
 }
 
 article p a {
-  color: #333;
+  color: var(--color-text);
   border: none;
-  border-bottom: 1px solid var(--color-highlight);
+  border-bottom: 1px solid var(--color-text);
 }
 
 article p a:hover {
   border-bottom: none;
 }
 
-p, pre {
+p,
+pre {
   margin: 1.5rem 0;
 }
 
-h1 a, datetime a {
+h1 a,
+datetime a {
   border-bottom: none;
 }
 
@@ -113,7 +124,7 @@ code {
   font-family: "Menlo", "Monaco", "Source Code Pro", "Inconsolata", "Consolas", "Droid Mono", monospace;
   font-size: .8rem;
   padding: 0 3px 2px 3px;
-  color: var(--color-highlight);
+  color: var(--color-text);
   background-color: #f7f7f7;
 }
 
@@ -155,17 +166,19 @@ figcaption p {
   margin-top: .3rem;
 }
 
-/* Logo */
 .logo {
-  padding: 10px 10px;
-  background: #333;
-  color: #efefef;
-  font-weight: bold;
-  display: inline-block;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
+  /* font-size: 3rem; */
 }
 
 .dot {
-  color: var(--color-highlight);
+  color: var(--color-text);
+}
+
+.home-link {
+  margin: 1.5rem;
+}
+
+.home-link a {
+  color: #c7c7c7;
+  font-size: .7rem;
 }
