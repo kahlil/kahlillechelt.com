@@ -51,19 +51,14 @@ nav a {
   border-bottom: none;
 }
 
-header h1 {
-  margin: 0;
-  /* text-transform: uppercase; */
-  /* letter-spacing: 1px; */
-  /* font-weight: 900; */
-}
 
 datetime {
   display: block;
   font-size: 0.7rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
   color: var(--color-gray-light);
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 article,
@@ -133,17 +128,17 @@ pre code {
 }
 
 article h1 {
-  margin-bottom: .3rem;
   font-size: 1.5rem;
+  margin-top: .6rem;
+}
+
+article p {
+  margin-top: .6rem;
 }
 
 article h2 {
   font-size: 1rem;
   margin-bottom: .3rem;
-}
-
-article p {
-  margin-top: 0;
 }
 
 figure {
@@ -166,10 +161,6 @@ figcaption p {
   margin-top: .3rem;
 }
 
-.logo {
-  /* font-size: 3rem; */
-}
-
 .dot {
   color: var(--color-text);
 }
@@ -181,4 +172,13 @@ figcaption p {
 .home-link a {
   color: #c7c7c7;
   font-size: .7rem;
+}
+
+.linkpost-link {
+  margin-bottom: .3rem;
+}
+
+.linkpost-link a {
+  font-weight: 700;
+  border-bottom: none;
 }

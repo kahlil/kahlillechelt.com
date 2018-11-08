@@ -1,7 +1,9 @@
 <article>
+  <a href="{{ .URL }}">
+    <datetime>{{ .Date.Format "January 02, 2006" }}</datetime>
+  </a>
+  {{ if (.Title) }}
   <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
-  {{ if (eq .Section "post") }}
-  <datetime>{{ .Date.Format "January 02, 2006" }}</datetime>
   {{ end }}
   {{ .Content }}
 </article>
