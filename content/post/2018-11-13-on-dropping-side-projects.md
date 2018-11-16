@@ -7,7 +7,7 @@ I stopped working on my code-related side projects [grit](http://github.com/kahl
 [belly](http://github.com/kahlil/belly) and [flow-state](http://github.com/kahlil/flow-state). I have a family and we
 recently moved. So most of my free time is spent working on the flat or spending time with the family.
 
-There are a few side projects I am not abandoning though.
+There are a few side proj<ects I am not abandoning though.
 
 - I will continue to co-organize [KarlsruheJS](http://karlsruhejs.org)
 - Even though the podcast is on a break right now, we will continue with [Reactive Podcast](http://reactive.audio) soon
