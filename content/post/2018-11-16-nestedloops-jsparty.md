@@ -1,6 +1,6 @@
 ---
 date: 2018-11-16T20:45:56+01:00
-title: "On the JS Party Podcast a Wild Nested Loops Appears"
+title: "Nested Loops on the JS Party Podcast 🎉"
 ---
 
 [Jan](https://twitter.com/thedeftone) and I had the distinct honor to guest on the JS Party podcast last week to talk about [Nested Loops](https://nestedloops.github.io). First of all it was a really great experience to be a guest on there. The Changelog family of podcasts are very professionally run and it was a great pleasure to be on. [@noopkat](https://twitter.com/noopkat), [@jerodsanto](https://twitter.com/jerodsanto) and [@adamstac](https://twitter.com/adamstac) made us feel very welcome and comfortable.
