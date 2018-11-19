@@ -65,8 +65,7 @@ datetime {
   text-transform: uppercase;
 }
 
-article,
-.header-content {
+article .header-content {
   margin: 0 1.5rem 4rem 1.5rem;
 }
 
@@ -173,7 +172,7 @@ figcaption p {
 .logo a {
   background-color: #333;
   color: white;
-  padding: 5px 10px;
+  padding: 3px 10px 5px 10px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
