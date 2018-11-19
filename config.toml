@@ -15,13 +15,17 @@ enableEmoji = true
   url = "/podcast/"
   weight = 1
 [[menu.main]]
+  name = "Twitter"
+  url = "https://twitter.com/kahliltweets"
+  weight = 2
+[[menu.main]]
   name = "About"
   url = "/about/"
-  weight = 2
+  weight = 3
 [[menu.main]]
   name = "Feed"
   url = "/index.xml"
-  weight = 3
+  weight = 4
 
 [params]
   description = "A blog by Kahlil Lechelt"
