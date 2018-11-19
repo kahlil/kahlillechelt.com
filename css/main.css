@@ -47,6 +47,10 @@ nav li {
   padding-right: .5rem;
 }
 
+nav li:last-child {
+  padding: 0;
+}
+
 nav a {
   border-bottom: none;
 }
@@ -63,7 +67,7 @@ datetime {
 
 article,
 .header-content {
-  margin: 0 1.5rem 7rem 1.5rem;
+  margin: 0 1.5rem 4rem 1.5rem;
 }
 
 a {
@@ -160,6 +164,23 @@ figcaption {
 
 figcaption p {
   margin-top: .3rem;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo a {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  text-align: center;
 }
 
 .dot {
