@@ -1,6 +1,6 @@
 ---
 date: 2018-11-29T17:19:20+01:00
-title: "Just Fucking Ship Taught me how to Ship Blog Posts"
+title: "Just Fucking Ship Taught Me How to Ship Blog Posts"
 ---
 
 [Just Fucking Ship](https://stackingthebricks.com/just-fucking-ship/) by [the most excellent Amy Hoy](https://mobile.twitter.com/amyhoy) is a great book. It’s about how to bootstrap and ship any (side-)project. 
