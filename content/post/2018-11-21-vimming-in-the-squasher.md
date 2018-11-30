@@ -1,6 +1,6 @@
 ---
 date: 2018-11-21T09:01:05+01:00
-title: 'Vimming in the Squasher: How to Squash your Commits with VIM'
+title: 'Vimming in the Squasher: How to Squash Your Commits with VIM'
 ---
 
 Whenever I use `git rebase -i` to squash commits, Git opens the squasher (that’s how I just named the text view for the
