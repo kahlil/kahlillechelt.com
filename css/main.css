@@ -70,6 +70,17 @@ article,
   margin: 0 1.5rem 4rem 1.5rem;
 }
 
+.header-content {
+  margin-top: 0rem;
+  margin-bottom: 5rem;
+}
+
+article:not(:first-child) {
+  padding-top: 4rem;
+  margin-top: 5rem;
+  border-top: 1px solid var(--color-gray-superlight);
+}
+
 a {
   color: var(--color-text);
   text-decoration: none;
