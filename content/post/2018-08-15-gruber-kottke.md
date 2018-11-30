@@ -1,6 +1,6 @@
 ---
 date: 2018-08-15T16:50:03+02:00
-title: "Kottke At The Talk Show"
+title: "Kottke at The Talk Show"
 ---
 
 One of my favorite podcasts is [The Talk Show](https://daringfireball.net/thetalkshow/) with John Gruber. Gruber is the man behind [Daring Fireball](https://daringfireball.net/), a very successful and long standing Apple news and analysis website. 
