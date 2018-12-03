@@ -16,7 +16,7 @@ enableEmoji = true
   weight = 1
 [[menu.main]]
   name = "Twitter"
-  url = "https://twitter.com/kahliltweets"
+  url = "https://mobile.twitter.com/kahliltweets"
   weight = 2
 [[menu.main]]
   name = "About"
