@@ -11,21 +11,25 @@ enableEmoji = true
   post = "/:year/:month/:day/:slug"
 
 [[menu.main]]
+  name = "Blog"
+  url = "/"
+  weight = 1
+[[menu.main]]
   name = "Podcast"
   url = "/podcast/"
-  weight = 1
+  weight = 2
 [[menu.main]]
   name = "Twitter"
   url = "https://mobile.twitter.com/kahliltweets"
-  weight = 2
+  weight = 3
 [[menu.main]]
   name = "About"
   url = "/about/"
-  weight = 3
+  weight = 4
 [[menu.main]]
   name = "Feed"
   url = "/index.xml"
-  weight = 4
+  weight = 5
 
 [params]
   description = "A blog by Kahlil Lechelt"
