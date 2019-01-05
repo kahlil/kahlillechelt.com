@@ -39,11 +39,11 @@ Or just be blunt and say:
 
 The goal is to get them to make an offer first. That offer will be in the middle range of what they can offer you and you can negotiate up from there. 
 
-## 2. Always Be Negotiating
+## 2. Always be negotiating
 
-Not necessarily because you need the money but because it represents your value at the company. It is a matter of respect and it influences how you are perceived at the company. 
+Always negotiate. Not necessarily because you need the money but because it represents your value at the company. It is a matter of respect and it influences how you are perceived at the company. 
 
-## 3. Start Negotiating when you receive an offer
+## 3. Start negotiating when you receive an offer
 
 Since you are not giving them a number, they will make an offer. Here is where you start negotiating. At this point it is highly unlikely that they would reject you for negotiating. They simply invested too much into you already. Take your time, maybe say you have to talk it over with your spouse, or that you need to read through it in peace.
 
