@@ -1,6 +1,7 @@
 ---
 date: 2019-01-05T11:21:07+01:00
 title: "2019 01 05 Micro Blog"
+draft: true
 ---
 
 Over the holidays I worked on porting my blog over to Micro.blog. I [customized a theme]() and [imported my blog posts](). 
