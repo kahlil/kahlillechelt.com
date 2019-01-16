@@ -7,7 +7,7 @@
   {{ .Content }}
   {{ end }}
   <a href="{{ .URL }}">
-    <datetime>{{ .Date.Format "January 7, 2006" }}</datetime>
+    <datetime>{{ .PublishDate.Format "January 2, 2006" }}</datetime>
   </a>
   {{ end }}
   {{ if .Title }}

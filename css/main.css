@@ -58,7 +58,7 @@ nav a {
 
 datetime {
   display: block;
-  font-size: .6rem;
+  font-size: .7rem;
   margin-bottom: 1rem;
   color: var(--color-gray-light);
   font-weight: 200;
@@ -67,7 +67,7 @@ datetime {
 
 article,
 .header-content {
-  margin: 0 1.5rem 4rem 1.5rem;
+  margin: 0 1.5rem 3rem 1.5rem;
 }
 
 .header-content {
@@ -76,8 +76,8 @@ article,
 }
 
 article:not(:first-child) {
-  padding-top: 4rem;
-  margin-top: 5rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
   border-top: 1px solid var(--color-gray-superlight);
 }
 
