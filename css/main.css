@@ -146,6 +146,7 @@ article h1 {
   font-size: 1.5rem;
   margin-top: .6rem;
   margin-bottom: .3rem;
+  font-family: "Rubik", var(--fonts);
 }
 
 article p {
