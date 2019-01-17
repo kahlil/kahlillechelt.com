@@ -76,8 +76,8 @@ article,
 }
 
 article:not(:first-child) {
-  padding-top: 2rem;
-  margin-top: 2rem;
+  padding-top: 3rem;
+  margin-top: 4rem;
   border-top: 1px solid var(--color-gray-superlight);
 }
 
