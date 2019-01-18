@@ -6,7 +6,8 @@
   "scripts": {
     "css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map css/styles.css -o static/css/styles.min.css",
     "watch:css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map css/styles.css -o static/css/styles.min.css -w",
-    "start": "hugo serve -D & npm run watch:css"
+    "start": "hugo serve & npm run watch:css",
+    "start:drafts": "hugo serve -D & npm run watch:css"
   },
   "repository": {
     "type": "git",
