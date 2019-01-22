@@ -9,8 +9,8 @@ functions without confusion.
 
 Because I was just using them intuitively so far and because of their
 synchronous style I got confused about when to `try-catch`. I also attempted to
-call an async function without `await` in front of it while using `await` in
-it's body, fully expecting it will be executed synchronously.
+call an async function without `await` in front of it while using `await` in its
+body, fully expecting it will be executed synchronously.
 
 It's important to remember that the foundation of async functions is Promises.
 
