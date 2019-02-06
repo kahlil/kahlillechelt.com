@@ -88,16 +88,29 @@ What is technical currency? Here is how I would define it:
 Technical currency is the teams ability to pay down technical debt. That ability
 is the sum of
 
+---
+
 New outline:
 
-What is technical debt?
+What is technical debt? Martin Fowler has a great definition.
 
-...
+> Like a financial debt, the technical debt incurs interest payments, which come
+> in the form of the extra effort that we have to do in future development
+> because of the quick and dirty design choice. We can choose to continue paying
+> the interest, or we can pay down the principal by refactoring the quick and
+> dirty design into the better design. Although it costs to pay down the
+> principal, we gain by reduced interest payments in the future.
 
-You will always have reasons to make technical debt. Technical debt also accrues
-over time. If you have a typical setup where your business depends on software
-being maintained and further developed, it's not about not making technical debt
-it's about keeping it at bay, keeping a balance.
+He also explains the oft-incurred consequences of technical debt:
+
+> The all too common problem is that development organizations let their debt
+> get out of control and spend most of their future development effort paying
+> crippling interest payments.
+
+You will always have reasons to allow for technical debt. Technical debt also
+accrues over time. If you have a typical setup where your business depends on
+software being maintained and further developed, it's not about not making
+technical debt it's about keeping it at bay, keeping a balance.
 
 You need to pay down technical debt in order to keep that balance. Otherwise
 development will become so slow that the business either fails or is easilyx1
