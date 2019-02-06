@@ -31,7 +31,8 @@ main {
 
 footer {
   padding: 0 1.5rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  color: #737373;
 }
 
 header .header-content {
