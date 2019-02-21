@@ -3,17 +3,17 @@
 
 <main>
 
-{{ range (where .Data.Pages "Section" "!=" "") }}
-	{{ if (eq .Section "post") }}
-    {{ if .Params.linkpost }}
-      {{ partial "linkpost.html" . }}
-    {{ else if .Params.micropost }}
-      {{ partial "micropost.html" . }}
-    {{ else }}
-      {{ partial "post.html" . }}
-    {{ end }}
-	{{ end }}
-{{ end }}
+  {{ range (where .Data.Pages "Section" "!=" "") }}
+  {{ if (eq .Section "posts") }}
+  {{ if .Params.linkpost }}
+  {{ partial "linkpost.html" . }}
+  {{ else if .Params.micropost }}
+  {{ partial "micropost.html" . }}
+  {{ else }}
+  {{ partial "post.html" . }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
 
 </main>
 
