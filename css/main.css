@@ -165,8 +165,7 @@ pre {
 }
 
 code {
-  font-family: "Menlo", "Monaco", "Source Code Pro", "Inconsolata", "Consolas",
-    "Droid Mono", monospace;
+  font-family: var(--fonts-monospace);
   font-size: 0.8rem;
   padding: 0 3px 2px 3px;
   color: var(--color-text);
@@ -272,4 +271,17 @@ hr:before {
   letter-spacing: 15px;
   margin-left: 15px;
   display: inline-block;
+}
+
+.archive-item {
+  display: table;
+}
+
+.archive-item time {
+  display: table-cell;
+  font-family: var(--fonts-monospace);
+}
+
+.archive-item strong {
+  display: table-cell;
 }

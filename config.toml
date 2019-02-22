@@ -27,9 +27,13 @@ enableEmoji = true
   url = "/about/"
   weight = 4
 [[menu.main]]
+  name = "Archive"
+  url = "/archive/"
+  weight = 5
+[[menu.main]]
   name = "Feed"
   url = "/index.xml"
-  weight = 5
+  weight = 6
 
 [params]
   description = "A blog by Kahlil Lechelt"

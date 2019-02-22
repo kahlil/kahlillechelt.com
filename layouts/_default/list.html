@@ -3,15 +3,13 @@
 
 <main>
 
-  {{ range (where .Data.Pages "Section" "!=" "") }}
-  {{ if (eq .Section "posts") }}
+  {{ range first 15 (where .Site.RegularPages "Type" "posts") }}
   {{ if .Params.linkpost }}
   {{ partial "linkpost.html" . }}
   {{ else if .Params.micropost }}
   {{ partial "micropost.html" . }}
   {{ else }}
   {{ partial "post.html" . }}
-  {{ end }}
   {{ end }}
   {{ end }}
 

@@ -1,5 +1,7 @@
 :root {
   --fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --fonts-monospace: "Menlo", "Monaco", "Source Code Pro", "Inconsolata", "Consolas",
+    "Droid Mono", monospace;
   --color-highlight: #047fe4;
   --color-gray-superlight: #ececec;
   --color-gray-light: #c0c0c0;
