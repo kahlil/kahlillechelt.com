@@ -158,7 +158,7 @@ blockquote {
 }
 
 pre {
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
   padding: 10px 10px;
   overflow: auto;
   display: block;
@@ -169,7 +169,7 @@ code {
   font-size: 0.8rem;
   padding: 0 3px 2px 3px;
   color: var(--color-text);
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
 }
 
 .dark-mode pre,
