@@ -1,4 +1,3 @@
-
 ---
 date: 2019-03-08T15:13:02.374Z
 title: "Constraints Are Decisions You Don't Have to Make"
