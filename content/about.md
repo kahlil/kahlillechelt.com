@@ -2,7 +2,7 @@
 title: 'Hi, my name is Kahlil Lechelt'
 ---
 
-I am a JavaScript developer located close to Karlsruhe, Germany. I am currently working at LogMeIn in Karlsruhe as a Staff Software Engineer.
+I am a JavaScript developer located close to Karlsruhe, Germany. I am currently working at LogMeIn in Karlsruhe as an Engineering Manager for GoToMeeting.
 
 I am [@kahliltweets](https://mobile.twitter.com/kahliltweets) on Twitter which is a great way to reach me and if you prefer
 email you can always write to hello at kahlil dot info.
