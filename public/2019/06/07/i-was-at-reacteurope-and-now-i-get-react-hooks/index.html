@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us" class="dark-mode-off">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kahlil Lechelt&#39;s Blog</title>
+    <link href="https://micro.blog/ka" rel="me" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900;700;400;300;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.min.css?v7" />
+  </head>
+
+  <body>
+    <div class="content">
+
+<header>
+  <div class="header-content">
+    <h1 class="logo">
+  <a href="/">
+    
+    
+    Kahlil Lechelt
+  </a>
+</h1>
+    <nav>
+  <ul>
+    
+    <li>
+      <a href="/">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/podcast/">Podcast</a>
+    </li>
+    
+    <li>
+      <a href="https://mobile.twitter.com/kahliltweets">Twitter</a>
+    </li>
+    
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    
+    <li>
+      <a href="/archive/">Archive</a>
+    </li>
+    
+  </ul>
+</nav>
+  </div>
+</header>
+
+
+<main>
+
+  
+  <article>
+  
+  <h1><a href="/2019/06/07/i-was-at-reacteurope-and-now-i-get-react-hooks/">I was at ReactEurope and now I &#34;get&#34; React Hooks</a></h1>
+  
+  
+  
+  <a href="/2019/06/07/i-was-at-reacteurope-and-now-i-get-react-hooks/">
+    <datetime>June 7, 2019</datetime>
+  </a>
+  
+  
+  <p>Last week, I went to Paris to spend some time there with my family and to attend ReactEurope.</p>
+<p>Based on the kind of mediocre design of their website I did not expect a lot of care to go into the organization of the conference. I expected a dull conference room in a hotel and some interesting talks.</p>
+<p>I got some interesting talks and a dull, stuffy conference room in a dull, ugly area of Paris. The room was too small for so many people though. The air was terrible and people coughing and sneezing all around me. I was not capable of spending a lot of time in there.</p>
+<p>Instead, I took some time to read through the <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks documentation</a>. Let me just take a second to say how well written and how thought-out the documentation is. Really world-class. Unlike the ReactEurope conference.</p>
+<p>I also started rewriting <a href="https://github.com/kahlil/grit">my Grit editor</a> from <a href="https://github.com/preactjs/preact">Preact</a> and <a href="https://github.com/developit/htm">htm</a> to React with hooks. Just so to get familiar with them.</p>
+<p>It is always hard to convey how features like that impact your development experience without trying it out. I have only rewritten a small part of it so far but I like it a lot.</p>
+<p>The concept of custom hooks especially seems to have a lot of impact when it comes to simplifying your code.</p>
+<p>Here is an example.</p>
+<p>In order for Grit to work the user has to store the path to their Markdown files in the settings. I store the settings by using this ace package called electron-store by Sindre Sorhus (Shout out to him, what would I do without his stellar open source work?!).</p>
+<p>This path needs to be shown in the UI via a state variable and it has to be synced back to the electron-store if it is changed.</p>
+<p>So I created this custom hook called useElectronStore to read the path from electron-store and to set the filePath state variable from it and to set both, the state variable and electron-store, with the new value once it is changed.</p>
+<p>And it makes getting and setting electron-store values incredibly easy. The API basically looks like this:</p>
+<pre><code>const [someValue, setSomeValue] = useElectronStore('someValue', '');
+</code></pre><p>The <code>'someValue'</code>-string is the path in electron-store and the second value is the default value for it.</p>
+<p>I can now say that I &ldquo;get&rdquo; React Hooks because ReactEurope was not that great. Works for me.</p>
+
+  
+</article>
+  
+
+</main>
+
+</div>
+
+<footer>
+  &copy; 2020 Kahlil Lechelt &bullet; <a href="/archive/">Archive</a>
+</footer>
+
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(101080356);
+  (function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+  })();
+</script>
+<noscript>
+  <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101080356ns.gif" /></p>
+</noscript>
+
+</body>
+
+</html>

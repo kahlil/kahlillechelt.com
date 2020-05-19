@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us" class="dark-mode-off">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kahlil Lechelt&#39;s Blog</title>
+    <link href="https://micro.blog/ka" rel="me" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900;700;400;300;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.min.css?v7" />
+  </head>
+
+  <body>
+    <div class="content">
+
+<header>
+  <div class="header-content">
+    <h1 class="logo">
+  <a href="/">
+    
+    
+    Kahlil Lechelt
+  </a>
+</h1>
+    <nav>
+  <ul>
+    
+    <li>
+      <a href="/">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/podcast/">Podcast</a>
+    </li>
+    
+    <li>
+      <a href="https://mobile.twitter.com/kahliltweets">Twitter</a>
+    </li>
+    
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    
+    <li>
+      <a href="/archive/">Archive</a>
+    </li>
+    
+  </ul>
+</nav>
+  </div>
+</header>
+
+
+<main>
+
+  
+  <article>
+  
+  <h1><a href="/2018/07/12/enums-for-the-uninitiated/">Enums For The Uninitiated</a></h1>
+  
+  
+  
+  <a href="/2018/07/12/enums-for-the-uninitiated/">
+    <datetime>July 12, 2018</datetime>
+  </a>
+  
+  
+  <p>Before TypeScript I have never used or heard of enums. So needless to say when I saw them in the docs I was confused.</p>
+<p>I was so used to describing the shape of data structures with interfaces that I didn’t understand what the benefits are of using enums.</p>
+<p>I was also confused because enums hold values as well as being a type. I didn’t think of TypeScript as something that gives me things to hold values with.</p>
+<p>So in order to understand I had to look into it some more and here is how I understand enums:</p>
+<p><em>Enums give you an easy way to logically group constants in order to make your code easier to read and understand.</em></p>
+<p>So if you have a bunch of constant values in your program that logically belong together. Like the days of the week, directions (up, down, left, right) or return types of an asynchronous operation for example you can use enums to group them and use them in your code.</p>
+<p>Enums give you type and data structure in one go without a lot of work.</p>
+<p>If you declare the following enum:</p>
+<pre><code>enum Directions {
+  Up,
+  Down,
+  Left,
+  Right
+}
+</code></pre><p>You are doing a bunch of things in one go:</p>
+<ul>
+<li>Declaring a type <code>Directions</code></li>
+<li>Assigning members to the enum</li>
+<li>Implicitly assigning values to the members of the enum</li>
+</ul>
+<p>The assigned values are numbers by default. Starting at 0 and incremented with each following property.</p>
+<p>So it’s kind of like a JavaScript object just that values are assigned automatically.</p>
+<p>You can change the starting point of the assigned numbers by assigning a custom number to the first property.</p>
+<pre><code>enum Directions {
+  Up = 1,
+  Down,
+  // ...
+}
+</code></pre><p>This means the increment starts at 1 instead of 0. That can be useful if you want to make sure that the first value can never be falsy.</p>
+<p>You can also manually assign values to all properties of the enum. They can be of type <code>number</code> or <code>string</code>.</p>
+<p>So now you can go ahead and use these constants in your code like:</p>
+<pre><code>if (direction === Directions.Up) {
+  // Do things.
+}
+</code></pre><p>Simple and convenient.</p>
+<p>The TypeScript docs say this:</p>
+<blockquote>
+<p>Enums allow us to define a set of named constants. Using enums can make it easier to document intent, or create a set of distinct cases.</p>
+</blockquote>
+<p>After having used enums a little bit in recent projects I find them very convenient and useful. I think especially &ldquo;documenting intent&rdquo; is what they do quite well in a convenient way.</p>
+<p>One cool thing about enums with numeric values, is that you can retrieve the member name of a numeric value by accessing it with the number, in our case accessing a <code>Directions</code> member with the number <code>1</code> returns the string <code>&quot;Up&quot;</code>.</p>
+<pre><code>Directions[1] // returns &quot;Up&quot;
+</code></pre><p>It&rsquo;s cool but so far I have never needed it.
+To make this possible during runtime enums get compiled to this:</p>
+<pre><code>var Directions;
+(function (Directions) {
+    Directions[Directions[&quot;Up&quot;] = 0] = &quot;Up&quot;;
+})(Directions || (Directions = {}));
+var direction = Directions.Up;
+var nameOfA = Directions[direction]; // &quot;Up&quot;
+</code></pre><p>It&rsquo;s an <a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/">iife</a> that gets passed an object. That function then assigns numbers to the member names and member names to the numbers.</p>
+<p>This line does two things at the same time.</p>
+<pre><code>Directions[Directions[&quot;Up&quot;] = 0] = &quot;Up&quot;;
+</code></pre><p><code>Directions[&quot;Up&quot;] = 0</code> assigns the number to the member name and because that line is a JavaScript expression it evaluates to a value and that value is the number that was assigned.</p>
+<p>This means that the whole line evaluates to <code>Directions[0] = &quot;Up&quot;;</code>.</p>
+<p>So what you end up with in JavaScript is:</p>
+<pre><code>{
+  0: &quot;Up&quot;,
+  Up: 0
+}
+</code></pre><p>Pretty neat right? But let&rsquo;s say resources are scarce and you don&rsquo;t need to access member names then you can use <em><code>const</code> enums</em>.</p>
+<p>They evaluate to their respective values. The enum code is completely removed during compilation. This means:</p>
+<pre><code>const enum Directions {
+  Up = 1,
+  Down
+}
+
+if (direction === Directions.Up) {
+  // Do things.
+}
+</code></pre><p>Is compiled to:</p>
+<pre><code>if (direction === 1) {
+  // Do things.
+}
+</code></pre><p>So that&rsquo;s my take on enums. After getting comfortable using enums for a bit, I find places where they can be useful all the time and I really like how they do make intent very explicit. Enums can make your code easier to read.</p>
+
+  
+</article>
+  
+
+</main>
+
+</div>
+
+<footer>
+  &copy; 2020 Kahlil Lechelt &bullet; <a href="/archive/">Archive</a>
+</footer>
+
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(101080356);
+  (function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+  })();
+</script>
+<noscript>
+  <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101080356ns.gif" /></p>
+</noscript>
+
+</body>
+
+</html>

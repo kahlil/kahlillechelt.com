@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us" class="dark-mode-off">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kahlil Lechelt&#39;s Blog</title>
+    <link href="https://micro.blog/ka" rel="me" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900;700;400;300;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.min.css?v7" />
+  </head>
+
+  <body>
+    <div class="content">
+
+<header>
+  <div class="header-content">
+    <h1 class="logo">
+  <a href="/">
+    
+    
+    Kahlil Lechelt
+  </a>
+</h1>
+    <nav>
+  <ul>
+    
+    <li>
+      <a href="/">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/podcast/">Podcast</a>
+    </li>
+    
+    <li>
+      <a href="https://mobile.twitter.com/kahliltweets">Twitter</a>
+    </li>
+    
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    
+    <li>
+      <a href="/archive/">Archive</a>
+    </li>
+    
+  </ul>
+</nav>
+  </div>
+</header>
+
+
+<main>
+
+  
+  <article>
+  
+  <h1><a href="/2019/05/07/announcing-grit-a-markdown-editor-for-blogging-with-a-static-site-generator/">Announcing Grit: a Markdown editor for blogging with a static site generator</a></h1>
+  
+  
+  
+  <a href="/2019/05/07/announcing-grit-a-markdown-editor-for-blogging-with-a-static-site-generator/">
+    <datetime>May 7, 2019</datetime>
+  </a>
+  
+  
+  <p>Last year I decided to write more. I thought I&rsquo;d try a hosted solution because I wanted to concentrate on the writing and not on the fiddling with the site.</p>
+<p><a href="http://micro.blog">Micro.blog</a> was the most attractive solution to me but after using it for a while I realized that, as a developer, I am not capable of leaving the building of my blog to somebody else. There were too many things I wanted to tweak/change, bugs I couldn&rsquo;t live with etc.</p>
+<p>So I ended up sticking with my <a href="http://gohugo.io">Hugo</a> solution.</p>
+<p>Unfortunately there are many little annoyances when blogging with a static site generator, due to the fact that your posts are a bunch of Markdown files in a folder with a specific file name and some frontmatter boilerplate in them.</p>
+<p>Creating a blog post was always tedious. Too many little fiddly things to do before you could just start to write.</p>
+<p>In order to remedy this I created a <a href="https://github.com/kahlil/blog-cli">blog-cli</a> that just scaffolds new blog posts for me. It works fine but I really wanted an editor that can do that for me.</p>
+<p>That&rsquo;s why I built <a href="https://github.com/kahlil/grit">Grit</a>. It&rsquo;s a little Electron app that lets you manage a folder full of Markdown posts and edit them as well.</p>
+<p>It allows you to store the path to your Markdown files, filter through the files, create a new file, edit the file and publish via Git.</p>
+<p>I used <a href="https://preactjs.com/">Preact</a> and <a href="https://github.com/developit/htm">htm</a> to write it because I was too lazy to set up a build step and I love writing code the browser can directly interpret. For the file editing part in Grit I am using <a href="https://codemirror.net/">CodeMirror</a> which is a hell of a product, wow.</p>
+<p>If you use Hugo, Jekyll, Gatsby or whatever other static site generator to build your blog and are looking for a little convenience there, give it a spin! See the current feature list <a href="https://github.com/kahlil/grit">on GitHub</a>.</p>
+<p>It&rsquo;s an alpha version so there be dragons. But I am planning a bunch of improvements like: drag and drop images, configurable frontmatter and some enhancements around file-creation.</p>
+<p>If you want, let me know what you think <a href="https://twitter.com/kahliltweets">on Twitter</a>.</p>
+
+  
+</article>
+  
+
+</main>
+
+</div>
+
+<footer>
+  &copy; 2020 Kahlil Lechelt &bullet; <a href="/archive/">Archive</a>
+</footer>
+
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(101080356);
+  (function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+  })();
+</script>
+<noscript>
+  <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101080356ns.gif" /></p>
+</noscript>
+
+</body>
+
+</html>

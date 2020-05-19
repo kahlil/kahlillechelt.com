@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Kahlil Lechelt&#39;s Blog</title>
+    <link>https://www.kahlillechelt.com/</link>
+    <description>Recent content in Home on Kahlil Lechelt&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jan 2020 14:29:08 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.kahlillechelt.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I am an engineering manager now</title>
+      <link>https://www.kahlillechelt.com/2020/01/23/i-am-an-engineering-manager-now/</link>
+      <pubDate>Thu, 23 Jan 2020 14:29:08 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2020/01/23/i-am-an-engineering-manager-now/</guid>
+      <description>Last year my manager quit. I was offered his position and since December or so, I am an engineering manager.
+It is strange to move from a well-defined role into such a hazily-defined one.
+A few things have changed. I don&amp;rsquo;t code anymore at work and the relationship to my team has changed. Especially to those who now report to me.
+I want to be the best possible manager to them that I can be, so I am busy learning.</description>
+    </item>
+    
+    <item>
+      <title>Build a Slack slash command app with Zeit’s Now</title>
+      <link>https://www.kahlillechelt.com/2019/07/08/build-a-slack-slash-command-app-with-zeits-now/</link>
+      <pubDate>Mon, 08 Jul 2019 14:29:08 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/07/08/build-a-slack-slash-command-app-with-zeits-now/</guid>
+      <description>First of all: Now is so flipping great it’s not even funny. Basically it is this:
+You write your app, type now and it&amp;rsquo;s deployed. You get back the URL under which it is deployed and that’s that. Every other deployment results in a new deployment under a new URL.
+The latest deployment is always aliased to a URL that doesn’t change and that’s the address to your app or API.</description>
+    </item>
+    
+    <item>
+      <title>I was at ReactEurope and now I &#34;get&#34; React Hooks</title>
+      <link>https://www.kahlillechelt.com/2019/06/07/i-was-at-reacteurope-and-now-i-get-react-hooks/</link>
+      <pubDate>Fri, 07 Jun 2019 15:33:30 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/06/07/i-was-at-reacteurope-and-now-i-get-react-hooks/</guid>
+      <description>Last week, I went to Paris to spend some time there with my family and to attend ReactEurope.
+Based on the kind of mediocre design of their website I did not expect a lot of care to go into the organization of the conference. I expected a dull conference room in a hotel and some interesting talks.
+I got some interesting talks and a dull, stuffy conference room in a dull, ugly area of Paris.</description>
+    </item>
+    
+    <item>
+      <title>Announcing Grit: a Markdown editor for blogging with a static site generator</title>
+      <link>https://www.kahlillechelt.com/2019/05/07/announcing-grit-a-markdown-editor-for-blogging-with-a-static-site-generator/</link>
+      <pubDate>Tue, 07 May 2019 14:30:59 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/05/07/announcing-grit-a-markdown-editor-for-blogging-with-a-static-site-generator/</guid>
+      <description>Last year I decided to write more. I thought I&amp;rsquo;d try a hosted solution because I wanted to concentrate on the writing and not on the fiddling with the site.
+Micro.blog was the most attractive solution to me but after using it for a while I realized that, as a developer, I am not capable of leaving the building of my blog to somebody else. There were too many things I wanted to tweak/change, bugs I couldn&amp;rsquo;t live with etc.</description>
+    </item>
+    
+    <item>
+      <title>Get off of Medium and publish a blog under your own domain</title>
+      <link>https://www.kahlillechelt.com/2019/04/02/get-off-of-medium-and-publish-a-blog-under-your-own-domain/</link>
+      <pubDate>Tue, 02 Apr 2019 10:08:50 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/04/02/get-off-of-medium-and-publish-a-blog-under-your-own-domain/</guid>
+      <description>Nobody can wall that off behind a paywall.
+Nobody can put a popup over your stuff and say &amp;ldquo;Don&amp;rsquo;t look at the content right now. It&amp;rsquo;s so much better if you login!&amp;quot;.
+Nobody can build their brand off of your work. Nobody can make money off of your work, if you don&amp;rsquo;t want to.
+Nobody can tell you &amp;ldquo;You can&amp;rsquo;t have your own domain on here.&amp;rdquo;
+Your hoster will most likely not suddenly go: &amp;ldquo;Oops we just went out of business / were acquired, we&amp;rsquo;re deleting all your stuff but you can export it until tomorrow and fuck off, basically.</description>
+    </item>
+    
+    <item>
+      <title>Constraints Are Decisions You Don&#39;t Have to Make</title>
+      <link>https://www.kahlillechelt.com/2019/03/08/constraints-are-decisions-you-dont-have-to-make/</link>
+      <pubDate>Fri, 08 Mar 2019 15:13:02 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/03/08/constraints-are-decisions-you-dont-have-to-make/</guid>
+      <description>Since I realized that constraints can produce more creative outcomes I‘ve been fascinated by it.
+I think I first learned about it when the iPhone became popular and the form factor and usage patterns produced beautifully designed apps and then website and web app designs that were optimized for mobile.
+I read up on it a little and there seems to be a pretty logical explanation for this.
+In an environment of abundance the brain is not being challenged.</description>
+    </item>
+    
+    <item>
+      <title>The Ultimate Recipe to Attract an Audience on the Internet</title>
+      <link>https://www.kahlillechelt.com/2019/03/01/the-ultimate-recipe-to-attract-an-audience-on-the-internet/</link>
+      <pubDate>Fri, 01 Mar 2019 13:17:48 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/03/01/the-ultimate-recipe-to-attract-an-audience-on-the-internet/</guid>
+      <description>My awesome co-worker Emma Wedekind wrote this post about how she got 27K followers on Twitter.
+It&amp;rsquo;s a great post with lots of good advice to grow high quality followers.
+I was able to watch the whole ride and it was quite something. There is one thing I noticed about how she used Twitter that I think had significant influence in why she blew up.
+She editorializes her Twitter account. She deliberately tweets content that might be valuable to the developer community.</description>
+    </item>
+    
+    <item>
+      <title>TFW You Realize What Technical Debt Actually Means</title>
+      <link>https://www.kahlillechelt.com/2019/02/21/tfw-you-realize-what-technical-debt-actually-means/</link>
+      <pubDate>Thu, 21 Feb 2019 21:31:28 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/02/21/tfw-you-realize-what-technical-debt-actually-means/</guid>
+      <description>A few weeks ago I set out to write a blog post about technical debt and the complexities of getting rid of it, or some of it, when you work for a company.
+I wanted to see what others had written about it and of course I landed on Martin Fowler&amp;rsquo;s article about technical debt. When I started reading it I realized that up to that point I didn&amp;rsquo;t really know what tech debt was.</description>
+    </item>
+    
+    <item>
+      <title>Nested Loops Bow-Out</title>
+      <link>https://www.kahlillechelt.com/2019/02/06/nested-loops-bow-out/</link>
+      <pubDate>Wed, 06 Feb 2019 15:28:19 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/02/06/nested-loops-bow-out/</guid>
+      <description>As you may know, I am a member of the JavaScript band Nested Loops. We performed on the last three opening performces of JSConf.eu.
+We will not be performing at JSConf.eu this year.
+It was a great honor and privilege for us to be able to do that and we are thankful for the opportunity.
+We produced original music for the conference and performed it in a browser. If you want, you can re-live of our performances on YouTube.</description>
+    </item>
+    
+    <item>
+      <title>How to Use Async Functions</title>
+      <link>https://www.kahlillechelt.com/2019/01/22/how-to-use-async-functions/</link>
+      <pubDate>Tue, 22 Jan 2019 11:43:02 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/01/22/how-to-use-async-functions/</guid>
+      <description>This article by Dr. Axel Rauschmayer was exactly what I needed to wrap my head around how to use async functions without confusion.
+Because I was just using them intuitively so far and because of their synchronous style I got confused about when to try-catch. I also attempted to call an async function without await in front of it while using await in its body, fully expecting it will be executed synchronously.</description>
+    </item>
+    
+    <item>
+      <title>blog-cli: A CLI for Blogging with Static Site Generators</title>
+      <link>https://www.kahlillechelt.com/2019/01/18/blog-cli-a-cli-for-blogging-with-static-site-generators/</link>
+      <pubDate>Fri, 18 Jan 2019 10:03:48 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/01/18/blog-cli-a-cli-for-blogging-with-static-site-generators/</guid>
+      <description>My blog is built with Hugo. Every blog I ever had was built with a static site generator or a file based CMS. I love static site generators, they make content management simple, they are secure and it&amp;rsquo;s fun to build websites with them.
+For me, they have one problem: creating a blog post is annoying. Typically the file for the post needs to have the date in it and the slug and then you need to put in the Front Matter for the post.</description>
+    </item>
+    
+    <item>
+      <title>Blogging is Back</title>
+      <link>https://www.kahlillechelt.com/2019/01/17/blogging-is-back/</link>
+      <pubDate>Thu, 17 Jan 2019 22:50:14 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/01/17/blogging-is-back/</guid>
+      <description>I&amp;rsquo;m excited about blogs this year. It really feels like blogs and RSS feeds are back. I am especially happy to see some developers getting serious about it.
+Dan Abramov started the year off with a barrage of really good posts of which some already went viral. People even started to translate them into different languages. Wow.
+Yoshua Wuyts started the year with a new blog as well. With a sick dark theme, too.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kahlillechelt.com/2019/01/16/remove-bg/</link>
+      <pubDate>Wed, 16 Jan 2019 21:53:42 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/01/16/remove-bg/</guid>
+      <description>Just a few days ago I stumbled over remove.bg. You can upload any picture with a face on it and it will give you back the same picture with the background removed and made transparent. It&amp;rsquo;s quite astonishing. How do they do this?!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kahlillechelt.com/2019/01/09/nextjs-mdx-blog-kit/</link>
+      <pubDate>Wed, 09 Jan 2019 10:26:18 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/01/09/nextjs-mdx-blog-kit/</guid>
+      <description>This Next.js MDX Blog Kit sure looks interesting!</description>
+    </item>
+    
+    <item>
+      <title>Salary Negotiations for JavaScript Developers (and Anybody Else)</title>
+      <link>https://www.kahlillechelt.com/2019/01/04/salary-negotiations-for-javascript-developers-and-anybody-else/</link>
+      <pubDate>Fri, 04 Jan 2019 10:05:52 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2019/01/04/salary-negotiations-for-javascript-developers-and-anybody-else/</guid>
+      <description>Salary negotiations at the start of a job always feel somewhat like a war to me.
+Each party is trying to get on higher ground to get the tactical advantage over the other.
+Typically one of those parties comes to that fight ill-prepared. Generally that’s the prospective employee.
+It&amp;rsquo;s weird that your first interaction with your future employer is them basically trying to get the best of you. Companies should just pay fair market by default but they don&amp;rsquo;t.</description>
+    </item>
+    
+    <item>
+      <title>Just Fucking Ship Taught Me How to Ship Blog Posts</title>
+      <link>https://www.kahlillechelt.com/2018/11/29/just-fucking-ship-taught-me-how-to-ship-blog-posts/</link>
+      <pubDate>Thu, 29 Nov 2018 17:19:20 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/11/29/just-fucking-ship-taught-me-how-to-ship-blog-posts/</guid>
+      <description>Just Fucking Ship by the most excellent Amy Hoy is a great book. It’s about how to bootstrap and ship any (side-)project.
+The most valuable part of the book for me personally was how she describes outlining a blog post.
+I always thought outlining a post was to come up with some high-level headlines. That never really helped though, because they were too high-level and I was still busy working on the structure of the blog post on the fly while filling in the gaps between the headlines.</description>
+    </item>
+    
+    <item>
+      <title>Vimming in the Squasher: How to Squash Your Commits with VIM</title>
+      <link>https://www.kahlillechelt.com/2018/11/21/vimming-in-the-squasher-how-to-squash-your-commits-with-vim/</link>
+      <pubDate>Wed, 21 Nov 2018 09:01:05 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/11/21/vimming-in-the-squasher-how-to-squash-your-commits-with-vim/</guid>
+      <description>Whenever I use git rebase -i to squash commits, Git opens the squasher (that’s how I just named the text view for the interactive rebase) in VIM.
+My knowledge of vimming is not very great so I used to just type i and then inch around with the arrow keys and delete character by character in order to delete the word “pick” a bunch of times and then type “squash” a bunch of time.</description>
+    </item>
+    
+    <item>
+      <title>Nested Loops on the JS Party Podcast</title>
+      <link>https://www.kahlillechelt.com/2018/11/16/nested-loops-on-the-js-party-podcast/</link>
+      <pubDate>Fri, 16 Nov 2018 20:45:56 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/11/16/nested-loops-on-the-js-party-podcast/</guid>
+      <description>Jan and I had the distinct honor to guest on the JS Party podcast last week to talk about Nested Loops. First of all it was a really great experience to be a guest on there. The Changelog family of podcasts are very professionally run and it was a great pleasure to be on. @noopkat, @jerodsanto and @adamstac made us feel very welcome and comfortable.
+We talked about how Nested Loops was founded and immediately had band problems.</description>
+    </item>
+    
+    <item>
+      <title>Flip the Switch</title>
+      <link>https://www.kahlillechelt.com/2018/11/16/flip-the-switch/</link>
+      <pubDate>Fri, 16 Nov 2018 15:15:29 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/11/16/flip-the-switch/</guid>
+      <description>Reactive Programming is a paradigm that solves a lot of problems that many JavaScript frameworks partly implement by introducing some sort of &amp;ldquo;reactivity&amp;rdquo;.
+That typically ties the reactivity down to one use case in the framework itself. Reactive Programming can be helpful in many more scenarios though.
+One huge hurdle for adoption seems to be to grasp the actual concepts. Specifically doing push-based programming instead of pull-based.
+I can relate because it did take me quite some time to get there but once the switch was flipped, so to speak, I started to think in terms of Reactive Programming instantly.</description>
+    </item>
+    
+    <item>
+      <title>On Dropping Side Projects</title>
+      <link>https://www.kahlillechelt.com/2018/11/13/on-dropping-side-projects/</link>
+      <pubDate>Tue, 13 Nov 2018 12:55:45 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/11/13/on-dropping-side-projects/</guid>
+      <description>I stopped working on my code-related side projects grit, belly and flow-state. I have a family and we recently moved. So most of my free time is spent working on the flat or spending time with the family.
+There are a few side proj&amp;lt;ects I am not abandoning though.
+ I will continue to co-organize KarlsruheJS Even though the podcast is on a break right now, we will continue with Reactive Podcast soon I will continue to work on musical projects every now and then I will continue to write on this blog  Writing regularly is somewhat of a new habit for me.</description>
+    </item>
+    
+    <item>
+      <title>Static Site Generators for Documentation</title>
+      <link>https://www.kahlillechelt.com/2018/11/13/static-site-generators-for-documentation/</link>
+      <pubDate>Tue, 13 Nov 2018 11:42:15 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/11/13/static-site-generators-for-documentation/</guid>
+      <description>We are using some internal libraries at work that are not very well documented. As a result it is really difficult and time-intensive to onboard onto the project. It became clear to me that not having good documentation can come at a very high cost when it comes to long-term productivity for a team with changing team members.
+As a result I started to work on documenting the inner workings of our application and it does feel satisfying to bring it to paper.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kahlillechelt.com/2018/11/08/micro-blog-mastodon/</link>
+      <pubDate>Thu, 08 Nov 2018 14:07:30 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/11/08/micro-blog-mastodon/</guid>
+      <description>Manton Reece announced that Micro.blog supports Mastodon now. This makes the two microblogging alternatives compatible with each other to some extent and effectively connects the two networks. I think this could be a really significant step for at least Micro.blog. Congrats on the release @manton!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kahlillechelt.com/2018/11/07/accessibility-quick-wins/</link>
+      <pubDate>Wed, 07 Nov 2018 17:18:38 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/11/07/accessibility-quick-wins/</guid>
+      <description>We launched an engineering blog at LogMeIn. I contributed one of the first articles in which I share some quick tips on how to boost accessibility on your legacy web app.
+I always thought that accessibility on the web was super hard but I was surprised at how easy it can be. Yay for web standards and WAI-ARIA 🙌.</description>
+    </item>
+    
+    <item>
+      <title>Kottke at The Talk Show</title>
+      <link>https://www.kahlillechelt.com/2018/08/15/kottke-at-the-talk-show/</link>
+      <pubDate>Wed, 15 Aug 2018 16:50:03 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/08/15/kottke-at-the-talk-show/</guid>
+      <description>One of my favorite podcasts is The Talk Show with John Gruber. Gruber is the man behind Daring Fireball, a very successful and long standing Apple news and analysis website.
+The episode I would like to point out is the one on which Jason Kottke joined as a guest. John invited him to celebrate the 20th anniversary of kottke.org.
+I am not a big kottke.org reader but nevertheless I found his story and the history of the site very interesting.</description>
+    </item>
+    
+    <item>
+      <title>belly FAQ: Y U NO USE ALIASES?</title>
+      <link>https://www.kahlillechelt.com/2018/08/10/belly-faq-y-u-no-use-aliases/</link>
+      <pubDate>Fri, 10 Aug 2018 15:30:40 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/08/10/belly-faq-y-u-no-use-aliases/</guid>
+      <description>Some people react to what I am doing with belly with the question why I didn&amp;rsquo;t use Git aliases or bash aliases. It is true, that the general behavior could have been implemented using aliases. But even in its current MVP-state belly does more than I comfortably could cover with aliases.
+The Spinner In order to show that belly is working, I am using a command line spinner. The spinner has different states and shows different text for those different states.</description>
+    </item>
+    
+    <item>
+      <title>belly: Improving Git&#39;s Command Line User Experience</title>
+      <link>https://www.kahlillechelt.com/2018/08/08/belly-improving-gits-command-line-user-experience/</link>
+      <pubDate>Wed, 08 Aug 2018 09:50:51 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/08/08/belly-improving-gits-command-line-user-experience/</guid>
+      <description>My preferred way to use Git is on the command line. I have a set of Git command sequences that I use all the time and that I know by heart but are a nuisance to type out every time and a set of command sequences that I need regularly but have to look up all the time. In order to improve my personal Git user experience I created belly.</description>
+    </item>
+    
+    <item>
+      <title>Reactive Podcast Episode 100: &#34;guts&#34; Was A Little Gross</title>
+      <link>https://www.kahlillechelt.com/2018/07/16/reactive-podcast-episode-100-guts-was-a-little-gross/</link>
+      <pubDate>Mon, 16 Jul 2018 18:16:13 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/07/16/reactive-podcast-episode-100-guts-was-a-little-gross/</guid>
+      <description>After a brief interruption:
+ We are back! Henning talks about finally launching the first site with the &amp;ldquo;unified platform&amp;rdquo;. It&amp;rsquo;s a Vue.js app talking to multiple APIs. Kahlil wrote about enums and made a small CLI tool for common Git tasks called &amp;ldquo;belly&amp;rdquo;.
+ Pick it up anywhere you get your podcasts or just listen in the browser.</description>
+    </item>
+    
+    <item>
+      <title>Enums For The Uninitiated</title>
+      <link>https://www.kahlillechelt.com/2018/07/12/enums-for-the-uninitiated/</link>
+      <pubDate>Thu, 12 Jul 2018 18:48:48 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/07/12/enums-for-the-uninitiated/</guid>
+      <description>Before TypeScript I have never used or heard of enums. So needless to say when I saw them in the docs I was confused.
+I was so used to describing the shape of data structures with interfaces that I didn’t understand what the benefits are of using enums.
+I was also confused because enums hold values as well as being a type. I didn’t think of TypeScript as something that gives me things to hold values with.</description>
+    </item>
+    
+    <item>
+      <title>Vanilla</title>
+      <link>https://www.kahlillechelt.com/2018/06/26/vanilla/</link>
+      <pubDate>Tue, 26 Jun 2018 09:20:35 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/06/26/vanilla/</guid>
+      <description>Vanilla is a menubar Mac app that allows you to hide menubar items. It&amp;rsquo;s the first menubar icon management app that stuck with me. It is incredibly simple and just so cute!
+When you launch it a little arrow and a dot appear in the menubar. You move the dot behind the last icon you want to hide and then click on the arrow. The arrow then swooshes over and lands on the spot where you put the dot with a nice little bouncy animation.</description>
+    </item>
+    
+    <item>
+      <title>accesskey</title>
+      <link>https://www.kahlillechelt.com/2018/06/26/accesskey/</link>
+      <pubDate>Tue, 26 Jun 2018 08:12:44 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/06/26/accesskey/</guid>
+      <description>While working on improving accessibility features of an application I learned about an HTML feature that I was not aware of before: the accesskey attribute.
+The attribute allows you to add keyboard shortcuts to an element.
+In order to assign a keyboard shortcut you add the accesskey attribute to an element and assign it a letter. For instance the letter &amp;ldquo;a&amp;rdquo;, like this:
+&amp;lt;div accesskey=&amp;quot;a&amp;quot;&amp;gt; ... &amp;lt;/div&amp;gt; This automatically binds a shortcut to the element that either focuses it or triggers a click event.</description>
+    </item>
+    
+    <item>
+      <title>Godfrey</title>
+      <link>https://www.kahlillechelt.com/2018/06/20/godfrey/</link>
+      <pubDate>Wed, 20 Jun 2018 09:27:44 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/06/20/godfrey/</guid>
+      <description>Godfrey is a standup comic. I first found this bit by him years ago on YouTube and loved it.
+Yesterday I stumbled upon his little standup special on VladTV and was very excited to find it.
+He did not disappoint. It is a well paced, very comfortably delivered, hilarious 24min special. He killt it.</description>
+    </item>
+    
+    <item>
+      <title>MDX</title>
+      <link>https://www.kahlillechelt.com/2018/06/15/mdx/</link>
+      <pubDate>Fri, 15 Jun 2018 09:36:19 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/06/15/mdx/</guid>
+      <description>MDX is a JSX in Markdown loader, parser, and renderer for ambitious projects. It combines the readability of Markdown with the expressivity of JSX. The best of both worlds.
+ If you configure MDX for your project you can do wild things like importing React components into your markdown file and use them in there.
+import Graph from &#39;./components/graph&#39; ## Here&#39;s a graph &amp;lt;Graph /&amp;gt; And on the other hand you can import your MDX files into React components and use them as regular React components.</description>
+    </item>
+    
+    <item>
+      <title>Nested Loops at the JSConf EU 2018 Opening Performance</title>
+      <link>https://www.kahlillechelt.com/2018/06/11/nested-loops-at-the-jsconf-eu-2018-opening-performance/</link>
+      <pubDate>Mon, 11 Jun 2018 19:59:31 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/06/11/nested-loops-at-the-jsconf-eu-2018-opening-performance/</guid>
+      <description>Once again Boris, Jan and me have been honored by the organizers of JSConf EU to participate in this year&amp;rsquo;s opening performance of the conference as NESTED LOOPS. That’s the name of the band we formed when we did the opening for the first time in 2015.
+Thank you for letting us do this. The result was quite epic if I may say so. I don’t think the video really does it justice.</description>
+    </item>
+    
+    <item>
+      <title>Reactive 99: 👋😭 @rockbot</title>
+      <link>https://www.kahlillechelt.com/2018/05/23/reactive-99-rockbot/</link>
+      <pubDate>Wed, 23 May 2018 20:16:37 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/05/23/reactive-99-rockbot/</guid>
+      <description>This is Raquel&amp;rsquo;s farewell episode. Sadly she is leaving the podcast as a co-host. But don&amp;rsquo;t fret, she will join us every once-in-a-while to tell us about her adventures at Slack and quirky animals.
+Other than that your three fav co-hosts chop it up about what&amp;rsquo;s going on at Slack right now, various conferences they are going to, social media nowadays, the only thing Facebook is actually good for and the arrival of the animal of the week at Slack planning meetings.</description>
+    </item>
+    
+    <item>
+      <title>Chopping It Up With Henning</title>
+      <link>https://www.kahlillechelt.com/2018/04/12/chopping-it-up-with-henning/</link>
+      <pubDate>Thu, 12 Apr 2018 08:32:08 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/04/12/chopping-it-up-with-henning/</guid>
+      <description>We&amp;rsquo;ve been having a bit of a break on the Reactive Podcast. The break was involuntary and just caused by normal life stuff. But we are working on getting back on track. Henning and I managed to put out a couple of episodes in which we chop it up about various things.
+The topics vary from what we&amp;rsquo;re working on currently to other random stuff that shot through our heads while recording the podcast.</description>
+    </item>
+    
+    <item>
+      <title>New Job, Who Dis?</title>
+      <link>https://www.kahlillechelt.com/2018/04/11/new-job-who-dis/</link>
+      <pubDate>Wed, 11 Apr 2018 17:27:12 +0200</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/04/11/new-job-who-dis/</guid>
+      <description>Last month I started working at LogMeIn as a Staff Software Engineer. My team is working on the web version of GoToMeeting. We are migrating legacy code to a new, modern tech stack, while improving the product as well as working on features.
+The new tech stack consists of TypeScript, React, Redux &amp;amp; redux-observable.
+Coming from Angular, not being super-fond of the complexity of the framework, I was expecting to enter the lands of simplicity with React and Redux.</description>
+    </item>
+    
+    <item>
+      <title>Just One Link</title>
+      <link>https://www.kahlillechelt.com/2018/02/16/just-one-link/</link>
+      <pubDate>Fri, 16 Feb 2018 17:29:24 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/02/16/just-one-link/</guid>
+      <description>Many designers and developers are taking the time, in various forms, to curate link-list-newsletters.
+They contain 5-ish links in fat type with a low-contrast small-type link description below each link.
+Over time I have subscribed to many of those and although I appreciate the work that people put into them, they have lost their value to me.
+It&amp;rsquo;s their sameness. I also don&amp;rsquo;t know why the author has chosen those links.</description>
+    </item>
+    
+    <item>
+      <title>96: Without Cheese You Are Nothing</title>
+      <link>https://www.kahlillechelt.com/2018/02/07/96-without-cheese-you-are-nothing/</link>
+      <pubDate>Wed, 07 Feb 2018 13:45:00 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/02/07/96-without-cheese-you-are-nothing/</guid>
+      <description>Henning and Raquel talk about, the Poison Dart Frog, moving cheese, when to maintain and when to develop features, a laptop theft ring and the fact that Slack is mostly PHP 😱
+ Another stellar conversation between my incredible co-hosts Raquel and Henning.</description>
+    </item>
+    
+    <item>
+      <title>[DE] Revision 328: Web Components</title>
+      <link>https://www.kahlillechelt.com/2018/02/07/de-revision-328-web-components/</link>
+      <pubDate>Wed, 07 Feb 2018 13:34:47 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/02/07/de-revision-328-web-components/</guid>
+      <description>Inspiriert durch einen Artikel von Mikeal Rogers berichtet Kahlil von seiner Begeisterung für Web Components. Neben konkreten Webstandards wie Custom Elements, Shadow DOM, Template-Elementen und HTML Imports (RIP) und Tools im Stile von Polymer und dem CDN unpkg treibt uns auch die Frage nach dem Warum und den möglichen Vorteilen von Web Components um.
+Während Kahlil in Web Components, kombiniert mit modernen Template-Libraries (lit-html, hyperHTML/viperHTML) bzw. Data Binding für Template Elemente (wie in Revision 319 besprochen) eine Alternative zu bzw.</description>
+    </item>
+    
+    <item>
+      <title>Stimulus: A modest JavaScript framework for the HTML you already have</title>
+      <link>https://www.kahlillechelt.com/2018/02/01/stimulus-a-modest-javascript-framework-for-the-html-you-already-have/</link>
+      <pubDate>Thu, 01 Feb 2018 13:43:02 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/02/01/stimulus-a-modest-javascript-framework-for-the-html-you-already-have/</guid>
+      <description>Stimulus works by continuously monitoring the page, waiting for the magic data-controller attribute to appear. Like the class attribute, you can put more than one value inside it. But instead of applying or removing CSS class names, data-controller values connect and disconnect Stimulus controllers.
+Think of it like this: in the same way that class is a bridge connecting HTML to CSS, data-controller is a bridge from HTML to JavaScript.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kahlillechelt.com/2018/01/30/micro-blog/</link>
+      <pubDate>Tue, 30 Jan 2018 09:58:15 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/01/30/micro-blog/</guid>
+      <description>This is a micro blog post. A blog post without a title that has 280 characters or less. All my blog posts and micro blog posts are distributed to my Micro.blog account.</description>
+    </item>
+    
+    <item>
+      <title>Reactive 95: Career Pro Tip: Make Yourself Irrelevant</title>
+      <link>https://www.kahlillechelt.com/2018/01/29/reactive-95/</link>
+      <pubDate>Mon, 29 Jan 2018 20:41:05 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/01/29/reactive-95/</guid>
+      <description>Henning and Raquel talk about The Swamp Hackathon, working at Slack and a book called Punished By Reward.
+ I couldn&amp;rsquo;t make it on this episode because of my new flamingo farm, but I really enjoyed the discussion my two co-hosts were having there.</description>
+    </item>
+    
+    <item>
+      <title>Reactive 94: There Are So Many Channels In The Slack Slack</title>
+      <link>https://www.kahlillechelt.com/2018/01/29/reactive-94/</link>
+      <pubDate>Mon, 29 Jan 2018 17:23:51 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/01/29/reactive-94/</guid>
+      <description>We&amp;rsquo;re back and talk about Raquel working at Slack, Henning and the hackathon, blockchain, Kahlil&amp;rsquo;s new Electron app and Bootstrap 4.
+ Our first episode this year!</description>
+    </item>
+    
+    <item>
+      <title>electron-serve</title>
+      <link>https://www.kahlillechelt.com/2018/01/26/electron-serve/</link>
+      <pubDate>Fri, 26 Jan 2018 17:23:51 +0100</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/01/26/electron-serve/</guid>
+      <description>In a default setup, Electron serves the app&amp;rsquo;s index.html file directly from disk with the file:// protocol. This does not work well with JavaScript apps that want to use client-side routing.
+The browser does not support history.pushState for files served from disk. This means every time you navigate to a different route with a client-side router it will try to resolve the path on disk which leads to a 404.</description>
+    </item>
+    
+    <item>
+      <title>Keeping TypeScript Benefits In A JavaScript Project With Visual Studio Code</title>
+      <link>https://www.kahlillechelt.com/2018/01/25/keeping-typescript-benefits-in-a-javascript-project-with-visual-studio-code/</link>
+      <pubDate>Thu, 25 Jan 2018 00:11:10 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/01/25/keeping-typescript-benefits-in-a-javascript-project-with-visual-studio-code/</guid>
+      <description>When I started Grit I was excited to find out that the Electron team is shipping types with Electron which expose the Electron API in your tooling. Since I am a fan of TypeScript I set up my dev environment to write my code in TypeScript as well.
+After a few days of writing TS code to transpile it for my app, I started to get annoyed with the fact that I am transpiling code.</description>
+    </item>
+    
+    <item>
+      <title>Building Grit</title>
+      <link>https://www.kahlillechelt.com/2018/01/18/building-grit/</link>
+      <pubDate>Thu, 18 Jan 2018 21:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/01/18/building-grit/</guid>
+      <description>Static Site CMS is now Grit. I wanted to give it a name because I want to keep writing about building this thing and Static Site CMS is a shitty name.
+Grit will be a Markdown editor for managing blog posts for your static site. There is nothing to see yet, I am still working on the MVP.
+I&amp;rsquo;ll be writing a series of posts about the process of building Grit.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kahlillechelt.com/2018/01/18/</link>
+      <pubDate>Thu, 18 Jan 2018 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/01/18/</guid>
+      <description>learnrx.io →
+Finally some human-friendly docs about RxJS. Huge effort by Brian Troncone.</description>
+    </item>
+    
+    <item>
+      <title>Switching To hyperHTML And HyperHTMLElement</title>
+      <link>https://www.kahlillechelt.com/2018/01/10/switching-to-hyperhtml-and-hyperhtmlelement/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/01/10/switching-to-hyperhtml-and-hyperhtmlelement/</guid>
+      <description>When starting work on Static Site CMS I originally planned on using Custom Components and lit-html instead of a JavaScript framework.
+In the process of setting up my development environment I was a little annoyed to realize that lit-html can only be used with ES Modules and not with CommonJS modules. Since Electron uses CommonJS that is a requirement for my current project.
+I heard that hyperHTML basically does the same thing as lit-html so I went and checked it out.</description>
+    </item>
+    
+    <item>
+      <title>Working Title: Static Site CMS</title>
+      <link>https://www.kahlillechelt.com/2018/01/05/working-title-static-site-cms/</link>
+      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2018/01/05/working-title-static-site-cms/</guid>
+      <description>Product development has always been of huge interest to me. I love creating something with web technologies that solves a problem and iterating on it. That is basically what I do at work but I always wanted to have my own thing.
+During the last year I have played around with a couple of ideas while trying out different JavaScript frameworks. Altogether I think I must have at least started working on 4 or 5 things.</description>
+    </item>
+    
+    <item>
+      <title>Template Instantiation</title>
+      <link>https://www.kahlillechelt.com/2017/12/20/template-instantiation/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2017/12/20/template-instantiation/</guid>
+      <description>Happily stumbled upon this little video by @dassurma and @jaffathecake. Apparently there is a template instantiation proposal out there somewhere that would add lit-html / hyperHMTL - like functionality to the template element.
+This would be huge if it made it into the platform. This would mean that Web Components would be complete because, as I outlined before, the only web standard missing for them to be useful out of the box is an API like lit-html that allows for their DOM to be rendered over and over again in an efficient way.</description>
+    </item>
+    
+    <item>
+      <title>ZeroFux - A Stateless Unidirectional Data Flow Implemented With Custom Events</title>
+      <link>https://www.kahlillechelt.com/2017/12/20/zerofux-a-stateless-unidirectional-data-flow-implemented-with-custom-events/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2017/12/20/zerofux-a-stateless-unidirectional-data-flow-implemented-with-custom-events/</guid>
+      <description>Undirectional Data Flow, Flux, Redux, Whateverux is essentially this:
+ something happens what happened is being described with an action object that action object is being dispatched through a central point, the dispatcher on the other side of that dispatcher actions are matched to reducers the reducers take the information of the actions and return state  This allows you to manage interactions in your UI in a stateless and synchronous manner.</description>
+    </item>
+    
+    <item>
+      <title>Use Web Components To Build JavaScript Apps</title>
+      <link>https://www.kahlillechelt.com/2017/12/14/use-web-components-to-build-javascript-apps/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2017/12/14/use-web-components-to-build-javascript-apps/</guid>
+      <description>Web Components are generally described as &amp;ldquo;custom, reusable, encapsulated HTML tags&amp;rdquo; that encapsulate some DOM, some styling and behavior implemented with JavaScript.
+I don&amp;rsquo;t understand why this use case is pushed so extensively when Web Components offer a perfectly good component abstraction for building complete JavaScript web apps.
+I&amp;rsquo;m not so much interested in Web Components for individual new custom tags à la &amp;lt;google-maps&amp;gt;&amp;lt;/google-maps&amp;gt; or something. I&amp;rsquo;m interested in using Web Components for building full fledged JavaScript apps with a component-tree architecture, unidirectional data flow and efficient DOM rendering.</description>
+    </item>
+    
+    <item>
+      <title>Web Components And The CMD-R Development Workflow</title>
+      <link>https://www.kahlillechelt.com/2017/11/16/web-components-and-the-cmd-r-development-workflow/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2017/11/16/web-components-and-the-cmd-r-development-workflow/</guid>
+      <description>A couple of months ago I stumbled across Mikeal Rogers&amp;rsquo; article I’ve seen the future, it’s full of HTML. in which he lays out his reasons why he started to dive into Web Components for the web apps he is working on right now and hinted to the workflow he uses.
+His enthusiasm for Web Components is infectious and because I have a lot of respect for Mikeal and his work, his article was a strong signal for me personally that Web Components might be something to take a closer look at.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kahlillechelt.com/2017/11/08/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2017/11/08/</guid>
+      <description>Netflix functions without client-side React, and it&amp;rsquo;s a good thing →
+Jake Archibald on Netflix removing React from their landing page:
+ Netflix has shown you could start with React on the server, then activate the client side parts if you need them, when you need them, and where you need them.
+ I hope this starts to become state of the art.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kahlillechelt.com/2017/10/28/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2017/10/28/</guid>
+      <description>Working Draft Podcast, Revision 314: DDD, CQRS und WTF →
+In this episode of the German podcast Working Draft Golo Roden does a great job explaining what DDD (Domain-Driven Design), CQRS (Command Query Responsibility Segregation) and Event Sourcing is and how his new project wolkenkit can help developers applying those principles and patterns.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.kahlillechelt.com/2017/10/26/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2017/10/26/</guid>
+      <description>Why I wrote Just. by Angus Croll →
+Just is a collection of dependency-free modules for common operations on Arrays, Collections, Strings, Objects and Functions started by @angustweets. &amp;ldquo;Do we really need something like that when we have Lodash?&amp;rdquo; you might ask.
+Angus does a great job explaining why he started Just:
+ Just is designed for those who value easy to follow, debuggable utilities over version lotto and yak-shaving down the module tree.</description>
+    </item>
+    
+    <item>
+      <title>I Finally Understood Functions As A Service</title>
+      <link>https://www.kahlillechelt.com/2017/10/24/i-finally-understood-functions-as-a-service/</link>
+      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2017/10/24/i-finally-understood-functions-as-a-service/</guid>
+      <description>Since I heard it for the first time, I was struggling to understand what &amp;ldquo;Functions As A Service&amp;rdquo; like AWS Lambda really is. I heard people explaining it on podcasts and read what it said on the AWS Lambda landing page but it just didn&amp;rsquo;t click.
+Last week me and Henning recorded the lastest episode of our podcast REACTIVE. On that episode Henning talks about how he uses AWS Lambda and an AWS database to build an API for their app at work.</description>
+    </item>
+    
+    <item>
+      <title>How Matt Mullenweg Single-Handedly Made Facebook Relicense React to MIT</title>
+      <link>https://www.kahlillechelt.com/2017/09/26/how-matt-mullenweg-single-handedly-made-facebook-relicense-react-to-mit/</link>
+      <pubDate>Tue, 26 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2017/09/26/how-matt-mullenweg-single-handedly-made-facebook-relicense-react-to-mit/</guid>
+      <description>OK, I have no proof that this is actually true, but it is a fun thought experiment / conspiracy theory. Here me out.
+Facebook just announced that they are relicensing a few of their open source projects to the MIT license.
+I am pretty sure this change will be extremely well received by everybody using React.
+It will also ensure that the majority of React users will switch to React 16 (the first version under the MIT license) because their BSD + patents license is widely mistrusted and / or disliked.</description>
+    </item>
+    
+    <item>
+      <title>All New</title>
+      <link>https://www.kahlillechelt.com/2017/09/15/all-new/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/2017/09/15/all-new/</guid>
+      <description>My blog used to be a Medium publication with a linked domain but I ditched Medium. I was disappointed with the design directions they are taking. I was a big fan of Medium&amp;rsquo;s design before the recent change to the new serif wordmark. It feels disjointed to me now and it is apparent that they are pushing their paid services and are working hard to make an actual business out of Medium.</description>
+    </item>
+    
+    <item>
+      <title>Archive</title>
+      <link>https://www.kahlillechelt.com/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/archive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hi, my name is Kahlil Lechelt</title>
+      <link>https://www.kahlillechelt.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/about/</guid>
+      <description>I am a JavaScript developer located close to Karlsruhe, Germany. I am currently working at LogMeIn in Karlsruhe as an Engineering Manager for GoToMeeting.
+I am @kahliltweets on Twitter which is a great way to reach me and if you prefer email you can always write to hello at kahlil dot info.
+You can find all my open source code on GitHub.
+I make music with my friends at SMASH HIFI and at NESTED LOOPS.</description>
+    </item>
+    
+    <item>
+      <title>Podcast</title>
+      <link>https://www.kahlillechelt.com/podcast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.kahlillechelt.com/podcast/</guid>
+      <description>Update from 2020-05-19:
+The podcast below has been discontinued. We just got too busy and our schedules were not combinable anymore.
+I am working on some other stuff. Stay tuned.
+ Every week I record an episode of the Reactive podcast with my friend Henning Glatter-Götz. We talk about tech, culture, web development and things we learned or noticed over the last week.
+You can subscribe to it on iTunesor your favorite podcast app.</description>
+    </item>
+    
+  </channel>
+</rss>

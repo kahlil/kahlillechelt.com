@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us" class="dark-mode-off">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kahlil Lechelt&#39;s Blog</title>
+    <link href="https://micro.blog/ka" rel="me" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900;700;400;300;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.min.css?v7" />
+  </head>
+
+  <body>
+    <div class="content">
+
+<header>
+  <div class="header-content">
+    <h1 class="logo">
+  <a href="/">
+    
+    
+    Kahlil Lechelt
+  </a>
+</h1>
+    <nav>
+  <ul>
+    
+    <li>
+      <a href="/">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/podcast/">Podcast</a>
+    </li>
+    
+    <li>
+      <a href="https://mobile.twitter.com/kahliltweets">Twitter</a>
+    </li>
+    
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    
+    <li>
+      <a href="/archive/">Archive</a>
+    </li>
+    
+  </ul>
+</nav>
+  </div>
+</header>
+
+
+<main>
+
+  
+  <article>
+  
+  <h1><a href="/2018/01/25/keeping-typescript-benefits-in-a-javascript-project-with-visual-studio-code/">Keeping TypeScript Benefits In A JavaScript Project With Visual Studio Code</a></h1>
+  
+  
+  
+  <a href="/2018/01/25/keeping-typescript-benefits-in-a-javascript-project-with-visual-studio-code/">
+    <datetime>January 25, 2018</datetime>
+  </a>
+  
+  
+  <p>When I started <a href="https://www.producthunt.com/upcoming/grit">Grit</a> I was excited to find out that the Electron team is shipping types with Electron which expose the Electron API in your tooling. Since I am a fan of TypeScript I set up my dev environment to write my code in TypeScript as well.</p>
+<p>After a few days of writing TS code to transpile it for my app, I started to get annoyed with the fact that I am transpiling code. And here is the reason:</p>
+<p>In Electron you write code for a very capable browser. ES2015 is fully implemented minus ES Modules. That means the code I can write for the browser directly is already so close to ideal for me that it felt wrong to transpile from something else. So I converted my project back to JavaScript.</p>
+<p>After years of dealing with Babel and TypeScript, writing ES2015+ code directly for the browser feels very freeing.</p>
+<p>No source maps to decode, no types to manage.</p>
+<p>Losing the types would be a little annoying though. For me personally, in this one-man-project, I enjoy the types especially because they enhance the tooling.</p>
+<p>Thankfully there is VSCode!</p>
+<p>VSCode has introduced something that is called <a href="https://code.visualstudio.com/docs/languages/jsconfig"><code>jsconfig.json</code></a>. It&rsquo;s a configuration file that tells VSCode that the folder containing it is a JavaScript project.</p>
+<p>From <a href="https://code.visualstudio.com/docs/languages/jsconfig">code.visualstudio.com</a>:</p>
+<blockquote>
+<p><code>jsconfig.json</code> is a descendent of <code>tsconfig.json</code>, which is a configuration file for TypeScript. <code>jsconfig.json</code> is the <code>tsconfig.json</code> with the <code>&quot;allowJs&quot;</code> attribute set to true.</p>
+</blockquote>
+<p>Adding that file tells VSCode to turn on the <a href="https://github.com/Microsoft/TypeScript/wiki/JavaScript-Language-Service-in-Visual-Studio">JavaScript Language Service</a> which is based on the TypeScript Language Service. This gives you powerful Intellisense features throughout the project.</p>
+<p>This means you get autocompletion and type errors for a normal JavaScript project. Types are being inferred by TypeScript type definition files as well as JSDoc comments.</p>
+<h2 id="setting-up-jsconfigjson-for-electron">Setting up jsconfig.json For Electron</h2>
+<p>In order to get it to work satisfyingly for my Electron setup, I had to configure a few things.
+jsconfig.json is just a tsconfig.json so the options are the same.</p>
+<p>First of all, I excluded <code>node_modules</code> since I don&rsquo;t want VSCode to type check all my dependencies.</p>
+<pre><code>&quot;exclude&quot;: [&quot;node_modules&quot;]
+</code></pre><p>In the <code>compileroptions</code> property, I set the <code>checkJs</code> property to <code>true</code> so that the JavaScript code is type checked as much as possible.</p>
+<p>Because I (have to) use CommonJS Modules in Electron I had to set the <code>module</code> property to <code>commonjs</code> so that <code>index.js</code> files are resolved CommonJS-style.</p>
+<p>And last but not least in order to be able to write ES2015+ code without warnings I set the <code>target</code> property to <code>es2017</code>.</p>
+<p>You can have a look at my config file <a href="https://github.com/kahlil/grit/blob/master/jsconfig.json">right here</a>.</p>
+<h2 id="adding-a-type-definition-for-hyperhtmlelement">Adding A Type Definition For HyperHTMLElement</h2>
+<p>I had to create a type definitions file for HyperHTMLElement because the JavaScript Language Service didn&rsquo;t like me having to use the <code>default</code> property on the required module. This is the code in question:</p>
+<pre><code>const HyperHTMLElement = require('hyperhtml-element').default;
+</code></pre><p>I went to the trouble to actually add all the class properties in the definition which gives me the sweet sweet code completion feature in VSCode. If you need it you can pick it up from <a href="https://github.com/kahlil/grit/blob/master/types/hyperhtml-element.d.ts">here</a>.</p>
+<p>This setup allows me to write modern JavaScript code directly for the browser as well as benefit from many TypeScript features. Love it.</p>
+
+  
+</article>
+  
+
+</main>
+
+</div>
+
+<footer>
+  &copy; 2020 Kahlil Lechelt &bullet; <a href="/archive/">Archive</a>
+</footer>
+
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(101080356);
+  (function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+  })();
+</script>
+<noscript>
+  <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101080356ns.gif" /></p>
+</noscript>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us" class="dark-mode-off">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kahlil Lechelt&#39;s Blog</title>
+    <link href="https://micro.blog/ka" rel="me" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900;700;400;300;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.min.css?v7" />
+  </head>
+
+  <body>
+    <div class="content">
+
+<header>
+  <div class="header-content">
+    <h1 class="logo">
+  <a href="/">
+    
+    
+    Kahlil Lechelt
+  </a>
+</h1>
+    <nav>
+  <ul>
+    
+    <li>
+      <a href="/">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/podcast/">Podcast</a>
+    </li>
+    
+    <li>
+      <a href="https://mobile.twitter.com/kahliltweets">Twitter</a>
+    </li>
+    
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    
+    <li>
+      <a href="/archive/">Archive</a>
+    </li>
+    
+  </ul>
+</nav>
+  </div>
+</header>
+
+
+<main>
+
+  
+  <article>
+  
+  <h1><a href="/2018/11/21/vimming-in-the-squasher-how-to-squash-your-commits-with-vim/">Vimming in the Squasher: How to Squash Your Commits with VIM</a></h1>
+  
+  
+  
+  <a href="/2018/11/21/vimming-in-the-squasher-how-to-squash-your-commits-with-vim/">
+    <datetime>November 21, 2018</datetime>
+  </a>
+  
+  
+  <p>Whenever I use <code>git rebase -i</code> to squash commits, Git opens the squasher (that’s how I just named the text view for the
+interactive rebase) in VIM.</p>
+<p>My knowledge of vimming is not very great so I used to just type <code>i</code> and then inch around with the arrow keys and delete
+character by character in order to delete the word “pick” a bunch of times and then type “squash” a bunch of time.</p>
+<p>Of course that was incredibly annoying, so
+<a href="https://coderwall.com/p/d6gifw/use-vim-visual-blocks-to-squash-multiple-git-commits">I finally looked up</a> how to vim in
+the squasher and it is glorious. So here is how you do it:</p>
+<p>First, move to the line with the first commit you want to squash, which is typically the second one.</p>
+<p>Then, enter into something called <em>visual block mode</em> (WTF?! What does that even mean?) by hitting <code>ctrl</code> + <code>V</code>.
+Something magical happens: when you move the curser it blocks out every character you move over with white and if you
+move down it will cover as many characters you covered in the line above. It looks like blocks. So I guess that&rsquo;s where
+the &ldquo;visual block&rdquo; comes in 😅.</p>
+<p>Select all the rows you wish to squash while visually blocking out the word &ldquo;pick&rdquo;.</p>
+<p>Now, more magic: hit <code>C</code> and type the word &ldquo;squash&rdquo;, after that hit <code>esc</code> and see the word &ldquo;squash&rdquo; applied in all
+places that were &ldquo;visually blocked out&rdquo;.</p>
+<p>If you only could exit VIM at this point, you would actually successfully squash all these commits. A boy can dream,
+right?</p>
+
+  
+</article>
+  
+
+</main>
+
+</div>
+
+<footer>
+  &copy; 2020 Kahlil Lechelt &bullet; <a href="/archive/">Archive</a>
+</footer>
+
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(101080356);
+  (function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+  })();
+</script>
+<noscript>
+  <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101080356ns.gif" /></p>
+</noscript>
+
+</body>
+
+</html>

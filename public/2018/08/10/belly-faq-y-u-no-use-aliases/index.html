@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us" class="dark-mode-off">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kahlil Lechelt&#39;s Blog</title>
+    <link href="https://micro.blog/ka" rel="me" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900;700;400;300;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.min.css?v7" />
+  </head>
+
+  <body>
+    <div class="content">
+
+<header>
+  <div class="header-content">
+    <h1 class="logo">
+  <a href="/">
+    
+    
+    Kahlil Lechelt
+  </a>
+</h1>
+    <nav>
+  <ul>
+    
+    <li>
+      <a href="/">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/podcast/">Podcast</a>
+    </li>
+    
+    <li>
+      <a href="https://mobile.twitter.com/kahliltweets">Twitter</a>
+    </li>
+    
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    
+    <li>
+      <a href="/archive/">Archive</a>
+    </li>
+    
+  </ul>
+</nav>
+  </div>
+</header>
+
+
+<main>
+
+  
+  <article>
+  
+  <h1><a href="/2018/08/10/belly-faq-y-u-no-use-aliases/">belly FAQ: Y U NO USE ALIASES?</a></h1>
+  
+  
+  
+  <a href="/2018/08/10/belly-faq-y-u-no-use-aliases/">
+    <datetime>August 10, 2018</datetime>
+  </a>
+  
+  
+  <p>Some people react to what I am doing with <a href="https://github.com/kahlil/belly"><em>belly</em></a> with the question why I didn&rsquo;t use Git aliases or bash aliases.
+It is true, that the general behavior could have been implemented using aliases. But even in its current MVP-state belly does more than I comfortably could cover with aliases.</p>
+<h2 id="the-spinner">The Spinner</h2>
+<p>In order to show that belly is working, I am using a command line spinner. The spinner has different states and shows different text for those different states.</p>
+<p>Clearly this could have been done with bash scripts of some sort but yeah, why would I do that?</p>
+<p>I am JavaScript developer so I use the tools that I am comfortable with, to make things.</p>
+<p>Also <em>whoop whoop</em> for npm because that said spinner is actually a ridiculously useful and powerful npm package by none other than the one Sindre Sorhus called <a href="https://github.com/sindresorhus/ora"><em>ora</em></a>.</p>
+<h2 id="shareability--portability">Shareability &amp; Portability</h2>
+<p>Aliases are just a little text in a config file and therefore quite easy to share and to drag around to your other machines or friend&rsquo;s machines.</p>
+<p>It does not beat <code>npm install</code> though. If you want to port your config files to other computers or share it with other people you have to back them up somewhere and also provide some installation script in order to add them easily to a Git setup (if you&rsquo;re friendly).</p>
+<p>By keeping this functionality in an npm package I get backup, easy-install and shareability out-of-the-box. On top of that, many developers are very familiar with using npm to install tooling.</p>
+<h2 id="more-ux">More UX</h2>
+<p>Going forward I would like to further improve belly&rsquo;s CLI-UX by, for instance, improving error display and improving the spinner states and who knows what I come up with.</p>
+<p>By writing this tool with JavaScript, it is extremely easy for me to extend the tool and to keep iterating. Aliases with bash scripts would just break my brain and it would take me forever.</p>
+<h2 id="try-belly">Try belly</h2>
+<p>If you want to know what I am talking about, <a href="https://github.com/sindresorhus/ora">get belly</a> by doing <code>npm i -g belly</code>.
+If you have any ideas for extending it or improving it, hit me up in the <a href="https://github.com/kahlil/belly/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">belly issues</a>.</p>
+
+  
+</article>
+  
+
+</main>
+
+</div>
+
+<footer>
+  &copy; 2020 Kahlil Lechelt &bullet; <a href="/archive/">Archive</a>
+</footer>
+
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(101080356);
+  (function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+  })();
+</script>
+<noscript>
+  <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101080356ns.gif" /></p>
+</noscript>
+
+</body>
+
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en-us" class="dark-mode-off">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kahlil Lechelt&#39;s Blog</title>
+    <link href="https://micro.blog/ka" rel="me" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900;700;400;300;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.min.css?v7" />
+  </head>
+
+  <body>
+    <div class="content">
+
+<header>
+  <div class="header-content">
+    <h1 class="logo">
+  <a href="/">
+    
+    
+    Kahlil Lechelt
+  </a>
+</h1>
+    <nav>
+  <ul>
+    
+    <li>
+      <a href="/">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/podcast/">Podcast</a>
+    </li>
+    
+    <li>
+      <a href="https://mobile.twitter.com/kahliltweets">Twitter</a>
+    </li>
+    
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    
+    <li>
+      <a href="/archive/">Archive</a>
+    </li>
+    
+  </ul>
+</nav>
+  </div>
+</header>
+
+<main>
+
+  
+  
+  <article>
+  
+  <h1><a href="/2020/01/23/i-am-an-engineering-manager-now/">I am an engineering manager now</a></h1>
+  
+  
+  
+  <a href="/2020/01/23/i-am-an-engineering-manager-now/">
+    <datetime>January 23, 2020</datetime>
+  </a>
+  
+  
+  <p>Last year my manager quit. I was offered his position and since December or so, I am an engineering manager.</p>
+<p>It is strange to move from a well-defined role into such a hazily-defined one.</p>
+<p>A few things have changed. I don&rsquo;t code anymore at work and the relationship to my team has changed. Especially to those who now report to me.</p>
+<p>I want to be the best possible manager to them that I can be, so I am busy learning.</p>
+<p>My friend <a href="http://twitter.com/hglattergotz">Henning Glatter-Götz</a> recommended the <a href="http://managingup.simplecast.com/"><strong>Managing Up podcast</strong></a> to me. I have listened to a bunch of episodes so far and it has been very helpful already.</p>
+<p>If you are an engineering manager or are interested in becoming one, I highly recommend you check out <a href="http://managingup.simplecast.com/">Managing Up</a>.</p>
+<p>So far, my favorite episodes are:</p>
+<p><a href="https://managingup.simplecast.com/episodes/54705bed"><strong>Episode 5: One on Ones: The Basics</strong></a></p>
+<p>I loved hearing about how they approach their one-on-ones and about their different techniques on how to ask questions. It was also really great to learn how commonplace one-on-ones are in engineering organizations.
+One thing that surprised me was that it seems to be common to have weekly one-on-one meetings. We do it bi-weekly at LogMeIn. I think that it&rsquo;s a good frequency if the one-on-ones are not skipped.</p>
+<p><a href="https://managingup.simplecast.com/episodes/creating-self-managing-teams"><strong>Episode 26: Creating Self-Managing Teams</strong></a></p>
+<p>This episode really exposed the experience the co-hosts of the show have. They are very open about mistakes they have made in the past and discuss how you might achieve &ldquo;managing yourself out of a job&rdquo;. This is a phrase that I have been thinking about a lot myself and I feel that should definitely be an engineering managers goal.</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/07/08/build-a-slack-slash-command-app-with-zeits-now/">Build a Slack slash command app with Zeit’s Now</a></h1>
+  
+  
+  
+  <a href="/2019/07/08/build-a-slack-slash-command-app-with-zeits-now/">
+    <datetime>July 8, 2019</datetime>
+  </a>
+  
+  
+  <p>First of all: <a href="https://zeit.co/now"><strong>Now</strong></a> is so flipping great it’s not even funny. Basically it is this:</p>
+<p>You write your app, type <code>now</code> and it&rsquo;s deployed. You get back the URL under which it is deployed and that’s that. Every other deployment results in a new deployment under a new URL.</p>
+<p>The latest deployment is always aliased to a URL that doesn’t change and that’s the address to your app or API.</p>
+<p>If you hook up Github, your branches get deployed automatically as immutable deployments. The alias of those deployments contains the branch name. Every push results in a new deployment.</p>
+<p>Now is a perfect fit if you want to create a slash command app for Slack.</p>
+<hr>
+<p>Slash commands are super simple. When you send off a message like <code>/mycommand yey</code> all the command does is sending a post request over to a URL with your command and then prints out the response to you in Slack.</p>
+<p>I used <a href="https://github.com/zeit/micro"><strong>Micro</strong></a> (also made by our buddies at Zeit) to set up the API. Micro is a small no-config Node tool that allows you to create a microservice in no time. Write the function that takes the request and start the microservice with the <code>micro</code> command and you&rsquo;re good to go.</p>
+<p>Now comes with <a href="https://zeit.co/blog/now-init">initialization templates</a> that have configurations for different tools, frameworks, static site generators, etc. One of them is called <code>node-micro</code> which configures Micro for Now. In order to use it, type <code>now init</code> and then choose <code>node-micro</code>.</p>
+<p>It works out of the box. If you start the <code>now dev</code> and curl <code>localhost:3000</code> you get the hello world message as a response.</p>
+<p>You can deploy that by just typing <code>now</code> on the terminal or by hooking up now with your GitHub repository.</p>
+<hr>
+<p>Next, configure your <a href="https://api.slack.com/slash-commands"><strong>Slack slash command</strong></a>. Give it a name and a slash command and the endpoint URL. In our case it would be the alias that was generated. The alias always points to the latest deployment.</p>
+<p>When you use that slash command it will post back that hello world message back into your Slack chat as a response.</p>
+<p>Now you are ready to take over the world with your Slack slash command!</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/06/07/i-was-at-reacteurope-and-now-i-get-react-hooks/">I was at ReactEurope and now I &#34;get&#34; React Hooks</a></h1>
+  
+  
+  
+  <a href="/2019/06/07/i-was-at-reacteurope-and-now-i-get-react-hooks/">
+    <datetime>June 7, 2019</datetime>
+  </a>
+  
+  
+  <p>Last week, I went to Paris to spend some time there with my family and to attend ReactEurope.</p>
+<p>Based on the kind of mediocre design of their website I did not expect a lot of care to go into the organization of the conference. I expected a dull conference room in a hotel and some interesting talks.</p>
+<p>I got some interesting talks and a dull, stuffy conference room in a dull, ugly area of Paris. The room was too small for so many people though. The air was terrible and people coughing and sneezing all around me. I was not capable of spending a lot of time in there.</p>
+<p>Instead, I took some time to read through the <a href="https://reactjs.org/docs/hooks-intro.html">React Hooks documentation</a>. Let me just take a second to say how well written and how thought-out the documentation is. Really world-class. Unlike the ReactEurope conference.</p>
+<p>I also started rewriting <a href="https://github.com/kahlil/grit">my Grit editor</a> from <a href="https://github.com/preactjs/preact">Preact</a> and <a href="https://github.com/developit/htm">htm</a> to React with hooks. Just so to get familiar with them.</p>
+<p>It is always hard to convey how features like that impact your development experience without trying it out. I have only rewritten a small part of it so far but I like it a lot.</p>
+<p>The concept of custom hooks especially seems to have a lot of impact when it comes to simplifying your code.</p>
+<p>Here is an example.</p>
+<p>In order for Grit to work the user has to store the path to their Markdown files in the settings. I store the settings by using this ace package called electron-store by Sindre Sorhus (Shout out to him, what would I do without his stellar open source work?!).</p>
+<p>This path needs to be shown in the UI via a state variable and it has to be synced back to the electron-store if it is changed.</p>
+<p>So I created this custom hook called useElectronStore to read the path from electron-store and to set the filePath state variable from it and to set both, the state variable and electron-store, with the new value once it is changed.</p>
+<p>And it makes getting and setting electron-store values incredibly easy. The API basically looks like this:</p>
+<pre><code>const [someValue, setSomeValue] = useElectronStore('someValue', '');
+</code></pre><p>The <code>'someValue'</code>-string is the path in electron-store and the second value is the default value for it.</p>
+<p>I can now say that I &ldquo;get&rdquo; React Hooks because ReactEurope was not that great. Works for me.</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/05/07/announcing-grit-a-markdown-editor-for-blogging-with-a-static-site-generator/">Announcing Grit: a Markdown editor for blogging with a static site generator</a></h1>
+  
+  
+  
+  <a href="/2019/05/07/announcing-grit-a-markdown-editor-for-blogging-with-a-static-site-generator/">
+    <datetime>May 7, 2019</datetime>
+  </a>
+  
+  
+  <p>Last year I decided to write more. I thought I&rsquo;d try a hosted solution because I wanted to concentrate on the writing and not on the fiddling with the site.</p>
+<p><a href="http://micro.blog">Micro.blog</a> was the most attractive solution to me but after using it for a while I realized that, as a developer, I am not capable of leaving the building of my blog to somebody else. There were too many things I wanted to tweak/change, bugs I couldn&rsquo;t live with etc.</p>
+<p>So I ended up sticking with my <a href="http://gohugo.io">Hugo</a> solution.</p>
+<p>Unfortunately there are many little annoyances when blogging with a static site generator, due to the fact that your posts are a bunch of Markdown files in a folder with a specific file name and some frontmatter boilerplate in them.</p>
+<p>Creating a blog post was always tedious. Too many little fiddly things to do before you could just start to write.</p>
+<p>In order to remedy this I created a <a href="https://github.com/kahlil/blog-cli">blog-cli</a> that just scaffolds new blog posts for me. It works fine but I really wanted an editor that can do that for me.</p>
+<p>That&rsquo;s why I built <a href="https://github.com/kahlil/grit">Grit</a>. It&rsquo;s a little Electron app that lets you manage a folder full of Markdown posts and edit them as well.</p>
+<p>It allows you to store the path to your Markdown files, filter through the files, create a new file, edit the file and publish via Git.</p>
+<p>I used <a href="https://preactjs.com/">Preact</a> and <a href="https://github.com/developit/htm">htm</a> to write it because I was too lazy to set up a build step and I love writing code the browser can directly interpret. For the file editing part in Grit I am using <a href="https://codemirror.net/">CodeMirror</a> which is a hell of a product, wow.</p>
+<p>If you use Hugo, Jekyll, Gatsby or whatever other static site generator to build your blog and are looking for a little convenience there, give it a spin! See the current feature list <a href="https://github.com/kahlil/grit">on GitHub</a>.</p>
+<p>It&rsquo;s an alpha version so there be dragons. But I am planning a bunch of improvements like: drag and drop images, configurable frontmatter and some enhancements around file-creation.</p>
+<p>If you want, let me know what you think <a href="https://twitter.com/kahliltweets">on Twitter</a>.</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/04/02/get-off-of-medium-and-publish-a-blog-under-your-own-domain/">Get off of Medium and publish a blog under your own domain</a></h1>
+  
+  
+  
+  <a href="/2019/04/02/get-off-of-medium-and-publish-a-blog-under-your-own-domain/">
+    <datetime>April 2, 2019</datetime>
+  </a>
+  
+  
+  <p>Nobody can wall that off behind a paywall.</p>
+<p>Nobody can put a popup over your stuff and say &ldquo;Don&rsquo;t look at the content right now. It&rsquo;s so much better if you login!&quot;.</p>
+<p>Nobody can build their brand off of your work. Nobody can make money off of your work, if you don&rsquo;t want to.</p>
+<p>Nobody can tell you &ldquo;You can&rsquo;t have your own domain on here.&rdquo;</p>
+<p>Your hoster will most likely not suddenly go: &ldquo;Oops we just went out of business / were acquired, we&rsquo;re deleting all your stuff but you can export it until tomorrow and fuck off, basically.&rdquo;</p>
+<p>And if they do, you can go and host that somewhere else.</p>
+<p>You can still decide to re-distribute your content to places like Medium, dev.to, Micro.blog, Twitter, Instagram, Linkedin, Facebook and / or via a newsletter. It&rsquo;s a good way to extend your readership.</p>
+<p>You can have an RSS feed! That feed should always be <em>under your domain</em>!</p>
+<p>Writing on the internet under other peoples / companies domain names is like giving away money.</p>
+<p>Sure, sometimes it makes sense to guest-post on somebody else&rsquo;s blog because it broadens your audience. That&rsquo;s a good trade-off.</p>
+<p>You should just always have a place that people can come back to that is yours.</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/03/08/constraints-are-decisions-you-dont-have-to-make/">Constraints Are Decisions You Don&#39;t Have to Make</a></h1>
+  
+  
+  
+  <a href="/2019/03/08/constraints-are-decisions-you-dont-have-to-make/">
+    <datetime>March 8, 2019</datetime>
+  </a>
+  
+  
+  <p>Since I realized that constraints can produce more creative outcomes I‘ve been fascinated by it.</p>
+<p>I think I first learned about it when the iPhone became popular and the form factor and usage patterns produced beautifully designed apps and then website and web app designs that were optimized for mobile.</p>
+<p>I read up on it a little and there seems to be a pretty logical explanation for this.</p>
+<p>In an environment of abundance the brain is not being challenged. The brain likes to be efficient as possible. If there is an abundance of resources it&rsquo;s going to be harder to be creative because your brain has no incentive to really get into gear.</p>
+<p>In a situation where you are confronted with resource scarcity of some kind, your brain has no choice to start turning up in order to find out how to work around the scarcity.</p>
+<p>This results in more creative, out-of-the-box thinking.</p>
+<p>I think there is a second element that plays a part in this as well: reduced cognitive load.</p>
+<p>Resource scarcity could also be interpreted as: some decisions were already made for you. The fewer decisions you have to make, the more brain capacity is available to you to solve the problem at hand.</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/03/01/the-ultimate-recipe-to-attract-an-audience-on-the-internet/">The Ultimate Recipe to Attract an Audience on the Internet</a></h1>
+  
+  
+  
+  <a href="/2019/03/01/the-ultimate-recipe-to-attract-an-audience-on-the-internet/">
+    <datetime>March 1, 2019</datetime>
+  </a>
+  
+  
+  <p>My awesome co-worker <a href="https://mobile.twitter.com">Emma Wedekind</a> wrote
+<a href="https://dev.to/emmawedekind/how-i-gained-27000-twitter-followers-in-6-months-2hog">this post about how she got 27K followers on Twitter</a>.</p>
+<p>It&rsquo;s a great post with lots of good advice to grow high quality followers.</p>
+<p>I was able to watch the whole ride and it was quite something. There is one
+thing I noticed about how she used Twitter that I think had significant
+influence in why she blew up.</p>
+<p>She <strong>editorializes</strong> her Twitter account. She deliberately tweets content that
+might be valuable to the developer community. And she responds to tweets a lot.</p>
+<p>She also keeps a very friendly, welcoming and helpful tone.</p>
+<p><strong>Be kind and provide value frequently and consistently over long stretches of
+time</strong> is basically the ultimate recipe for attracting and growing an audience
+on the internet. We&rsquo;ve all seen this work many times.</p>
+<p>It has happened many times over on YouTube, Twitter and of course many blogs.</p>
+<p>The thing is, the hardest part is not to come up with the topics or to do the
+writing itself. The hardest part is to keep it going in a specific rhythm over
+long stretches of time.</p>
+<p>It takes a lot of discipline to keep that up, it&rsquo;s hard work. But if you can do
+it, it will pay off.</p>
+<p>My hat goes off to Emma for doing it.</p>
+<p>If you want an audience too, follow <em>the ultimate recipe</em> and you most likely
+will not blow up like Emma did, but you will for sure attract an audience that
+cares about what you have to say.</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/02/21/tfw-you-realize-what-technical-debt-actually-means/">TFW You Realize What Technical Debt Actually Means</a></h1>
+  
+  
+  
+  <a href="/2019/02/21/tfw-you-realize-what-technical-debt-actually-means/">
+    <datetime>February 21, 2019</datetime>
+  </a>
+  
+  
+  <p>A few weeks ago I set out to write a blog post about technical debt and the
+complexities of getting rid of it, or some of it, when you work for a company.</p>
+<p>I wanted to see what others had written about it and of course I landed on
+<a href="https://martinfowler.com/bliki/TechnicalDebt.html">Martin Fowler&rsquo;s article about technical debt</a>.
+When I started reading it I realized that up to that point I didn&rsquo;t really know
+what tech debt was.</p>
+<p>It seams that while being confronted with the eternal vastness of software
+engineering, this is what my brain does: when I hear a term for the first time
+and I can deduce its approximate meaning from context, I store it as a known
+term. Even though I don&rsquo;t know exactly what it is.</p>
+<p>What I deduced it to be was: &ldquo;Legacy code, that makes it hard to maintain your
+code or to add features.&rdquo;</p>
+<p>And every time I heard or used the term &ldquo;technical debt&rdquo; there was a tiny little
+voice in the back of my head going: &ldquo;Why is it &ldquo;debt&rdquo;!? I don&rsquo;t get it.&rdquo;</p>
+<p>Anyways good ol&rsquo; Martin cleaned up that part of my brain and made it crystal
+clear for me:</p>
+<blockquote>
+<p>Technical Debt is a wonderful metaphor developed by Ward Cunningham to help us
+think about this problem. In this metaphor, doing things the quick and dirty
+way sets us up with a technical debt, which is similar to a financial debt.</p>
+<p>Like a financial debt, the technical debt incurs interest payments, which come
+in the form of the extra effort that we have to do in future development
+because of the quick and dirty design choice.</p>
+<p>We can choose to continue paying the interest, or we can pay down the
+principal by refactoring the quick and dirty design into the better design.
+Although it costs to pay down the principal, we gain by reduced interest
+payments in the future.</p>
+</blockquote>
+<p>It&rsquo;s a <em>metaphor</em>! It is actually a term that was invented in order to explain
+consequences of sloppy coding to people in suits!</p>
+<p>Fowler goes on to write:</p>
+<blockquote>
+<p>The metaphor also explains why it may be sensible to do the quick and dirty
+approach. Just as a business incurs some debt to take advantage of a market
+opportunity developers may incur technical debt to hit an important deadline.</p>
+<p>The all too common problem is that development organizations let their debt
+get out of control and spend most of their future development effort paying
+crippling interest payments.</p>
+</blockquote>
+<p>Thank. You. Technical debt can lead to <strong>crippling interest payments</strong>. These
+can slow down your development teams so badly that you can&rsquo;t compete anymore.</p>
+<p>The term &ldquo;technical debt&rdquo; carries all the information you need in order to make
+the argument to company leadership why getting rid of it or keeping it at bay
+may be a wise business decision.</p>
+<p>Who knew?! 😂</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/02/06/nested-loops-bow-out/">Nested Loops Bow-Out</a></h1>
+  
+  
+  
+  <a href="/2019/02/06/nested-loops-bow-out/">
+    <datetime>February 6, 2019</datetime>
+  </a>
+  
+  
+  <p>As you may know, I am a member of the JavaScript band
+<a href="https://nestedloops.github.io/">Nested Loops</a>. We performed on the last three
+opening performces of <a href="http://jsconf.eu/">JSConf.eu</a>.</p>
+<p>We will not be performing at JSConf.eu this year.</p>
+<p>It was a great honor and privilege for us to be able to do that and we are
+thankful for the opportunity.</p>
+<p>We produced original music for the conference and performed it in a browser. If
+you want, you can re-live of our performances
+<a href="https://www.youtube.com/results?search_query=jsconf+eu+nested+loops">on YouTube</a>.
+And you can listen to our story on the Changelog podcast
+<a href="https://changelog.com/jsparty/52">here</a>.</p>
+<p>I have no idea if we will ever perform again at JSConf.eu or any other event.</p>
+<p>If you want to talk to us about performing at your JavaScript conference or any
+other event, or if you needs some original music just
+<a href="mailto:hello@kahlil.info">drop me an email</a> or DM me on
+<a href="https://mobile.twitter.com/kahliltweets">Twitter</a>.</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/01/22/how-to-use-async-functions/">How to Use Async Functions</a></h1>
+  
+  
+  
+  <a href="/2019/01/22/how-to-use-async-functions/">
+    <datetime>January 22, 2019</datetime>
+  </a>
+  
+  
+  <p><a href="http://2ality.com/2016/10/async-function-tips.html">This article</a> by Dr. Axel
+Rauschmayer was exactly what I needed to wrap my head around how to use async
+functions without confusion.</p>
+<p>Because I was just using them intuitively so far and because of their
+synchronous style I got confused about when to <code>try-catch</code>. I also attempted to
+call an async function without <code>await</code> in front of it while using <code>await</code> in its
+body, fully expecting it will be executed synchronously.</p>
+<p>It&rsquo;s important to remember that the foundation of async functions is Promises.</p>
+<p>The most interesting parts of Axel&rsquo;s article to me, were these:</p>
+<ul>
+<li><a href="http://2ality.com/2016/10/async-function-tips.html#async-functions-are-started-synchronously-settled-asynchronously">Async functions are started synchronously, settled asynchronously</a></li>
+<li><a href="http://2ality.com/2016/10/async-function-tips.html#parallelism">Parallelism</a></li>
+<li><a href="http://2ality.com/2016/10/async-function-tips.html#immediately-invoked-async-function-expressions">Immediately Invoked Async Function Expressions</a></li>
+</ul>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/01/18/blog-cli-a-cli-for-blogging-with-static-site-generators/">blog-cli: A CLI for Blogging with Static Site Generators</a></h1>
+  
+  
+  
+  <a href="/2019/01/18/blog-cli-a-cli-for-blogging-with-static-site-generators/">
+    <datetime>January 18, 2019</datetime>
+  </a>
+  
+  
+  <p>My blog is built with Hugo. Every blog I ever had was built with a static site
+generator or a file based CMS. I love static site generators, they make content
+management simple, they are secure and it&rsquo;s fun to build websites with them.</p>
+<p>For me, they have one problem: creating a blog post is annoying. Typically the
+file for the post needs to have the date in it and the slug and then you need to
+put in the Front Matter for the post. It is all just very tedious and annoying.</p>
+<p>That&rsquo;s why I made blog-cli. It creates the Markdown file for me at the right
+location with the correct file name, inserts the basic Front Matter and opens
+the file in my favorite Markdown editor. This means I go from post idea to
+writing in 1 second.</p>
+<p>This should work for most static site generators. At least for simple setups.</p>
+<p>Here is how it works.</p>
+<p>First you have to install blog-cli. You need Node.js and npm for that.</p>
+<pre><code>npm install --global @kahlil/blog-cli
+</code></pre><p>Then you need to tell blog-cli where you want it to put your posts.</p>
+<pre><code>blog --path ~/my-blog/posts
+</code></pre><p>Then you need to tell blog-cli about your favorite Markdown Editor.</p>
+<pre><code>blog --editor 'ia writer'
+</code></pre><p>Now you are all set and you can create a new post and open it in your editor by
+simple specifying a slug.</p>
+<pre><code>blog my-new-cool-post
+</code></pre><p>This will create a new file with the filename: 2019-01-17-my-new-cool-post.md in
+the directory you specified, ~/my-blog/posts in this case.</p>
+<p>The Front Matter that is inserted looks something like this:</p>
+<pre><code>---
+draft: true
+date: 2019-01-18T10:03:48.620Z
+title: &quot;&quot;
+---
+</code></pre><hr>
+<p>Now, if you are part of the cool kids club then you probably keep your files in
+a Git repository, commit new blog posts and push them to Github at which point
+it gets deployed to Netlify.</p>
+<p>It turns out that blog-cli can help you with that as well!</p>
+<pre><code>blog --publish
+</code></pre><p>Will automatically commit all changes with the message &lsquo;new post&rsquo; and execute a
+git push.</p>
+<p>Nifty, right?! If you are static-site-generator-blogging as well I hope blog-cli
+can help you.</p>
+<p>If you have any ideas to improve it please send an issue or a PR
+<a href="https://github.com/kahlil/blog-cli">on GitHub</a>.</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/01/17/blogging-is-back/">Blogging is Back</a></h1>
+  
+  
+  
+  <a href="/2019/01/17/blogging-is-back/">
+    <datetime>January 17, 2019</datetime>
+  </a>
+  
+  
+  <p>I&rsquo;m excited about blogs this year. It really feels like blogs and RSS feeds are
+back. I am especially happy to see some developers getting serious about it.</p>
+<p><a href="http://overreacted.io">Dan Abramov</a> started the year off with a barrage of
+really good posts of which some already went viral. People even started to
+translate them into different languages. Wow.</p>
+<p>Yoshua Wuyts started the year with <a href="http://blog.yoshuawuyts.com">a new blog</a> as
+well. With a sick dark theme, too.</p>
+<p><a href="https://css-tricks.com">CSS Tricks</a> relaunched their blog with an amazing dark
+theme design. Not a new blog obviously but man did they make a splash with this.
+<a href="https://css-tricks.com/design-v17/">Their post about how they came up with the design</a>
+is really impressive.</p>
+
+  
+</article>
+  
+  
+  
+  <article>
+  
+  
+  
+  <p>Just a few days ago I stumbled over <a href="http://remove.bg">remove.bg</a>. You can
+upload any picture with a face on it and it will give you back the same picture
+with the background removed and made transparent. It&rsquo;s quite astonishing. How do
+they do this?!</p>
+
+  
+  <a href="/2019/01/16/remove-bg/">
+    <datetime>January 16, 2019</datetime>
+  </a>
+  
+  
+</article>
+  
+  
+  
+  <article>
+  
+  
+  
+  <p><a href="https://github.com/lorenseanstewart/nextjs-mdx-blog-kit">This Next.js MDX Blog Kit</a>
+sure looks interesting!</p>
+
+  
+  <a href="/2019/01/09/nextjs-mdx-blog-kit/">
+    <datetime>January 9, 2019</datetime>
+  </a>
+  
+  
+</article>
+  
+  
+  
+  <article>
+  
+  <h1><a href="/2019/01/04/salary-negotiations-for-javascript-developers-and-anybody-else/">Salary Negotiations for JavaScript Developers (and Anybody Else)</a></h1>
+  
+  
+  
+  <a href="/2019/01/04/salary-negotiations-for-javascript-developers-and-anybody-else/">
+    <datetime>January 4, 2019</datetime>
+  </a>
+  
+  
+  <p>Salary negotiations at the start of a job always feel somewhat like a war to me.</p>
+<p>Each party is trying to get on higher ground to get the tactical advantage over the other.</p>
+<p>Typically one of those parties comes to that fight ill-prepared. Generally that’s the prospective employee.</p>
+<p>It&rsquo;s weird that your first interaction with your future employer is them basically trying to get the best of you. Companies should just pay fair market by default but they don&rsquo;t. They try to get you as cheap as they can.</p>
+<p>I learned a few things about salary negotiations from a friend, from experience and from this <a href="https://mobile.twitter.com/filosottile/status/1070099435085066241">twitter thread</a> that led me to <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/">this amazing 7k word Kalzumeus article</a> on the topic.</p>
+<p>Here are the three most important things I learned.</p>
+<h2 id="1-never-give-a-number">1. Never give a number</h2>
+<p>If they want to know what you want to make, they want to gain leverage over you in order to lower your ask, don’t tell them.</p>
+<p>Rather tell them:</p>
+<blockquote>
+<p>First and foremost I am interested if we are a mutual fit. I am happy to talk about the financials later on in the process.</p>
+</blockquote>
+<p>If they keep asking say this.</p>
+<blockquote>
+<p>Money is not that important to me right now, I would like to find out if we are a mutual fit first. I do expect to be paid a salary that is fair market.</p>
+</blockquote>
+<p>If they want to know what you currently make, they want to gain leverage over you to see if they can low-ball you, don’t tell them.</p>
+<p>Rather tell them:</p>
+<blockquote>
+<p>I don’t feel comfortable talking about the internals of my current working arrangement out of respect to my current employer.</p>
+</blockquote>
+<p>Or just be blunt and say:</p>
+<blockquote>
+<p>I don’t see how my current salary factors into these discussions. Let’s find out if we are a mutual fit first.”</p>
+</blockquote>
+<p>The goal is to get them to make an offer first. That offer will be in the middle range of what they can offer you and you can negotiate up from there.</p>
+<h2 id="2-always-be-negotiating">2. Always be negotiating</h2>
+<p>Always negotiate. Not necessarily because you need the money but because it represents your value at the company. It is a matter of respect and it influences how you are perceived at the company.</p>
+<h2 id="3-start-negotiating-when-you-receive-an-offer">3. Start negotiating when you receive an offer</h2>
+<p>Since you are not giving them a number, they will make an offer. Here is where you start negotiating. At this point it is highly unlikely that they would reject you for negotiating. They simply invested too much into you already. Take your time, maybe say you have to talk it over with your spouse, or that you need to read through it in peace.</p>
+<p>Then you could say that the offer is &ldquo;interesting&rdquo; but not quite there to get this done. Ask if there is flexibility on that number. They might make you another offer that is higher and that they can&rsquo;t go any higher. This is where you can tell them that this offer will work if they can throw in a few more vacation days or something like stock options etc. As @patio11 puts it in his article:</p>
+<blockquote>
+<p>You Have A Multi-Dimensional Preference Set.  Use It.</p>
+</blockquote>
+<p>This kind of tactic should get you to the high end of what is possible to get for your position. This will make you feel good and strengthen your position in the company from the get go.</p>
+<hr>
+<p>To be honest, I think it is a flaw in the system and really uncomfortable that one of your first interactions with your new employer is of this nature.</p>
+<p>There are rare cases in which it&rsquo;s done differently. Basecamp for instance pays everybody the same competitive salary based on job title and current market situation. You should read <a href="https://m.signalvnoise.com/how-we-pay-people-at-basecamp-f1d04f4f194b">their article about it</a>, it’s such a refreshing take on this matter.</p>
+<hr>
+<p>If you want to get deeper into this I highly recommend you read <a href="https://mobile.twitter.com/patio11">@patio11&rsquo;s</a> <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/">article that I mentioned a few times already</a>. He links to more resources as well.</p>
+<p>Happy negotiating!</p>
+
+  
+</article>
+  
+  
+
+</main>
+
+</div>
+
+<footer>
+  &copy; 2020 Kahlil Lechelt &bullet; <a href="/archive/">Archive</a>
+</footer>
+
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(101080356);
+  (function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+  })();
+</script>
+<noscript>
+  <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101080356ns.gif" /></p>
+</noscript>
+
+</body>
+
+</html>

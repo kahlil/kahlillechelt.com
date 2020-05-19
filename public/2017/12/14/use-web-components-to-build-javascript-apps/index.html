@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us" class="dark-mode-off">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kahlil Lechelt&#39;s Blog</title>
+    <link href="https://micro.blog/ka" rel="me" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900;700;400;300;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.min.css?v7" />
+  </head>
+
+  <body>
+    <div class="content">
+
+<header>
+  <div class="header-content">
+    <h1 class="logo">
+  <a href="/">
+    
+    
+    Kahlil Lechelt
+  </a>
+</h1>
+    <nav>
+  <ul>
+    
+    <li>
+      <a href="/">Blog</a>
+    </li>
+    
+    <li>
+      <a href="/podcast/">Podcast</a>
+    </li>
+    
+    <li>
+      <a href="https://mobile.twitter.com/kahliltweets">Twitter</a>
+    </li>
+    
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    
+    <li>
+      <a href="/archive/">Archive</a>
+    </li>
+    
+  </ul>
+</nav>
+  </div>
+</header>
+
+
+<main>
+
+  
+  <article>
+  
+  <h1><a href="/2017/12/14/use-web-components-to-build-javascript-apps/">Use Web Components To Build JavaScript Apps</a></h1>
+  
+  
+  
+  <a href="/2017/12/14/use-web-components-to-build-javascript-apps/">
+    <datetime>December 14, 2017</datetime>
+  </a>
+  
+  
+  <p>Web Components are generally described as <a href="https://www.webcomponents.org/introduction">&ldquo;custom, reusable, encapsulated HTML tags&rdquo;</a> that encapsulate some DOM, some styling and behavior implemented with JavaScript.</p>
+<p>I don&rsquo;t understand why this use case is pushed so extensively when Web Components offer a perfectly good component abstraction for building complete JavaScript web apps.</p>
+<p>I&rsquo;m not so much interested in Web Components for individual new custom tags à la <code>&lt;google-maps&gt;&lt;/google-maps&gt;</code> or something. I&rsquo;m interested in using Web Components for building full fledged JavaScript apps with a component-tree architecture, unidirectional data flow and efficient DOM rendering. And I think they are perfect for it!</p>
+<p>And they are perfect for it <em>now</em>.</p>
+<p>Web Components are typically described as the combination of the following four web standards:</p>
+<ul>
+<li>Custom Components</li>
+<li>Shadow DOM</li>
+<li>HTML Template</li>
+<li>HTML Imports</li>
+</ul>
+<p>First of all let&rsquo;s forget about HTML Imports. Vendors don&rsquo;t agree on them, they block rendering and honestly they feel super clunky to me.</p>
+<p>We have ES Modules. Web Components don&rsquo;t work without JavaScript anyway so let&rsquo;s import them via ES Modules or bundle them up and serve them from a server or CDN.</p>
+<p>Mikeal Rogers actually <a href="https://medium.com/@mikeal/ive-seen-the-future-it-s-full-of-html-2577246f2210">already built a solution</a> for himself that allows him to write Web Components in JavaScript, publish them to npm and automatically serve them automatically on a CDN via unpkg.</p>
+<p>That&rsquo;s totally the way to go. But he also talks about isolated components as far as I can see.</p>
+<p>Like I said I think they are the perfect building blocks for building JavaScript web apps how we build them today with React, Vue, Angular and so on.</p>
+<p>My opinionated list of things that of what Web Components consist looks like this.</p>
+<ul>
+<li>Custom Components (with Shadow DOM and HTML Template behind the scenes)</li>
+<li>Tagged Template Literals</li>
+</ul>
+<p>Custom Components are the heart. They are the building blocks for web applications. Shadow DOM should always be used for encapsulation and HTML Template should be used to efficiently build the DOM for the component.</p>
+<p>The developer should really just interact with a Custom Component class without having to think about Shadow DOM and the HTML Template.</p>
+<p>What Custom Components are missing is an efficient way to automatically update the DOM on component state changes.</p>
+<p>Basically something like React‘s vDOM.</p>
+<p>But adding a vDOM library doesn’t feel right because one of the big wins of Web Components is that you don’t have to manage a separate DOM next to the one in the browser. So what to do?</p>
+<p>While watching the talks of the 2017 Polymer Summit I stumbled on <a href="https://www.youtube.com/watch?v=ruql541T7gc">this talk about lit-html</a> and I was impressed by it right away.</p>
+<p>It’s a genius little 2k-sized library that goes with Web Components beautifully. It allows you to build the DOM for your Custom Component with a tagged template literal.</p>
+<p>Tagged Template Literals are a JavaScript standard. They are Template Literals that are marked by a function name. The string contained in the Template Literal is processed by that function before it&rsquo;s returned. In the case of lit-html it looks like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">markup</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">html</span><span style="color:#e6db74">`
+</span><span style="color:#e6db74">  &lt;div&gt;
+</span><span style="color:#e6db74">    </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">someValue</span><span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">  &lt;/div&gt;
+</span><span style="color:#e6db74">`</span>;
+</code></pre></div><p>lit-html comes with the <code>html</code>-function to use with Template Literals and with a <code>render</code> function that efficiently renders updated state to the DOM.</p>
+<p>Under the hood lit-html uses HTML Template to efficiently clone the markup. The <code>html</code> function returns something called a <code>TemplateResult</code> which gets passed to the <code>render</code> function along with the DOM element to which it should be rendered. lit-html remembers the dynamic parts of the template and makes sure these get updated when needed. The static parts of the template are always just rendered once.</p>
+<p>According to <a href="https://youtu.be/Io6JjgckHbg?t=1254">this talk from the Google Web Summit</a> lit-html fairs pretty well performance-wise.</p>
+<p>I think it is the perfect library for managing DOM updates of Custom Components because it it just uses Web Standards to do its job and refrains from maintaining a second DOM tree in order to be fast.</p>
+<p>With a little luck some sort of efficient DOM updating will also land in the browser as a standard but for now this is great!</p>
+<p>So in conclusion: the perfect web app building block for me is just a Custom Component that uses a base class that hides away creating the Shadow DOM and the usage of lit-html.</p>
+<p><a href="https://github.com/kahlil/kaf/blob/master/js/util/lit-element.js">I made such a subclass</a> for <a href="https://kaf.kahlillechelt.com">my little Café search app</a>, it&rsquo;s called <code>LitElement</code> and it is str8 🔥.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// A super chill custom element subclass with
+</span><span style="color:#75715e">// some nifty default behavior.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LitElement</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">HTMLElement</span> {
+  <span style="color:#a6e22e">constructor</span>() {
+    <span style="color:#66d9ef">super</span>();
+    <span style="color:#75715e">// Initialize the state variable.
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {};
+    <span style="color:#75715e">// Create the Shadow DOM for this element.
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">attachShadow</span>({ <span style="color:#a6e22e">mode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;open&#39;</span> });
+    <span style="color:#75715e">// Just a convenient alias for addEventListener
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">on</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">addEventListener</span>;
+  }
+  
+  <span style="color:#75715e">// The state getter.
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">get</span> <span style="color:#a6e22e">state</span>() {
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">_state</span>;
+  }
+  
+  <span style="color:#75715e">// The state setter calls the 
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// invalidate function, which invalidates the
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// state and calls render.
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">state</span>(<span style="color:#a6e22e">s</span>) {
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">_state</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>;
+    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">invalidate</span>();
+  }
+
+  <span style="color:#75715e">// This function makes sure that 
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// the lit-html render function is called 
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// when invalidate() is called. 
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// But it makes sure it is always called 
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// on next tick so that render calls are 
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// batched.
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">invalidate</span>() {
+    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">needsRender</span>) {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">needsRender</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+      Promise.<span style="color:#a6e22e">resolve</span>().<span style="color:#a6e22e">then</span>(() =&gt; {
+        <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">needsRender</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+        <span style="color:#75715e">// this.render is the render function of 
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// the Custom Component that subclasses this
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// class and it returns a TemplateResult created
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// with the lit-html html-function and a Tagged 
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// Template Literal. 
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// The location to which the DOM is rendered to is
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// always the shadow root of the component.
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">render</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">render</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>), <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">shadowRoot</span>);
+      });
+    }
+}
+</code></pre></div><p>❤️ the platform.</p>
+
+  
+</article>
+  
+
+</main>
+
+</div>
+
+<footer>
+  &copy; 2020 Kahlil Lechelt &bullet; <a href="/archive/">Archive</a>
+</footer>
+
+<script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(101080356);
+  (function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+  })();
+</script>
+<noscript>
+  <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101080356ns.gif" /></p>
+</noscript>
+
+</body>
+
+</html>
