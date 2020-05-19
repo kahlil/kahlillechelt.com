@@ -6,8 +6,8 @@
   "scripts": {
     "css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map css/styles.css -o static/css/styles.min.css",
     "watch:css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map css/styles.css -o static/css/styles.min.css -w",
-    "start": "hugo serve & npm run watch:css",
-    "start:drafts": "hugo serve -D & npm run watch:css"
+    "start": "hugo serve & yarn watch:css",
+    "start:drafts": "hugo serve -D & yarn watch:css"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,9 @@
     "postcss-cli": "7.1.1",
     "postcss-cssnext": "3.1.0",
     "postcss-import": "12.0.1"
+  },
+  "volta": {
+    "node": "12.16.3",
+    "yarn": "1.22.4"
   }
 }

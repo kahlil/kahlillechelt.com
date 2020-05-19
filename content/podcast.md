@@ -2,6 +2,13 @@
 title: Podcast
 ---
 
+**Update from 2020-05-19:**  
+The podcast below has been discontinued. We just got too busy and our schedules were not combinable anymore. 
+
+I am working on some other stuff. Stay tuned.
+
+---
+
 Every week I record an episode of the [Reactive podcast](http://reactive.audio) with my friend
 [Henning Glatter-Götz](https://twitter.com/hglattergotz). We talk about tech, culture, web development and things we
 learned or noticed over the last week.

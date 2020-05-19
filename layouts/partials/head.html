@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" class="dark-mode-off">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ .Site.Title }}</title>
+    <link href="https://micro.blog/ka" rel="me" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900;700;400;300;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ "/css/styles.min.css?v7" | relURL }}" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed for kahlillechelt.com"
+      href="/index.xml"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Site.Title }}</title>
-  <link href="https://micro.blog/ka" rel="me" />
-  <link href="https://fonts.googleapis.com/css?family=Rubik:700,700i" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "/css/styles.min.css?v7" | relURL }}" />
-  <link rel="alternate" type="application/rss+xml" title="RSS Feed for kahlillechelt.com" href="/index.xml" />
-</head>
-
-<body>
-  <div class="content">
+  <body>
+    <div class="content">

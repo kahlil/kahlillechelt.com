@@ -51,6 +51,11 @@ ul {
   padding-left: 1rem;
 }
 
+b,
+strong {
+  font-weight: 700;
+}
+
 nav ul {
   padding: 0;
 }
@@ -187,10 +192,11 @@ pre code {
 }
 
 article h1 {
+  font-weight: 700;
   font-size: 1.5rem;
   margin-top: 0.6rem;
   margin-bottom: 0.3rem;
-  font-family: "Rubik", var(--fonts);
+  font-family: "Work Sans", var(--fonts);
 }
 
 article p {
@@ -227,6 +233,7 @@ figcaption p {
 }
 
 .logo a {
+  font-family: var(--fonts-logo);
   background-color: #333;
   color: white;
   padding: 5px 10px 6px 10px;
