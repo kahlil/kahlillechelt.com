@@ -1,7 +1,7 @@
 
 ---
 date: 2020-01-23T14:29:08.011Z
-title: "I am an engineering manager now"
+title: "New job, who dis?! - Engineering Manager edition"
 ---
 
 Last year my manager quit. I was offered his position and since December or so, I am an engineering manager. 
