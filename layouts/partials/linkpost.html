@@ -1,5 +1,5 @@
 <article class="linkpost">
   <p class="linkpost-link"><a href="{{ .Params.link }}">{{ .Params.linktitle }}&nbsp;&rarr;</a></p>
-  <datetime><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></datetime>
+  <time datetime="{{ .Date }}"><a href="{{ .URL }}">{{ .Date.Format "January 02, 2006" }}</a></time>
   {{ .Content }}
 </article>

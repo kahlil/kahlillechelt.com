@@ -1,4 +1,7 @@
 @import "tailwindcss/base";
+
 @import "tailwindcss/components";
+
 @import "./markdown.styles.css";
+
 @import "tailwindcss/utilities";

@@ -2,7 +2,7 @@
 /* Markdown Styles */
 /* Global */
 .markdown {
-  @apply leading-relaxed text-sm;
+  @apply leading-normal text-sm text-gray-900;
 }
 
 @screen sm {
@@ -18,9 +18,11 @@
 }
 
 /* Headers */
-.markdown h1,
+.markdown h1 {
+  @apply text-4xl my-2 font-bold;
+}
 .markdown h2 {
-  @apply text-xl my-6 font-semibold;
+  @apply text-xl my-3 font-semibold;
 }
 .markdown h3,
 .markdown h4,
@@ -30,7 +32,9 @@
 }
 
 @screen sm {
-  .markdown h1,
+  .markdown h1 {
+    @apply text-4xl;
+  }
   .markdown h2 {
     @apply text-2xl;
   }
@@ -48,6 +52,9 @@
 }
 .markdown a:hover {
   @apply underline;
+}
+.markdown h1 a {
+  @apply text-gray-900;
 }
 /* Paragraph */
 .markdown p {
@@ -71,7 +78,9 @@
 }
 /* Blockquotes */
 .markdown blockquote {
-  @apply p-2 mx-6 bg-gray-100 mb-4 border-l-4 border-gray-400 italic;
+  @apply bg-gray-100 mb-4 border-l-2 border-gray-900 italic;
+  margin-left: -16px;
+  padding: 14px;
 }
 .markdown blockquote > p {
   @apply mb-0;
@@ -86,6 +95,11 @@
 }
 .markdown table {
   @apply mb-6;
+}
+
+/* Post dates */
+.markdown time {
+  @apply font-light text-sm mb-5 block text-gray-500;
 }
 
 /* Wrap any inline highlights `that are really long`, but don't modify

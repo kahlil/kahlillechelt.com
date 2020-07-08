@@ -1,16 +1,16 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
 
-<main class="container mx-auto px-4">
+<main class="container mx-auto px-4 lg:max-w-screen-sm xl:max-w-screen-sm">
 
   {{ range first 15 (where .Site.RegularPages "Type" "posts") }}
-  {{ if .Params.linkpost }}
-  {{ partial "linkpost.html" . }}
-  {{ else if .Params.micropost }}
-  {{ partial "micropost.html" . }}
-  {{ else }}
-  {{ partial "post.html" . }}
-  {{ end }}
+    {{ if .Params.linkpost }}
+      {{ partial "linkpost.html" . }}
+    {{ else if .Params.micropost }}
+      {{ partial "micropost.html" . }}
+    {{ else }}
+      {{ partial "post.html" . }}
+    {{ end }}
   {{ end }}
 
 </main>

@@ -12,7 +12,7 @@
     {{ range (where .Site.RegularPages "Type" "posts") }}
     {{ if .Title }}
     <p class="archive-item">
-      <time>
+      <time datetime="{{ .Date }}">
         {{ .Date | dateFormat "2006"}}&#8209;{{ .Date | dateFormat "01" }}&#8209;{{ .Date | dateFormat "02"}}:&nbsp;
         <!-- print publish day -->
       </time>
