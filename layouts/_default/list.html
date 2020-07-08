@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
 
-<main>
+<main class="container mx-auto px-4">
 
   {{ range first 15 (where .Site.RegularPages "Type" "posts") }}
   {{ if .Params.linkpost }}

@@ -1,5 +1,4 @@
-@import "variables.css";
-@import "normalize.css";
-@import "main.css";
-@import "sticky-footer.css";
-@import "media-queries.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "./markdown.styles.css";
+@import "tailwindcss/utilities";

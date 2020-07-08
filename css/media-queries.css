@@ -1,6 +1,0 @@
-/* Media queries */
-@media (min-width: 48em) {
-  html {
-    font-size: 20px;
-  }
-}

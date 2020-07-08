@@ -1,11 +1,11 @@
 {
   "name": "kahlillechelt.com",
   "version": "1.0.0",
-  "description": "My personal site.",
-  "main": "index.js",
+  "description": "Kahlil's blog.",
   "scripts": {
-    "css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map css/styles.css -o static/css/styles.min.css",
-    "watch:css": "postcss -u postcss-import postcss-cssnext postcss-clean --no-map css/styles.css -o static/css/styles.min.css -w",
+    "css": "postcss css/styles.css -o static/css/styles.min.css",
+    "css:prod": "postcss --env production --no-map css/styles.css -o static/css/styles.min.css",
+    "watch:css": "postcss css/styles.css -o static/css/styles.min.css -w",
     "start": "hugo serve & yarn watch:css",
     "start:drafts": "hugo serve -D & yarn watch:css"
   },
@@ -13,20 +13,18 @@
     "type": "git",
     "url": "git+https://github.com/kahlil/kahlillechelt.com.git"
   },
-  "author": "",
+  "author": "Kahlil Lechelt",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/kahlil/kahlillechelt.com/issues"
   },
-  "homepage": "https://github.com/kahlil/kahlillechelt.com#readme",
+  "homepage": "https://www.kahlillechelt.com",
   "dependencies": {
-    "caniuse-lite": "1.0.30001088",
-    "chokidar-cli": "2.1.0",
-    "postcss": "7.0.32",
-    "postcss-clean": "1.1.0",
+    "autoprefixer": "9.8.4",
+    "cssnano": "4.1.10",
     "postcss-cli": "7.1.1",
-    "postcss-cssnext": "3.1.0",
-    "postcss-import": "12.0.1"
+    "postcss-import": "12.0.1",
+    "tailwindcss": "1.4.6"
   },
   "volta": {
     "node": "12.16.3",
