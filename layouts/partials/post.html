@@ -6,9 +6,11 @@
   {{ if not .Title }}
   {{ .Content }}
   {{ end }}
-  <a href="{{ .URL }}">
-    <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
-  </a>
+
+  <time datetime="{{ .Date }}">
+    <a href="{{ .URL }}">{{ .Date.Format "January 2, 2006" }}</a>
+  </time>
+  
   {{ end }}
   {{ if .Title }}
   {{ .Content }}

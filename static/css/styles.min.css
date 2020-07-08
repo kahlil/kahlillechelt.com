@@ -627,22 +627,10 @@ video {
 
 .markdown {
   line-height: 1.5;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   --text-opacity: 1;
   color: #1a202c;
   color: rgba(26, 32, 44, var(--text-opacity));
-}
-
-@media (min-width: 640px) {
-  .markdown {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .markdown {
-    font-size: 1.125rem;
-  }
 }
 
 /* Headers */
@@ -651,59 +639,56 @@ video {
   font-size: 2.25rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .markdown h2 {
-  font-size: 1.25rem;
-  margin-top: 0.75rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .markdown h3,
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  font-size: 1.125rem;
-  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
-@media (min-width: 640px) {
+/* @screen sm {
   .markdown h1 {
-    font-size: 2.25rem;
+    @apply text-4xl;
   }
-
   .markdown h2 {
-    font-size: 1.5rem;
+    @apply text-2xl;
   }
-
   .markdown h3,
   .markdown h4,
   .markdown h5,
   .markdown h6 {
-    font-size: 1.25rem;
+    @apply text-xl;
   }
-}
+} */
 
 /* Links */
 
 .markdown a {
-  --text-opacity: 1;
-  color: #3182ce;
-  color: rgba(49, 130, 206, var(--text-opacity));
+  /* @apply text-blue-600; */
+  text-decoration: underline;
 }
 
 .markdown a:hover {
-  text-decoration: underline;
 }
 
 .markdown h1 a {
   --text-opacity: 1;
   color: #1a202c;
   color: rgba(26, 32, 44, var(--text-opacity));
+  text-decoration: none;
 }
 
 /* Paragraph */
@@ -737,17 +722,15 @@ video {
 /* Blockquotes */
 
 .markdown blockquote {
-  --bg-opacity: 1;
-  background-color: #f7fafc;
-  background-color: rgba(247, 250, 252, var(--bg-opacity));
   margin-bottom: 1rem;
-  border-left-width: 2px;
+  padding: 0.25rem;
+  border-left-width: 4px;
   --border-opacity: 1;
   border-color: #1a202c;
   border-color: rgba(26, 32, 44, var(--border-opacity));
   font-style: italic;
   margin-left: -16px;
-  padding: 14px;
+  padding-left: 12px;
 }
 
 .markdown blockquote > p {
@@ -788,6 +771,10 @@ video {
   --text-opacity: 1;
   color: #a0aec0;
   color: rgba(160, 174, 192, var(--text-opacity));
+}
+
+.markdown time a {
+  text-decoration: none;
 }
 
 /* Wrap any inline highlights `that are really long`, but don't modify

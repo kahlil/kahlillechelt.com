@@ -1,9 +1,40 @@
-<nav>
-  <ul>
-    {{ range .Site.Menus.main }}
-    <li>
-      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
-    </li>
-    {{ end }}
-  </ul>
+<nav class="flex items-center justify-between flex-wrap p-6 mb-6 bg-gray-900 text-white">
+  <div class="flex items-center flex-shrink-0 mr-6">
+    <div class="w-16 h-16 mr-4"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1152200434347651074/R9-O0TZw_400x400.jpg" alt=""></div>
+    <div>
+      <p class="font-semibold text-2xl tracking-tight">Kahlil Lechelt</p>
+      <p class="text-white text-xl">on software development</p>
+    </div>
+  </div>
+  <div class="block lg:hidden">
+    <button class="flex items-center px-3 py-2 border rounded border-white">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    </button>
+  </div>
+  <div class="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto text-xl">
+    <div class="text-sm lg:flex-grow">
+      
+    </div>
+    <div>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+        Blog
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+        Podcast
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+        Twitter
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+        About
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+        Archive
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+        Feed
+      </a>
+      <!-- <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-gray-900 border-gray-900 hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0">Download</a> -->
+    </div>
+  </div>
 </nav>
