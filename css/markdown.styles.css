@@ -35,10 +35,10 @@
 
 /* Links */
 .markdown a {
-  /* @apply text-blue-600; */
-  @apply underline;
+  @apply text-purple-600;
 }
 .markdown a:hover {
+  @apply underline;
 }
 .markdown h1 a {
   @apply text-gray-900 no-underline;
@@ -86,10 +86,10 @@
 
 /* Post dates */
 .markdown time {
-  @apply font-light text-sm mb-5 block text-gray-500;
+  @apply font-light text-sm mb-5 block;
 }
 .markdown time a {
-  @apply no-underline;
+  @apply no-underline text-gray-500;
 }
 
 /* Wrap any inline highlights `that are really long`, but don't modify
