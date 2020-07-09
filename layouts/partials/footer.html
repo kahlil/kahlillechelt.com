@@ -1,22 +1,19 @@
-    <footer>
+    <footer class="container centered mt-24 mb-12 pin-b">
       &copy; {{ dateFormat "2006" now }} Kahlil Lechelt &bullet; <a href="/archive/">Archive</a>
     </footer>
 
-    <script type="text/javascript">
-      var clicky_site_ids = clicky_site_ids || [];
-      clicky_site_ids.push(101080356);
-      (function () {
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = '//static.getclicky.com/js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
-      })();
+    <script>
+      const el = document.querySelector('.menu');
+      const elItems = document.querySelector('.menu-items');
+      const handleToggle = () => elItems.classList.toggle('hidden');
+
+      el.onclick = () => handleToggle();
+      el.addEventListener('keyup', (event) => {
+        if(event.keyCode === 13 || event.keyCode === 32) {
+          handleToggle();
+        }
+      });
     </script>
 
-    <noscript>
-      <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101080356ns.gif" /></p>
-    </noscript>
-    
   </body>
-</html>å
+</html>

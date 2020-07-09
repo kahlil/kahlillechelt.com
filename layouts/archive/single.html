@@ -1,8 +1,8 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
-<main class="archive">
+<main class="archive container centered">
   <article>
-    <h1>
+    <h1 class="text-4xl font-bold mb-12">
       {{ .Title }}
       <!-- title, in this case it will be "Archive page" -->
     </h1>
@@ -11,12 +11,12 @@
     <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
     {{ range (where .Site.RegularPages "Type" "posts") }}
     {{ if .Title }}
-    <p class="archive-item">
-      <time datetime="{{ .Date }}">
+    <p class="pb-4">
+      <time datetime="{{ .Date }}" class="font-mono table-cell text-xl">
         {{ .Date | dateFormat "2006"}}&#8209;{{ .Date | dateFormat "01" }}&#8209;{{ .Date | dateFormat "02"}}:&nbsp;
         <!-- print publish day -->
       </time>
-      <strong><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></strong>
+      <strong class="table-cell text-xl"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></strong>
 
       <!-- if you want pages summary you can print it here {{ .Summary }} -->
     </p>

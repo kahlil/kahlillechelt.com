@@ -15,7 +15,7 @@
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  @apply text-xl mt-6 mb-3 font-semibold;
+  @apply text-xl mt-6 mb-3 font-bold;
 }
 
 /* @screen sm {
@@ -33,12 +33,20 @@
   }
 } */
 
+/* Post dates */
+.markdown time {
+  @apply font-light text-base mb-5 block;
+}
+.markdown time a {
+  @apply no-underline text-gray-500;
+}
+
 /* Links */
 .markdown a {
-  @apply text-purple-600;
+  /* @apply text-purple-600; */
+  @apply underline;
 }
 .markdown a:hover {
-  @apply underline;
 }
 .markdown h1 a {
   @apply text-gray-900 no-underline;
@@ -84,14 +92,10 @@
   @apply mb-6;
 }
 
-/* Post dates */
-.markdown time {
-  @apply font-light text-sm mb-5 block;
+/* Emphasis */
+.markdown strong {
+  @apply font-semibold;
 }
-.markdown time a {
-  @apply no-underline text-gray-500;
-}
-
 /* Wrap any inline highlights `that are really long`, but don't modify
    the setting for codeblocks (inside ```), which are rendered in as:
    <pre><code>...
@@ -99,4 +103,16 @@
 .markdown :not(pre) > code.language-text {
   white-space: pre-line;
 }
+
+/* Horizontal Rule */
+.markdown hr {
+  @apply border-0 h-1 relative pb-10;
+  text-align: center;
+}
+.markdown hr:before {
+  @apply ml-6 inline-block;
+  content: "...";
+  letter-spacing: 15px;
+}
+
 /* purgecss end ignore */

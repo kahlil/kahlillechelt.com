@@ -1,0 +1,15 @@
+.centered {
+  @apply mx-auto px-4;
+}
+
+@screen lg {
+  .centered {
+    @apply max-w-screen-sm;
+  }
+}
+
+@screen xl {
+  .centered {
+    @apply max-w-screen-sm;
+  }
+}
