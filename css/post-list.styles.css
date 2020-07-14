@@ -1,3 +1,5 @@
+/* purgecss start ignore */
 .post-list article:not(:first-child) {
   @apply border-gray-200 border-t-2 pt-16 mt-24;
 }
+/* purgecss end ignore */

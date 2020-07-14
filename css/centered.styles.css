@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 .centered {
   @apply mx-auto px-4;
 }
@@ -13,3 +14,4 @@
     @apply max-w-screen-sm;
   }
 }
+/* purgecss end ignore */

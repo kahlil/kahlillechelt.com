@@ -1,19 +1,13 @@
-<!-- <nav>
-  <ul>
-    {{ range .Site.Menus.main }}
-    <li>
-      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
-    </li>
-    {{ end }}
-  </ul>
-</nav> -->
 
-<nav class="flex items-center justify-between flex-wrap p-6 mb-6 bg-gray-900 text-white">
-  <div class="flex items-center flex-shrink-0 mr-6">
-    <div class="w-16 h-16 mr-4"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1152200434347651074/R9-O0TZw_400x400.jpg" alt=""></div>
+
+<nav class="flex items-center justify-between flex-wrap p-4 mb-6 bg-gray-900 text-white">
+  <div class="flex items-center flex-shrink-0 mr-6 py-4 md:h-32">
+    <div class="w-16 h-16 hidden md:block md:w-32 md:h-32 absolute"><img class="rounded-full" src="https://pbs.twimg.com/profile_images/1152200434347651074/R9-O0TZw_400x400.jpg" alt=""></div>
     <div>
-      <p class="font-semibold text-2xl tracking-tight"><a href="/">Kahlil's Blog</a></p>
-      <p class="text-white text-lg font-light">on making software</p>
+      <p class="text-2xl md:text-4xl uppercase tracking-wide font-black relative bg-red-700 px-2 md:ml-24 md:pl-2 transform -skew-x-12">
+        <a href="/">Kahlil Lechelt</a>
+      </p>
+      <p class="text-white text-xl md:text-lg relative bg-red-700 mt-1 md:ml-24 px-2 md:pl-2 md:pb-1 transform -skew-x-12 inline-block">on software</p>
     </div>
   </div>
   <div class="block md:hidden">
@@ -21,16 +15,14 @@
       menu
     </button>
   </div>
-  <div class="menu-items hidden w-full flex-grow md:flex md:items-center md:w-auto text-xl">
+  <div class="menu-items-js hidden w-full flex-grow md:flex md:items-baseline md:w-auto text-xl md:mt-auto md:mb-4">
     <div class="text-sm md:flex-grow"></div>
-    <div>
+    <div class="menu-items">
       {{ range .Site.Menus.main }}
-      <a href="{{ .URL | relURL }}" class="block mt-4 md:inline-block md:mt-0 hover:text-white mr-4">
+      <a href="{{ .URL | relURL }}" class="block mt-4 md:inline-block md:mt-0 hover:text-white">
         {{ .Name }}
       </a>
       {{ end }}
-      
-      <!-- <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-gray-900 border-gray-900 hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0">Download</a> -->
     </div>
   </div>
 </nav>
