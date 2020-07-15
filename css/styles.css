@@ -2,9 +2,7 @@
 
 @import "tailwindcss/components";
 
-@import "./centered.styles.css";
-@import "./menu-items.styles.css";
-@import "./post-list.styles.css";
+@import "./misc.styles.css";
 @import "./markdown.styles.css";
 
 @import "tailwindcss/utilities";

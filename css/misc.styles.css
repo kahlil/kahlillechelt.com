@@ -1,0 +1,18 @@
+/* purgecss start ignore */
+.post-list article:not(:first-child) {
+  @apply border-gray-200 border-t-2 pt-16 mt-24;
+}
+
+.menu-items a:not(:last-child) {
+  @apply mr-4;
+}
+
+.centered {
+  @apply mx-auto px-4;
+}
+@screen md {
+  .centered {
+    @apply max-w-screen-sm;
+  }
+}
+/* purgecss end ignore */

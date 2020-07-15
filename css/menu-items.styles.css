@@ -1,5 +1,0 @@
-/* purgecss start ignore */
-.menu-items a:not(:last-child) {
-  @apply mr-4;
-}
-/* purgecss end ignore */

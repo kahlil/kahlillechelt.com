@@ -18,21 +18,6 @@
   @apply text-xl mt-6 mb-3 font-bold;
 }
 
-/* @screen sm {
-  .markdown h1 {
-    @apply text-4xl;
-  }
-  .markdown h2 {
-    @apply text-2xl;
-  }
-  .markdown h3,
-  .markdown h4,
-  .markdown h5,
-  .markdown h6 {
-    @apply text-xl;
-  }
-} */
-
 /* Post dates */
 .markdown time {
   @apply font-light text-base mb-5 block;
@@ -43,7 +28,6 @@
 
 /* Links */
 .markdown a {
-  /* @apply text-purple-600; */
   @apply underline;
 }
 .markdown a:hover {
@@ -102,6 +86,12 @@
 */
 .markdown :not(pre) > code.language-text {
   white-space: pre-line;
+  @apply text-red-600;
+}
+
+.markdown :not(pre) > code {
+  white-space: pre-line;
+  @apply text-red-600 bg-gray-200 p-1 text-lg;
 }
 
 /* Horizontal Rule */
