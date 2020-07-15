@@ -20,14 +20,12 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@kahliltweets" />
     <meta name="twitter:creator" content="@kahliltweets" />
-    <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:title" content="{{ .Title }}" />
     {{ with .Summary }}
-    <meta property="twitter:description" content="{{ . }}" />
+    <meta name="twitter:description" content="{{ . }}" />
     {{ else }}
-    <meta property="twitter:description" content="{{ .Param.description }}" />
+    <meta name="twitter:description" content="{{ .Param "description" }}" />
     {{ end }}
-    <meta property="twitter:image" content="https://www.kahlillechelt.com/img/twitter-card-thumbnail.png" />
+    <meta name="twitter:image" content="https://www.kahlillechelt.com/img/twitter-card-thumbnail.png" />
   </head>
 
   <body class="flex flex-col h-full">
