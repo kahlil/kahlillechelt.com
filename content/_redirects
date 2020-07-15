@@ -10,4 +10,4 @@
 
 /post/* /:splat
 
-/:year/:month/:day/:slug /blog/:slug
+/:year/:month/:day/:slug /blog/:slug 301
