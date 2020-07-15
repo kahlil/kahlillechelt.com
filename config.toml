@@ -8,7 +8,7 @@ footnotereturnlinkcontents = "↩"
 enableEmoji = true
 
 [permalinks]
-  posts = "/:year/:month/:day/:slug"
+  posts = "/blog/:slug"
 
 [[menu.main]]
   name = "Blog"
