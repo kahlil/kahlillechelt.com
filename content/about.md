@@ -1,5 +1,6 @@
 ---
 title: 'Hi, my name is Kahlil Lechelt'
+description: A blog on software by Kahlil Lechelt.
 ---
 
 I am a JavaScript developer located close to Karlsruhe, Germany. I am currently working at LogMeIn in Karlsruhe as an Engineering Manager for GoToMeeting.

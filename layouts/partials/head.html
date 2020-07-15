@@ -16,6 +16,18 @@
       title="RSS Feed for kahlillechelt.com"
       href="/index.xml"
     />
+    {{/*  Twitter Card  */}}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kahliltweets" />
+    <meta name="twitter:creator" content="@kahliltweets" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:title" content="{{ .Title }}" />
+    {{ with .Param "description" }}
+    <meta property="og:description" content="{{ . }}" />
+    {{ else }}
+    <meta property="og:description" content="{{ .Summary }}" />
+    {{ end }}
+    <meta property="og:image" content="/img/twitter-card-thumbnail.png" />
   </head>
 
   <body class="flex flex-col h-full">
