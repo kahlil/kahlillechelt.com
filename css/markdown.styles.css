@@ -6,10 +6,10 @@
 }
 /* Headers */
 .markdown h1 {
-  @apply text-4xl my-2 font-extrabold;
+  @apply text-4xl my-3 font-extrabold leading-snug;
 }
 .markdown h2 {
-  @apply text-2xl mt-6 mb-3 font-bold;
+  @apply text-2xl mt-6 mb-3 font-bold leading-snug;
 }
 .markdown h3,
 .markdown h4,
@@ -89,9 +89,12 @@
   @apply text-red-600;
 }
 
-.markdown :not(pre) > code {
-  white-space: pre-line;
+.markdown code {
   @apply text-red-600 bg-gray-200 p-1 text-lg;
+}
+
+.markdown pre {
+  @apply overflow-scroll bg-gray-200 p-2 mb-6;
 }
 
 /* Horizontal Rule */
