@@ -108,4 +108,25 @@
   letter-spacing: 15px;
 }
 
+/* Images */
+.markdown img,
+.markdown pre {
+  min-width: calc(100% + 2rem);
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+@screen md {
+  .markdown img,
+  .markdown pre {
+    min-width: calc(100% + 6rem);
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
+}
+
+/* Image captions */
+.markdown figcaption {
+  @apply text-gray-500 text-sm pt-2 font-normal block text-center;
+}
+
 /* purgecss end ignore */

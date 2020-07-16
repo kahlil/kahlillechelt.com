@@ -26,7 +26,11 @@
     {{ else }}
     <meta name="twitter:description" content="{{ .Param "description" }}" />
     {{ end }}
+    {{ with .Param "image" }}
+    <meta name="twitter:image" content="https://www.kahlillechelt.com{{ . }}" />
+    {{ else }}
     <meta name="twitter:image" content="https://www.kahlillechelt.com/img/twitter-card-thumbnail.png" />
+    {{ end }}
   </head>
 
   <body class="flex flex-col h-full">

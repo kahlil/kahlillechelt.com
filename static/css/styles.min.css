@@ -848,6 +848,37 @@ video {
   letter-spacing: 15px;
 }
 
+/* Images */
+
+.markdown img,
+.markdown pre {
+  min-width: calc(100% + 2rem);
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+@media (min-width: 768px) {
+  .markdown img,
+  .markdown pre {
+    min-width: calc(100% + 6rem);
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
+}
+
+/* Image captions */
+
+.markdown figcaption {
+  --text-opacity: 1;
+  color: #a0aec0;
+  color: rgba(160, 174, 192, var(--text-opacity));
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+}
+
 /* purgecss end ignore */
 
 .space-y-0 > :not(template) ~ :not(template) {
