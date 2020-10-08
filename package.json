@@ -24,7 +24,7 @@
     "cssnano": "4.1.10",
     "postcss-cli": "7.1.1",
     "postcss-import": "12.0.1",
-    "tailwindcss": "1.4.6"
+    "tailwindcss": "1.8.12"
   },
   "volta": {
     "node": "12.16.3",
