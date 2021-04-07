@@ -21,7 +21,7 @@
   "homepage": "https://www.kahlillechelt.com",
   "dependencies": {
     "autoprefixer": "9.8.5",
-    "cssnano": "4.1.10",
+    "cssnano": "4.1.11",
     "postcss-cli": "7.1.1",
     "postcss-import": "12.0.1",
     "tailwindcss": "1.4.6"
