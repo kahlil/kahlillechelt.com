@@ -1,13 +1,11 @@
 
 
 <nav class="flex items-center justify-between flex-wrap p-4 mb-6 bg-gray-900 text-white overflow-hidden relative">
-  <div class="flex items-center flex-shrink-0 mr-6 py-4 md:h-32">
-    <div class="w-16 h-16 hidden md:block md:w-32 md:h-32 absolute" style=""><img class="rounded-full" src="/img/avatar.jpg" alt=""></div>
+  <div class="flex items-center flex-shrink-0 mr-6 py-4">
     <div>
-      <p class="text-2xl md:text-4xl uppercase tracking-wide font-black relative bg-red-700 px-2 md:ml-24 md:pl-2 transform -skew-x-12">
+      <p class="text-2xl md:text-4xl uppercase tracking-wide font-black relative px-2 md:pl-2">
         <a href="/">Kahlil Lechelt</a>
       </p>
-      <p class="text-white text-xl md:text-lg relative bg-red-700 mt-1 md:ml-24 px-2 md:pl-2 md:pb-1 transform -skew-x-12 inline-block">on software</p>
     </div>
   </div>
   <div class="block md:hidden">
@@ -15,7 +13,7 @@
       menu
     </button>
   </div>
-  <div class="menu-items-js hidden w-full flex-grow md:flex md:items-baseline md:w-auto text-xl md:mt-auto md:mb-4">
+  <div class="menu-items-js hidden w-full flex-grow md:flex md:w-auto text-xl">
     <div class="text-sm md:flex-grow"></div>
     <div class="menu-items">
       {{ range .Site.Menus.main }}
