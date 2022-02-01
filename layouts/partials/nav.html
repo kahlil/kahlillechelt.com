@@ -17,7 +17,7 @@
     <div class="text-sm md:flex-grow"></div>
     <div class="menu-items">
       {{ range .Site.Menus.main }}
-      <a href="{{ .URL | relURL }}" class="block mt-4 md:inline-block md:mt-0 hover:text-white">
+      <a href="{{ .URL }}" class="block mt-4 md:inline-block md:mt-0 hover:text-white">
         {{ .Name }}
       </a>
       {{ end }}

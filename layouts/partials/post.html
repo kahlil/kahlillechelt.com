@@ -1,6 +1,6 @@
 <article class="markdown">
   {{ if .Title }}
-  <h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
+  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
   {{ end }}
   {{ if eq .Section "posts" }}
   {{ if not .Title }}
@@ -8,7 +8,7 @@
   {{ end }}
 
   <time datetime="{{ .Date }}">
-    <a href="{{ .URL }}">{{ .Date.Format "January 2, 2006" }}</a>
+    <a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006" }}</a>
   </time>
   
   {{ end }}

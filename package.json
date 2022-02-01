@@ -6,7 +6,8 @@
     "css": "postcss css/styles.css -o static/css/styles.min.css",
     "css:prod": "postcss --env production --no-map css/styles.css -o static/css/styles.min.css",
     "watch:css": "postcss css/styles.css -o static/css/styles.min.css -w",
-    "start": "hugo serve & yarn watch:css",
+    "serve": "hugo serve",
+    "start": "yarn serve & yarn watch:css",
     "start:drafts": "hugo serve -D & yarn watch:css"
   },
   "repository": {
@@ -20,14 +21,16 @@
   },
   "homepage": "https://www.kahlillechelt.com",
   "dependencies": {
-    "autoprefixer": "10.2.6",
-    "cssnano": "5.0.5",
-    "postcss-cli": "8.3.1",
+    "autoprefixer": "10.4.2",
+    "browserslist": "^4.19.1",
+    "cssnano": "5.0.16",
+    "postcss": "^8.4.6",
+    "postcss-cli": "9.1.0",
     "postcss-import": "14.0.2",
-    "tailwindcss": "2.1.4"
+    "tailwindcss": "3.0.18"
   },
   "volta": {
-    "node": "12.16.3",
-    "yarn": "1.22.4"
+    "node": "16.13.2",
+    "yarn": "1.22.17"
   }
 }
