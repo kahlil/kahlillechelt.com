@@ -2,6 +2,7 @@
 draft: false
 date: 2022-03-01T00:00:00.674Z
 title: "Run your day, don’t let the day run you"
+image: "/img/we-run-tings.png"
 ---
 
 When I transitioned from software engineering to engineering management I had a difficult time adjusting to the new job. As an engineer, I let the day run me. I did not proactively plan my day or my week. I worked on my sprint tasks when I had no meetings and joined meetings when I had to. 
@@ -12,7 +13,7 @@ I continued with that basic framework as an engineering manager out of habit and
 
 By letting the day run me I was sitting in meetings almost all the time, never got into flow state and just reacted to things. I barely had time to do any proactive, strategic work and when I had some time I feverishly caught up on outstanding todos.
 
-![](/img/we-run-tings.jpg)
+![Picture of a 45 inch record of Flourgon's number one hit "We run things"](/img/we-run-tings.jpg "The lyrics in We Run Things by Flourgon lead to the solution to my problem. Just turn it around.")
 
 In 1988 Jamaican artist Flourgon landed a number one hit with ["We run things"](https://www.youtube.com/watch?v=o0WcBLMZMbQ). In the chorus he used the Jamaican proverb:
 
