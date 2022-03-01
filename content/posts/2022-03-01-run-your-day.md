@@ -2,7 +2,7 @@
 draft: false
 date: 2022-03-01T00:00:00.674Z
 title: "Run your day, don’t let the day run you"
-image: "/img/we-run-tings.png"
+image: "/img/we-run-tings.jpg"
 ---
 
 When I transitioned from software engineering to engineering management I had a difficult time adjusting to the new job. As an engineer, I let the day run me. I did not proactively plan my day or my week. I worked on my sprint tasks when I had no meetings and joined meetings when I had to. 
