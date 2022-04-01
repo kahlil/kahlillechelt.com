@@ -6,6 +6,7 @@ disqusShortname = ""
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 enableEmoji = true
+summaryLength = 30
 
 [permalinks]
   posts = "/blog/:slug"

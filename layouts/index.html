@@ -4,7 +4,7 @@
 <main class="post-list container mx-auto px-4 md:max-w-screen-sm">
 
   {{ range first 15 (where .Site.RegularPages "Type" "posts") }}
-  {{ partial "post.html" . }}
+  {{ partial "post-snippet.html" . }}
   {{ end }}
 
 </main>
