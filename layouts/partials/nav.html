@@ -4,13 +4,13 @@
   <div class="mr-6 pb-4 pt-12">
     <div>
       {{/*  <div class="flex justify-center pb-3"><img src="/img/avatar_2.jpg" alt="Avatar" class="rounded-full inline-block overflow-hidden w-16 h-16"></div>  */}}
-      <p class="text-3xl text-center uppercase tracking-wide font-black relative px-2 md:pl-2">
+      <p class="text-3xl md:text-4xl text-center uppercase tracking-wide font-black relative px-2 md:pl-2">
         <a href="/">Kahlil Lechelt</a>
       </p>
     </div>
-    <div class="menu-items text-center text-xl">
+    <div class="menu-items text-center text-l md:text-xl">
       {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}" class="mt-4 inline-block hover:underline">
+      <a href="{{ .URL }}" class="mt-4 mx-1 md:mx-2 inline-block hover:underline">
         {{ .Name }}
       </a>
       {{ end }}

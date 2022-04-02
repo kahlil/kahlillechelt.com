@@ -474,11 +474,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 4rem;
 }
 
-.menu-items a {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .centered {
   margin-left: auto;
   margin-right: auto;
@@ -727,6 +722,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -947,6 +952,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 768px) {
 
+  .md\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -977,5 +987,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pl-2 {
     padding-left: 0.5rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
