@@ -3,8 +3,8 @@
   @apply border-gray-200 border-t-2 pt-16 mt-24;
 }
 
-.menu-items a:not(:last-child) {
-  @apply mr-4;
+.menu-items a {
+  @apply mx-2;
 }
 
 .centered {

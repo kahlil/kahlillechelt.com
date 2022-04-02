@@ -1,10 +1,12 @@
 ---
 title: 'Hi, my name is Kahlil Lechelt'
-description: A blog on software by Kahlil Lechelt.
+description: A blog by Kahlil Lechelt.
 ---
 
-I am a JavaScript developer located close to Karlsruhe, Germany. I am currently working at LogMeIn in Karlsruhe as an Engineering Manager for GoToMeeting.
+I am a JavaScript developer turned engineering manager located close to Karlsruhe, Germany. I am currently working at [GoTo](https://goto.com), managing a distributed team.
 
-I am [@kahliltweets](https://mobile.twitter.com/kahliltweets) on Twitter but the best way to reach me is by sending an email to [kahlil@hey.com](mailto:kahlil@hey.com). Send me an email if you want to chat about JavaScript apps or if you are a JavaScript dev and need some advice!
+On this blog I write about what I learn.
+
+I am [@kahliltweets](https://mobile.twitter.com/kahliltweets) on Twitter but the best way to reach me is by sending an email to [kahlil@hey.com](mailto:kahlil@hey.com).
 
 You can find all my open source code [on GitHub](https://github.com/kahlil).

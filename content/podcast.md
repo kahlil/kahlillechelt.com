@@ -1,6 +1,6 @@
 ---
 title: Podcast
-description: A blog on software by Kahlil Lechelt.
+description: A blog by Kahlil Lechelt.
 ---
 
 **Update from 2020-05-19:**  
