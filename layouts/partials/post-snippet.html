@@ -1,20 +1,24 @@
 <article class="markdown">
   {{ if .Title }}
+  <time datetime="{{ .Date }}">
+    <a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006" }} &bullet; {{ .ReadingTime }} min read</a>
+  </time>
   <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
   {{ end }}
   {{ if eq .Section "posts" }}
     {{ if not .Title }}
+    <time datetime="{{ .Date }}">
+      <a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006" }}</a>
+    </time>
     {{ .Content }}
   {{ end }}
-  <time datetime="{{ .Date }}">
-    <a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006" }}</a>
-  </time>
+  
   {{ end }}
   {{ if .Title }}
     {{ .Summary }}
     {{ if .Truncated }}
-    <p class="mt-6">
-      <a class="" href="{{ .Permalink }}">Read more →</a>
+    <p class="mt-5">
+      <a href="{{ .Permalink }}">Read more →</a>
     </p>
     {{ end }}
   {{ end }}

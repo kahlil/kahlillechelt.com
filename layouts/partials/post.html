@@ -1,16 +1,16 @@
 <article class="markdown">
   {{ if .Title }}
+  {{ if eq .Section "posts" }}
+  <time datetime="{{ .Date }}">
+    <a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006" }} &bullet; {{ .ReadingTime }} min read</a>
+  </time>
+  {{ end }}
   <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
   {{ end }}
   {{ if eq .Section "posts" }}
   {{ if not .Title }}
   {{ .Content }}
   {{ end }}
-
-  <time datetime="{{ .Date }}">
-    <a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006" }}</a>
-  </time>
-  
   {{ end }}
   {{ if .Title }}
   {{ .Content }}
